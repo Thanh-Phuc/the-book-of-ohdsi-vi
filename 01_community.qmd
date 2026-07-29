@@ -6,8 +6,8 @@ title: "Chương 1: Cộng đồng OHDSI"
 
 *Trưởng chương: Patrick Ryan & George Hripcsak*
 
-Đến với nhau là một sự khởi đầu; giữ được nhau là sự tiến bộ; làm việc
-cùng nhau là thành công. Henry Ford
+"Đến với nhau là một sự khởi đầu; giữ được nhau là sự tiến bộ; làm việc
+cùng nhau là thành công." Henry Ford
 
 ## Hành trình từ dữ liệu đến bằng chứng
 
@@ -44,8 +44,8 @@ duy nhất nào có thể giúp điều hướng trên con đường đó. Trên
 không có khái niệm duy nhất về "dữ liệu", cũng như không có khái niệm
 duy nhất về "bằng chứng".
 
-![](media/image2.jpeg){width="5.485416666666667in"
-height="3.617707786526684in"}
+![](media/image2.jpeg){width="7.6in"
+height="5.8in"}
 
 Hình 1.1: Hành trình từ dữ liệu đến bằng chứng
 
