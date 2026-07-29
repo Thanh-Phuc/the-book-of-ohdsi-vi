@@ -4,547 +4,43 @@ title: "Lời tựa & Giới thiệu"
 
 # Lời tựa & Giới thiệu {.unnumbered}
 
-> Cuốn sách OHDSI
->
-> Khoa học Dữ liệu Y tế Quan sát và Tin học 2020-11-25
-
-# Mục lục
-
-+-------------------------------------------------------+----------+
-| [**Lời tựa**](#lời-tựa)                               | > **ix** |
-+======================================================:+:========:+
-| Mục tiêu của cuốn sách . . . . . . . . . . . . . . .  | > ix     |
-| . . . . . . . . . . . . . . . .                       |          |
-+-------------------------------------------------------+----------+
-| Cấu trúc của cuốn sách . . . . . . . . . . . . . . .  | > ix     |
-| . . . . . . . . . . . . . .                           |          |
-+-------------------------------------------------------+----------+
-| Các cộng tác viên . . . . . . . . . . . . . . . . . . | > x      |
-| . . . . . . . . . . . . . . . .                       |          |
-+-------------------------------------------------------+----------+
-| Các phiên bản phần mềm . . . . . . . . . . . . . . .  | > x      |
-| . . . . . . . . . . . . . . . .                       |          |
-+-------------------------------------------------------+----------+
-| Giấy phép . . . . . . . . . . . . . . . . . . . . . . | > xi     |
-| . . . . . . . . . . . . . . .                         |          |
-+-------------------------------------------------------+----------+
-| Cách cuốn sách được phát triển . . . . . . . . . . .  | > xi     |
-| . . . . . . . . . . . . . .                           |          |
-+-------------------------------------------------------+----------+
-| [**I Cộng đồng OHDSI**](#_bookmark3)                  | > **1**  |
-+-------------------------------------------------------+----------+
-| [**1 Cộng đồng OHDSI**](#_bookmark4)                  | > **3**  |
-+-------------------------------------------------------+----------+
-| 1.1 Hành trình từ dữ liệu đến bằng chứng . . . . . .  | > 3      |
-| . . . . . . . . . . . . .                             |          |
-+-------------------------------------------------------+----------+
-| 1.2 Đối tác kết cục y tế quan sát (OMOP) . . . . . .  | > 5      |
-| . . . . . . . . . . . . .                             |          |
-+-------------------------------------------------------+----------+
-| 1.3 OHDSI với tư cách là một cộng tác khoa học mở . . | > 6      |
-| . . . . . . . . . . . . .                             |          |
-+-------------------------------------------------------+----------+
-| 1.4 Tiến trình của OHDSI . . . . . . . . . . . . . .  | > 7      |
-| . . . . . . . . . . . .                               |          |
-+-------------------------------------------------------+----------+
-| 1.5 Cộng tác trong OHDSI . . . . . . . . . . . . . .  | > 9      |
-| . . . . . . . . . . . .                               |          |
-+-------------------------------------------------------+----------+
-| 1.6 Tóm tắt . . . . . . . . . . . . . . . . . . . . . | > 9      |
-| . . . . . . . . . . . .                               |          |
-+-------------------------------------------------------+----------+
-| [**2 Nơi bắt đầu**](#_bookmark16)                     | > **11** |
-+-------------------------------------------------------+----------+
-| 2.1 Tham gia hành trình . . . . . . . . . . . . . . . | > 11     |
-| . . . . . . . . . . . . .                             |          |
-+-------------------------------------------------------+----------+
-| 2.2 Nơi bạn phù hợp . . . . . . . . . . . . . . . . . | > 18     |
-| . . . . . . . . . . .                                 |          |
-+-------------------------------------------------------+----------+
-| 2.3 Tóm tắt . . . . . . . . . . . . . . . . . . . . . | > 20     |
-| . . . . . . . . . . . .                               |          |
-+-------------------------------------------------------+----------+
-| [**3 Khoa học mở**](#_bookmark29)                     | > **21** |
-+-------------------------------------------------------+----------+
-| 3.1 Khoa học mở . . . . . . . . . . . . . . . . . . . | > 21     |
-| . . . . . . . . . . .                                 |          |
-+-------------------------------------------------------+----------+
-| 3.2 Khoa học mở trong hành động&#58; Study-a-Thon . . . . | > 23     |
-| . . . . . . . . . . .                                 |          |
-+-------------------------------------------------------+----------+
-| 3.3 Tiêu chuẩn mở . . . . . . . . . . . . . . . . . . | > 23     |
-| . . . . . . . . . . .                                 |          |
-+-------------------------------------------------------+----------+
-| 3.4 Mã nguồn mở . . . . . . . . . . . . . . . . . . . | > 24     |
-| . . . . . . . . . . . .                               |          |
-+-------------------------------------------------------+----------+
-| 3.5 Dữ liệu mở . . . . . . . . . . . . . . . . . . .  | > 24     |
-| . . . . . . . . . . . .                               |          |
-+-------------------------------------------------------+----------+
-| 3.6 Thảo luận mở . . . . . . . . . . . . . . . . . .  | > 24     |
-| . . . . . . . . . . .                                 |          |
-+-------------------------------------------------------+----------+
-| 3.7 OHDSI và các nguyên tắc chỉ đạo FAIR . . . . . .  | > 25     |
-| . . . . . . . . . .                                   |          |
-+-------------------------------------------------------+----------+
-
-> iii
-
-II. [Biểu diễn dữ liệu thống nhất 29](#_bookmark53) 29
-
-<!-- -->
-
-4.  [Mô hình dữ liệu chung (CDM) 31](#_bookmark54) 31
-
-1.  [Nguyên tắc thiết kế 33](#_bookmark56) 33
-
-2.  [Quy ước mô hình dữ liệu 34](#_bookmark60) 34
-
-3.  [Các bảng chuẩn hóa CDM 39](#_bookmark66) 39
-
-4.  [Thông tin bổ sung 51](#thông-tin-bổ-sung) 51
-
-5.  [Tóm tắt 51](#_bookmark71) 51
-
-6.  [Bài tập 52](#_bookmark72) 52
-
-5.  [Từ vựng chuẩn hóa 55](#_bookmark82) 55
-
-1.  [Tại sao cần từ vựng và tại sao cần chuẩn hóa 55](#_bookmark84)
-55
-
-2.  [Khái niệm 58](#_bookmark93) 58
-
-3.  [Mối quan hệ 65](#_bookmark107) 65
-
-4.  [Hệ thống phân cấp 68](#_bookmark114) 68
-
-5.  [Bảng tham chiếu nội bộ 70](#_bookmark118) 70
-
-6.  [Các tình huống đặc biệt 70](#_bookmark119) 70
-
-7.  [Tóm tắt 72](#_bookmark121) 72
-
-8.  [Bài tập 73](#bài-tập-1) 73
-
-6.  [Trích xuất - Chuyển đổi - Nạp (ETL) 75](#_bookmark128) 75
-
-1.  [Giới thiệu 75](#_bookmark130) 75
-
-2.  [Bước 1&#58; Thiết kế ETL 75](#_bookmark131) 75
-
-3.  [Bước 2&#58; Tạo ánh xạ mã 84](#_bookmark142) 84
-
-4.  [Bước 3&#58; Triển khai ETL 92](#_bookmark151) 92
-
-5.  [Bước 4&#58; Kiểm soát chất lượng 93](#_bookmark153) 93
-
-6.  [Các quy ước ETL và THEMIS 94](#_bookmark154) 94
-
-7.  [Bảo trì CDM và ETL 95](#_bookmark157) 95
-
-8.  [Suy nghĩ cuối cùng về ETL 96](#_bookmark159) 96
-
-9.  [Tóm tắt 96](#_bookmark160) 96
-
-10. [Bài tập 97](#_bookmark161) 97
-
-<!-- -->
-
-III. [Phân tích dữ liệu 99](#_bookmark167) 99
-
-<!-- -->
-
-7.  [Các trường hợp sử dụng phân tích dữ liệu 101](#_bookmark169) 101
-
-1.  [Đặc điểm lâm sàng 101](#_bookmark171) 101
-
-2.  [Ước tính cấp độ quần thể 102](#_bookmark173) 102
-
-3.  [Dự đoán cấp độ bệnh nhân 103](#_bookmark175) 103
-
-4.  [Ví dụ các trường hợp sử dụng trong tăng huyết áp
-104](#các-trường-hợp-sử-dụng-ví-dụ-trong-tăng-huyết-áp) 104
-
-5.  [Hạn chế của nghiên cứu quan sát 105](#_bookmark178) 105
-
-6.  [Tóm tắt 106](#_bookmark180) 106
-
-7.  [Bài tập 106](#bài-tập-3) 106
-
-8.  [Công cụ phân tích OHDSI 107](#_bookmark184) 107
-
-1.  [Triển khai phân tích 107](#_bookmark186) 107
-
-2.  [Chiến lược phân tích 108](#_bookmark188) 108
-
-3.  [ATLAS](#_bookmark190) 109
-
-4.  [Thư viện phương pháp 112](#_bookmark197) 112
-
-5.  [Chiến lược triển khai 118](#chiến-lược-triển-khai) 118
-
-6.  [Tóm tắt 120](#tóm-tắt-6) 120
-
-9.  [SQL và R 121](#_bookmark224) 121
-
-1.  [SqlRender](#_bookmark227) 122
-
-2.  [Trình kết nối cơ sở dữ liệu 130](#_bookmark231) 130
-
-3.  [Truy vấn CDM 133](#_bookmark235) 133
-
-4.  [Sử dụng từ vựng khi truy vấn 136](#_bookmark236) 136
-
-5.  [QueryLibrary](#querylibrary) 137
-
-6.  [Thiết kế một nghiên cứu đơn giản 138](#_bookmark242) 138
-
-7.  [Triển khai nghiên cứu bằng SQL và R 139](#_bookmark243) 139
-
-8.  [Tóm tắt 145](#_bookmark244) 145
-
-9.  [Bài tập 145](#bài-tập-4) 145
-
-10. [Định nghĩa nhóm thuần tập 147](#_bookmark249) 147
-
-1.  [Nhóm thuần tập là gì? 148](#_bookmark250) 148
-
-2.  [Định nghĩa nhóm thuần tập dựa trên quy tắc 149](#_bookmark253)
-149
-
-3.  [Tập hợp khái niệm 151](#_bookmark256) 151
-
-4.  [Định nghĩa nhóm thuần tập xác suất 152](#_bookmark260) 152
-
-5.  [Tính hợp lệ của định nghĩa nhóm thuần tập 152](#_bookmark262)
-152
-
-6.  [Định nghĩa nhóm thuần tập cho tăng huyết áp 153](#_bookmark265)
-153
-
-7.  [Triển khai nhóm thuần tập bằng ATLAS 154](#_bookmark267) 154
-
-8.  [Triển khai nhóm thuần tập bằng SQL 164](#_bookmark281) 164
-
-9.  [Tóm tắt 171](#tóm-tắt-8) 171
-
-10. [Bài tập 172](#_bookmark283) 172
-
-11. [Đặc điểm lâm sàng 173](#_bookmark286) 173
-
-1.  [Đặc điểm lâm sàng cấp độ cơ sở dữ liệu 174](#_bookmark288) 174
-
-2.  [Đặc điểm nhóm thuần tập 174](#_bookmark290) 174
-
-3.  [Lộ trình điều trị 174](#_bookmark291) 174
-
-4.  [Tỷ lệ mới mắc 175](#_bookmark294) 175
-
-5.  [Đặc điểm người bệnh tăng huyết áp 176](#_bookmark297) 176
-
-6.  [Đặc điểm cơ sở dữ liệu trong ATLAS 177](#_bookmark298) 177
-
-7.  [Đặc điểm nhóm thuần tập trong ATLAS 180](#_bookmark299) 180
-
-8.  [Đặc điểm nhóm thuần tập trong R 187](#_bookmark306) 187
-
-9.  [Lộ trình nhóm thuần tập trong ATLAS 190](#_bookmark308) 190
-
-10. [Phân tích tỷ lệ mới mắc trong ATLAS 194](#_bookmark310) 194
-
-11. [Tóm tắt 197](#_bookmark311) 197
-
-12. [Bài tập 198](#bài-tập-6) 198
-
-12. [Ước tính cấp độ quần thể 201](#_bookmark316) 201
-
-1.  [Thiết kế phương pháp nhóm thuần tập 202](#_bookmark318) 202
-
-2.  [Thiết kế nhóm thuần tập tự kiểm soát 206](#_bookmark327) 206
-
-3.  [Thiết kế bệnh-chứng 206](#_bookmark328) 206
-
-4.  [Thiết kế chéo bệnh-chứng 207](#_bookmark331) 207
-
-5.  [Thiết kế chuỗi trường hợp tự kiểm soát 208](#_bookmark334) 208
-
-6.  [Thiết kế nghiên cứu tăng huyết áp 209](#_bookmark336) 209
-
-7.  [Triển khai nghiên cứu bằng ATLAS 211](#_bookmark337) 211
-
-8.  [Triển khai nghiên cứu bằng R 224](#_bookmark352) 224
-
-9.  [Kết quả nghiên cứu 232](#_bookmark355) 232
-
-10. [Tóm tắt 237](#_bookmark365) 237
-
-11. [Bài tập 237](#bài-tập-7) 237
-
-13. [Dự đoán cấp độ bệnh nhân 239](#_bookmark374) 239
-
-1.  [Vấn đề dự đoán 240](#_bookmark377) 240
-
-2.  [Trích xuất dữ liệu 242](#_bookmark383) 242
-
-3.  [Khớp mô hình 243](#_bookmark387) 243
-
-4.  [Đánh giá các mô hình dự đoán 248](#_bookmark394) 248
-
-5.  [Thiết kế nghiên cứu dự đoán cấp độ bệnh nhân
-252](#_bookmark401) 252
-
-6.  [Triển khai nghiên cứu trong ATLAS 255](#_bookmark404) 255
-
-7.  [Triển khai nghiên cứu trong R 266](#_bookmark418) 266
-
-8.  [Phổ biến kết quả 272](#phổ-biến-kết-quả) 272
-
-9.  [Các tính năng dự đoán cấp độ bệnh nhân bổ sung
-280](#các-tính-năng-dự-đoán-cấp-độ-bệnh-nhân-bổ-sung) 280
-
-10. [Tóm tắt 282](#_bookmark434) 282
-
-11. [Bài tập 282](#bài-tập-8) 282
-
-<!-- -->
-
-IV. [Chất lượng bằng chứng 285](#_bookmark439) 285
-
-<!-- -->
-
-14. [Chất lượng bằng chứng 287](#_bookmark440) 287
-
-1.  [Các thuộc tính của bằng chứng đáng tin cậy 287](#_bookmark442)
-287
-
-2.  [Hiểu về chất lượng bằng chứng 289](#_bookmark444) 289
-
-3.  [Truyền đạt chất lượng bằng chứng
-290](#truyền-đạt-chất-lượng-bằng-chứng) 290
-
-4.  [Tóm tắt 290](#_bookmark447) 290
-
-15. [Chất lượng dữ liệu 291](#_bookmark448) 291
-
-1.  [Các nguồn gây vấn đề về chất lượng dữ liệu 292](#_bookmark450)
-292
-
-2.  [Chất lượng dữ liệu nói chung 292](#_bookmark451) 292
-
-3.  [Kiểm tra cụ thể theo nghiên cứu 297](#_bookmark459) 297
-
-4.  [ACHILLES trong thực tế 299](#achilles-trong-thực-tiễn) 299
-
-5.  [Bảng điều khiển chất lượng dữ liệu trong thực tế
-301](#_bookmark466) 301
-
-6.  [Kiểm tra cụ thể theo nghiên cứu trong thực tế
-302](#_bookmark469) 302
-
-7.  [Tóm tắt 305](#_bookmark472) 305
-
-8.  [Bài tập 305](#bài-tập-9) 305
-
-16. [Độ hợp lệ lâm sàng 307](#_bookmark477) 307
-
-1.  [Đặc điểm của các cơ sở dữ liệu chăm sóc sức khỏe
-307](#_bookmark479) 307
-
-2.  [Xác thực nhóm thuần tập 308](#_bookmark480) 308
-
-3.  [Xác minh hồ sơ nguồn 311](#_bookmark483) 311
-
-4.  [PheValuator](#_bookmark485) 314
-
-5.  [Tính tổng quát của bằng chứng
-324](#tính-khái-quát-của-bằng-chứng) 324
-
-6.  [Tóm tắt 325](#_bookmark494) 325
-
-17. [Độ hợp lệ của phần mềm 327](#_bookmark495) 327
-
-1.  [Độ hợp lệ của mã nghiên cứu 327](#_bookmark497) 327
-
-2.  [Quy trình phát triển phần mềm thư viện phương pháp
-329](#_bookmark500) 329
-
-3.  [Kiểm thử thư viện phương pháp 332](#_bookmark505) 332
-
-4.  [Tóm tắt 333](#_bookmark506) 333
-
-18. [Độ hợp lệ của phương pháp 335](#_bookmark507) 335
-
-1.  [Chẩn đoán cụ thể theo thiết kế 335](#_bookmark509) 335
-
-2.  [Chẩn đoán cho tất cả các ước tính 336](#_bookmark511) 336
-
-3.  [Xác thực phương pháp trong thực tế 343](#_bookmark523) 343
-
-4.  [Điểm chuẩn phương pháp OHDSI
-351](#tiêu-chuẩn-đánh-giá-phương-pháp-ohdsi) 351
-
-5.  [Tóm tắt 352](#_bookmark534) 352
-
-<!-- -->
-
-V.  [Các nghiên cứu OHDSI 355](#_bookmark537) 355
-
-<!-- -->
-
-19. [Các bước nghiên cứu 357](#_bookmark538) 357
-
-1.  [Hướng dẫn thực hành tốt nhất chung 358](#_bookmark539) 358
-
-2.  [Chi tiết các bước nghiên cứu 361](#_bookmark542) 361
-
-3.  [Tóm tắt 367](#_bookmark546) 367
-
-20. [Nghiên cứu mạng lưới OHDSI 369](#_bookmark547) 369
-
-1.  [OHDSI với tư cách là một mạng lưới nghiên cứu
-369](#_bookmark549) 369
-
-2.  [Các nghiên cứu mạng lưới OHDSI
-370](#các-nghiên-cứu-mạng-lưới-ohdsi) 370
-
-3.  [Thực hiện một nghiên cứu mạng lưới OHDSI 374](#_bookmark554)
-374
-
-4.  [Hướng tới tương lai&#58; Sử dụng tự động hóa nghiên cứu mạng lưới
-377](#_bookmark557) 377
-
-5.  [Thực hành tốt nhất cho các nghiên cứu mạng lưới OHDSI
-378](#thực-tiễn-tốt-nhất-cho-các-nghiên-cứu-mạng-lưới-ohdsi) 378
-
-6.  [Tóm tắt 380](#_bookmark561) 380
-
-[Phụ lục 380](#_bookmark561) 380
-
-A.  [Thuật ngữ 381](#_bookmark562) 381
-
-B.  [Định nghĩa nhóm thuần tập 385](#_bookmark563) 385
-
-1.  [Thuốc ức chế men chuyển (ACE) 385](#_bookmark564) 385
-
-2.  [Người dùng mới đơn trị liệu thuốc ức chế men chuyển (ACE)
-386](#người-dùng-mới-sử-dụng-thuốc-ức-chế-men-chuyển-đơn-trị-liệu)
-386
-
-3.  [Nhồi máu cơ tim cấp (AMI) 389](#nhồi-máu-cơ-tim-cấp-ami) 389
-
-4.  [Phù mạch 390](#phù-mạch) 390
-
-5.  [Người dùng mới đơn trị liệu thuốc lợi tiểu giống Thiazide
-391](#người-dùng-mới-sử-dụng-thuốc-lợi-tiểu-nhóm-thiazide-đơn-trị-liệu)
-391
-
-6.  [Bệnh nhân bắt đầu liệu pháp đầu tay cho tăng huyết áp
-394](#bệnh-nhân-bắt-đầu-liệu-pháp-điều-trị-tăng-huyết-áp-dòng-đầu)
-394
-
-7.  [Bệnh nhân bắt đầu liệu pháp đầu tay cho tăng huyết áp với thời
-gian theo dõi \>3 năm
-397](#bệnh-nhân-bắt-đầu-liệu-pháp-điều-trị-tăng-huyết-áp-dòng-đầu-với-thời-gian-theo-dõi-3-năm)
-397
-
-8.  [Sử dụng thuốc ức chế men chuyển (ACE) 397](#_bookmark585) 397
-
-9.  [Sử dụng thuốc chẹn thụ thể Angiotensin (ARB)
-398](#sử-dụng-thuốc-chẹn-thụ-thể-angiotensin-arb) 398
-
-10. [Sử dụng thuốc lợi tiểu Thiazide hoặc thuốc lợi tiểu giống
-Thiazide
-399](#sử-dụng-thuốc-lợi-tiểu-nhóm-thiazide-hoặc-tương-tự-thiazide)
-399
-
-11. [Sử dụng thuốc chẹn kênh Canxi Dihydropyridine (dCCB)
-399](#sử-dụng-thuốc-chẹn-kênh-canxi-dihydropyridine-dccb) 399
-
-12. [Sử dụng thuốc chẹn kênh Canxi không phải Dihydropyridine
-(ndCCB)
-399](#sử-dụng-thuốc-chẹn-kênh-canxi-không-phải-dihydropyridine-nd-ccb)
-399
-
-13. [Sử dụng thuốc chẹn Beta 400](#sử-dụng-thuốc-chẹn-beta) 400
-
-14. [Sử dụng thuốc lợi tiểu quai 400](#sử-dụng-thuốc-lợi-tiểu-quai)
-400
-
-15. [Sử dụng thuốc lợi tiểu giữ Kali
-401](#sử-dụng-thuốc-lợi-tiểu-giữ-kali) 401
-
-16. [Sử dụng thuốc chẹn Alpha-1 401](#sử-dụng-thuốc-chẹn-alpha-1)
-401
-
-C.  [Đối chứng âm 403](#_bookmark603) 403
-
-1.  [ACEi và THZ 403](#_bookmark604) 403
-
-D.  [Mẫu đề cương nghiên cứu 407](#mẫu-giao-thức) 407
-
-E.  [Đáp án gợi ý 409](#gợi-ý-trả-lời) 409
-
-1.  [Mô hình dữ liệu chung (CDM) 409](#_bookmark607) 409
-
-2.  [Từ vựng chuẩn hóa 413](#_bookmark611) 413
-
-3.  [ETL (Trích xuất - Chuyển đổi - Nạp) 413](#_bookmark612) 413
-
-4.  [Các trường hợp sử dụng phân tích dữ liệu
-414](#các-trường-hợp-sử-dụng-phân-tích-dữ-liệu-1) 414
-
-5.  [SQL và R 415](#_bookmark614) 415
-
-6.  [Định nghĩa các nhóm thuần tập 417](#_bookmark615) 417
-
-7.  [Đặc điểm lâm sàng 421](#đặc-điểm-hóa-2) 421
-
-8.  [Ước tính cấp độ quần thể 429](#_bookmark633) 429
-
-9.  [Dự đoán cấp độ bệnh nhân 434](#_bookmark635) 434
-
-10. [Chất lượng dữ liệu 436](#chất-lượng-dữ-liệu-1) 436
-
-[Tài liệu tham khảo 439](#thư-mục-tài-liệu-tham-khảo) 439
-
-[Chỉ mục 449](#thư-mục-tài-liệu-tham-khảo) 449
-
-# Lời tựa
-
-> Đây là cuốn sách về cộng đồng hợp tác Observational Health Data
-> Sciences and Informatics (OHDSI). Cộng đồng OHDSI đã viết cuốn sách
-> này để phục vụ như một kho lưu trữ tri thức trung tâm cho mọi vấn đề
-> liên quan đến OHDSI. Cuốn sách là một tài liệu sống, được cộng đồng
-> duy trì thông qua các công cụ phát triển mã nguồn mở và liên tục phát
-> triển. Phiên bản trực tuyến, có sẵn miễn phí tại
-> http://book.ohdsi.org, luôn đại diện cho phiên bản mới nhất. Bản in
-> vật lý của cuốn sách có sẵn trên Amazon với giá gốc.
+> Sách OHDSI: Khoa học Dữ liệu Y tế Quan sát và Tin học
+
+## Lời tựa
+
+Đây là cuốn sách về cộng đồng hợp tác Observational Health Data
+Sciences and Informatics (OHDSI). Cộng đồng OHDSI đã viết cuốn sách
+này để phục vụ như một kho lưu trữ tri thức trung tâm cho mọi vấn đề
+liên quan đến OHDSI. Cuốn sách là một tài liệu sống, được cộng đồng
+duy trì thông qua các công cụ phát triển mã nguồn mở và liên tục phát
+triển. Phiên bản trực tuyến, có sẵn miễn phí tại
+http://book.ohdsi.org, luôn đại diện cho phiên bản mới nhất. Bản in
+vật lý của cuốn sách có sẵn trên Amazon với giá gốc.
 
 ## Mục tiêu của cuốn sách này
 
-> Cuốn sách này hướng tới việc trở thành một kho lưu trữ tri thức trung
-> tâm cho OHDSI, tập trung vào việc mô tả cộng đồng OHDSI, các tiêu
-> chuẩn dữ liệu OHDSI và các công cụ OHDSI. Cuốn sách dành cho cả những
-> người mới bắt đầu và những người đã có kinh nghiệm với OHDSI, với mục
-> tiêu mang tính thực tiễn, cung cấp lý thuyết cần thiết và các hướng
-> dẫn tiếp theo về cách thực hiện công việc. Sau khi đọc cuốn sách này,
-> bạn sẽ hiểu OHDSI là gì và làm thế nào để tham gia vào hành trình này.
-> Bạn sẽ tìm hiểu về mô hình dữ liệu chung và các từ vựng chuẩn hóa,
-> cũng như cách sử dụng chúng để chuẩn hóa một cơ sở dữ liệu chăm sóc
-> sức khỏe quan sát. Bạn sẽ học về ba trường hợp sử dụng chính cho các
-> dữ liệu này: đặc điểm lâm sàng, ước tính cấp độ quần thể và dự đoán
-> cấp độ bệnh nhân. Bạn sẽ đọc về các công cụ mã nguồn mở của OHDSI hỗ
-> trợ cả ba hoạt động này và cách sử dụng chúng. Các chương về chất
-> lượng dữ liệu, tính hợp lệ lâm sàng, tính hợp lệ của phần mềm và tính
-> hợp lệ của phương pháp sẽ giải thích cách thiết lập chất lượng của
-> bằng chứng được tạo ra. Cuối cùng, bạn sẽ học cách sử dụng các công cụ
-> OHDSI để thực hiện các nghiên cứu này trong một mạng lưới nghiên cứu
-> phân tán.
+Cuốn sách này hướng tới việc trở thành một kho lưu trữ tri thức trung
+tâm cho OHDSI, tập trung vào việc mô tả cộng đồng OHDSI, các tiêu
+chuẩn dữ liệu OHDSI và các công cụ OHDSI. Cuốn sách dành cho cả những
+người mới bắt đầu và những người đã có kinh nghiệm với OHDSI, với mục
+tiêu mang tính thực tiễn, cung cấp lý thuyết cần thiết và các hướng
+dẫn tiếp theo về cách thực hiện công việc. Sau khi đọc cuốn sách này,
+bạn sẽ hiểu OHDSI là gì và làm thế nào để tham gia vào hành trình này.
+Bạn sẽ tìm hiểu về mô hình dữ liệu chung và các từ vựng chuẩn hóa,
+cũng như cách sử dụng chúng để chuẩn hóa một cơ sở dữ liệu chăm sóc
+sức khỏe quan sát. Bạn sẽ học về ba trường hợp sử dụng chính cho các
+dữ liệu này: đặc điểm lâm sàng, ước tính cấp độ quần thể và dự đoán
+cấp độ bệnh nhân. Bạn sẽ đọc về các công cụ mã nguồn mở của OHDSI hỗ
+trợ cả ba hoạt động này và cách sử dụng chúng. Các chương về chất
+lượng dữ liệu, tính hợp lệ lâm sàng, tính hợp lệ của phần mềm và tính
+hợp lệ của phương pháp sẽ giải thích cách thiết lập chất lượng của
+bằng chứng được tạo ra. Cuối cùng, bạn sẽ học cách sử dụng các công cụ
+OHDSI để thực hiện các nghiên cứu này trong một mạng lưới nghiên cứu
+phân tán.
 
 ## Cấu trúc của cuốn sách
 
-Cuốn sách này được tổ chức thành năm phần chính&#58;
+Cuốn sách này được tổ chức thành năm phần chính:
 
 I)  Cộng đồng OHDSI
 
@@ -556,146 +52,83 @@ IV) Chất lượng bằng chứng
 
 V)  Các nghiên cứu OHDSI
 
-ix
-
-> Mỗi phần có nhiều chương, và tùy trường hợp, mỗi chương đều tuân theo
-> trình tự: Giới thiệu, Lý thuyết, Thực hành, Tóm tắt và Bài tập.
+Mỗi phần có nhiều chương, và tùy trường hợp, mỗi chương đều tuân theo
+trình tự: Giới thiệu, Lý thuyết, Thực hành, Tóm tắt và Bài tập.
 
 ## Những người đóng góp
 
-> Mỗi chương liệt kê một hoặc nhiều trưởng chương. Đây là những người
-> dẫn dắt việc biên soạn chương đó. Tuy nhiên, có rất nhiều người khác
-> đã đóng góp cho cuốn sách mà chúng tôi muốn ghi nhận tại đây:
+Mỗi chương liệt kê một hoặc nhiều trưởng chương. Đây là những người
+dẫn dắt việc biên soạn chương đó. Tuy nhiên, có rất nhiều người khác
+đã đóng góp cho cuốn sách mà chúng tôi muốn ghi nhận tại đây:
 
-***
-Hamed Abedtash Mustafa Ascha  Mark Beno
--------------- -------------- -----------------
-Clair          David Blatt    Brian Christian
-Blacketer
-
-Gino Cloft     Frank DeFalco  Sara Dempster
-
-Jon Duke       Sergio Eslava  Clark Evans
-
-Thomas         George         Vojtech Huser
-Falconer       Hripcsak
-
-Mark Khayter   Greg Klebanov  Kristin Kostka
-
-Bob Lanese     Wanda          Chun Li
-Lattimore
-
-David Madigan  Tiếng Mã Lai   Harry Menegay
-Sindhoosha
-
-Akihiko        Ellen Palmer   Nirav Patil
-Nishimura
-
-Jose Posada    Nicole Pratt   Dani
-Prieto-Alhambra
-
-Christian      Jenna Reps     Peter Rijnbeek
-Reich
-
-Patrick Ryan   Craig Sachson  Izzy Saridakis
-
-Paola Saroufim Martijn        Sarah Seager
-Schuemie
-
-Anthony Sena   Sunah Song     Matt Spotnitz
-
-Marc Suchard   Joel Swerdel   Devin Tian
-
-Don Torok      Kees van       Mui Van Zandt
-Bochove
-
-Erica Voss     Kristin Waite  Mike Warfe
-
-Jamie Weaver   James Wiggins  Andrew Williams
-
-Seng Chan You
-***
+Hamed Abedtash, Mustafa Ascha, Mark Beno, Clair Blacketer, David Blatt,
+Brian Christian, Gino Cloft, Frank DeFalco, Sara Dempster, Jon Duke,
+Sergio Eslava, Clark Evans, Thomas Falconer, George Hripcsak, Vojtech
+Huser, Mark Khayter, Greg Klebanov, Kristin Kostka, Bob Lanese, Wanda
+Lattimore, Chun Li, David Madigan, Sindhoosha Malay, Harry Menegay,
+Akihiko Nishimura, Ellen Palmer, Nirav Patil, Jose Posada, Nicole Pratt,
+Dani Prieto-Alhambra, Christian Reich, Jenna Reps, Peter Rijnbeek,
+Patrick Ryan, Craig Sachson, Izzy Saridakis, Paola Saroufim, Martijn
+Schuemie, Sarah Seager, Anthony Sena, Sunah Song, Matt Spotnitz, Marc
+Suchard, Joel Swerdel, Devin Tian, Don Torok, Kees van Bochove, Mui Van
+Zandt, Erica Voss, Kristin Waite, Mike Warfe, Jamie Weaver, James
+Wiggins, Andrew Williams, Seng Chan You
 
 ## Các phiên bản phần mềm
 
-> Một phần lớn của cuốn sách này nói về phần mềm mã nguồn mở của OHDSI,
-> và phần mềm này sẽ phát triển theo thời gian. Mặc dù các nhà phát
-> triển cố gắng hết sức để cung cấp trải nghiệm ổn định và nhất quán cho
-> người dùng, nhưng không thể tránh khỏi việc theo thời gian, các cải
-> tiến phần mềm sẽ khiến một số hướng dẫn trong cuốn sách này trở nên
-> lỗi thời. Cộng đồng sẽ cập nhật phiên bản trực tuyến của cuốn sách để
-> phản ánh những thay đổi đó và các ấn bản mới của bản in sẽ được phát
-> hành theo thời gian. Để tham khảo, đây là các số phiên bản của phần
-> mềm được sử dụng trong phiên bản này của cuốn sách:
+Một phần lớn của cuốn sách này nói về phần mềm mã nguồn mở của OHDSI,
+và phần mềm này sẽ phát triển theo thời gian. Mặc dù các nhà phát
+triển cố gắng hết sức để cung cấp trải nghiệm ổn định và nhất quán cho
+người dùng, nhưng không thể tránh khỏi việc theo thời gian, các cải
+tiến phần mềm sẽ khiến một số hướng dẫn trong cuốn sách này trở nên
+lỗi thời. Cộng đồng sẽ cập nhật phiên bản trực tuyến của cuốn sách để
+phản ánh những thay đổi đó và các ấn bản mới của bản in sẽ được phát
+hành theo thời gian. Để tham khảo, đây là các số phiên bản của phần
+mềm được sử dụng trong phiên bản này của cuốn sách:
 
-- ACHILLES&#58; phiên bản 1.6.6
+- ACHILLES: phiên bản 1.6.6
 
-- ATLAS&#58; phiên bản 2.7.3
+- ATLAS: phiên bản 2.7.3
 
-- EUNOMIA&#58; phiên bản 1.0.0
+- EUNOMIA: phiên bản 1.0.0
 
-- Các gói thư viện phương pháp&#58; xem Bảng 1
+- Các gói thư viện phương pháp: xem Bảng 1
 
-> *Mục lục xi*
->
-> Bảng 1: Các phiên bản của các gói trong Thư viện phương pháp được sử
-> dụng trong cuốn sách này.
 
-+------------------+---------+
-| Gói              | > Phiên |
-|                  | > bản   |
-+==================+=========+
-| CaseControl      | > 1.6.0 |
-+------------------+---------+
-| CaseCrossover    | > 1.1.0 |
-+------------------+---------+
-| CohortMethod     | > 3.1.0 |
-+------------------+---------+
-| Cyclops          | > 2.0.2 |
-+------------------+---------+
-| Trình kết nối cơ | > 2.4.1 |
-| sở dữ liệu       |         |
-+------------------+---------+
-| Hiệu chuẩn theo  | > 2.0.0 |
-| kinh nghiệm      |         |
-+------------------+---------+
-| Bằng chứngTổng   | > 0.0.4 |
-| hợp              |         |
-+------------------+---------+
-| Tính năngTrích   | > 2.2.4 |
-| xuất             |         |
-+------------------+---------+
-| Phương phápĐánh  | > 1.1.0 |
-| giá              |         |
-+------------------+---------+
-| ParallelLogger   | > 1.1.0 |
-+------------------+---------+
-| Dự đoán cấp độ   | > 3.0.6 |
-| bệnh nhân        |         |
-+------------------+---------+
-| Trường hợp tự    | 1.4.0   |
-| kiểm soátLoạt    |         |
-+------------------+---------+
-| Nhóm tự kiểm     | > 1.5.0 |
-| soát             |         |
-+------------------+---------+
-| SqlRender        | > 1.6.2 |
-+------------------+---------+
+Bảng 1: Các phiên bản của các gói trong Thư viện phương pháp được sử
+dụng trong cuốn sách này.
+
+| Gói (Package)                 | Phiên bản |
+|--------------------------------|-----------|
+| CaseControl                    | 1.6.0     |
+| CaseCrossover                  | 1.1.0     |
+| CohortMethod                   | 3.1.0     |
+| Cyclops                        | 2.0.2     |
+| DatabaseConnector (Trình kết nối cơ sở dữ liệu) | 2.4.1 |
+| EmpiricalCalibration (Hiệu chuẩn theo kinh nghiệm) | 2.0.0 |
+| EvidenceSynthesis (Bằng chứng Tổng hợp) | 0.0.4 |
+| FeatureExtraction (Tính năng Trích xuất) | 2.2.4 |
+| MethodEvaluation (Phương pháp Đánh giá) | 1.1.0 |
+| ParallelLogger                 | 1.1.0     |
+| PatientLevelPrediction (Dự đoán cấp độ bệnh nhân) | 3.0.6 |
+| SelfControlledCaseSeries (Loạt trường hợp tự kiểm soát) | 1.4.0 |
+| SelfControlledCohort (Nhóm tự kiểm soát) | 1.5.0 |
+| SqlRender                      | 1.6.2     |
 
 ## Giấy phép
 
-> Cuốn sách này được cấp phép theo giấy phép Creative Commons Zero v1.0
-> Universal.
+Cuốn sách này được cấp phép theo giấy phép Creative Commons Zero v1.0
+Universal.
 
-![](/Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image1.png){width="1.2191655730533684in"
+![](media/image1.png){width="1.2191655730533684in"
 height="0.4294783464566929in"}
 
 ## Cách cuốn sách được phát triển
 
-> Cuốn sách được viết bằng RMarkdown sử dụng gói bookdown. Phiên bản
-> trực tuyến được tự động xây dựng lại từ kho lưu trữ nguồn tại
-> https://github.com/OHDSI/TheBookOfOhdsi thông qua hệ thống tích hợp
-> liên tục "travis". Định kỳ, một ảnh chụp nhanh trạng thái của cuốn
-> sách sẽ được thực hiện và đánh dấu là một "ấn bản". Những ấn bản này
-> sẽ có sẵn dưới dạng bản in từ Amazon.
->
+Cuốn sách được viết bằng RMarkdown sử dụng gói bookdown. Phiên bản
+trực tuyến được tự động xây dựng lại từ kho lưu trữ nguồn tại
+https://github.com/OHDSI/TheBookOfOhdsi thông qua hệ thống tích hợp
+liên tục "travis". Định kỳ, một ảnh chụp nhanh trạng thái của cuốn
+sách sẽ được thực hiện và đánh dấu là một "ấn bản". Những ấn bản này
+sẽ có sẵn dưới dạng bản in từ Amazon.
+

@@ -2,116 +2,112 @@
 title: "Phụ lục B: Các đối chứng âm tính"
 ---
 
-# Phụ lục B: Các đối chứng âm tính
-
 # Các đối chứng âm tính
 
-> Phụ lục này chứa các đối chứng âm tính được
-> sử dụng trong nhiều chương của cuốn sách.
+Phụ lục này chứa các đối chứng âm tính được
+sử dụng trong nhiều chương của cuốn sách.
 
 ## ACEi và THZ
 
-> Bảng C.1: Các kết cục đối chứng âm tính khi so sánh các thuốc ức chế
-> men chuyển (ACEi) với thuốc lợi tiểu thiazide và các thuốc tương tự
-> thiazide (THZ).
->
-> ID khái niệm Tên khái niệm
->
-> 434165 Phết cổ tử cung bất thường 436409 Đồng tử bất thường
->
-> 199192 Trầy xước và/hoặc bỏng do ma sát ở thân mình không kèm nhiễm
-> trùng 4088290 Thiếu vú
->
-> 4092879 Thiếu thận
->
-> 44783954 Trào ngược axit
->
-> 75911 Vẹo ngón cái mắc phải 137951 Dày sừng mắc phải 77965 Ngón tay lò
-> xo mắc phải 376707 Viêm kết mạc cấp tính
->
-> 4103640 Cụt bàn chân 73241 Polyp hậu môn và trực tràng 133655 Bỏng
-> cẳng tay 73560 Gai xương gót
->
-> 434327 Lạm dụng cần sa
->
-> 4213540 Rối loạn chức năng thân cổ 140842 Thay đổi cấu trúc da 81378
-> Nhuyễn sụn bánh chè 432303 Lạm dụng cocaine
->
-> 4201390 Hiện diện lỗ mở thông đại tràng
->
-> 403
->
-> ID khái niệm Tên khái niệm
->
-> 46269889 Biến chứng do bệnh Crohn 134438 Viêm da tiếp xúc
->
-> 78619 Dập nát đầu gối 201606 Bệnh Crohn 76786 Trật khớp gối
->
-> 4115402 Khó ngủ
->
-> 45757370 Mất cân đối vú sau tái tạo 433111 Ảnh hưởng của việc đói
->
-> 433527 Lạc nội mạc tử cung
->
-> 4170770 Nang thượng bì 4092896 Phân bất thường 259995 Dị vật trong lỗ
-> tự nhiên 40481632 Nang hoạt dịch
->
-> 4166231 Tiền sử di truyền
->
-> 433577 Ngón chân hình búa
->
-> 4231770 Huyết khối di truyền
->
-> 440329 Zona không biến chứng 4012570 Hành vi tình dục nguy cơ cao
->
-> 4012934 Đồng niệu cystine
->
-> 441788 Nhiễm virus u nhú ở người (HPV) 4201717 Hiện diện lỗ mở thông
-> hồi tràng
->
-> 374375 Nút ráy tai
->
-> 4344500 Hội chứng chèn ép vùng vai 139099 Móng chọc thịt
->
-> 444132 Chấn thương đầu gối 196168 Kinh nguyệt không đều
->
-> 432593 Kwashiorkor (suy dinh dưỡng thể phù)
->
-> 434203 Di chứng của dập nát
->
-> 438329 Di chứng của tai nạn xe cơ giới 195873 Khí hư
->
-> 4083487 Drusen võng mạc
->
-> 4103703 Đi ngoài phân đen
->
-> 4209423 Lệ thuộc nicotine 377572 Ảnh hưởng của tiếng ồn đến tai trong
->
-> 40480893 Phản ứng xét nghiệm tuberculin không đặc hiệu 136368 Bướu
-> giáp đa nhân không độc 140648 Nấm móng do nấm da 438130 Lạm dụng thuốc
-> phiện
->
-> 4091513 Trung tiện
->
-> 4202045 Hội chứng mệt mỏi sau virus 373478 Viễn thị
->
-> 46286594 Vấn đề liên quan đến lối sống 439790 Đau tâm lý
+Bảng C.1: Các kết cục đối chứng âm tính khi so sánh các thuốc ức chế
+men chuyển (ACEi) với thuốc lợi tiểu thiazide và các thuốc tương tự
+thiazide (THZ).
+
+ID khái niệm Tên khái niệm
+
+434165 Phết cổ tử cung bất thường 436409 Đồng tử bất thường
+
+199192 Trầy xước và/hoặc bỏng do ma sát ở thân mình không kèm nhiễm
+trùng 4088290 Thiếu vú
+
+4092879 Thiếu thận
+
+44783954 Trào ngược axit
+
+75911 Vẹo ngón cái mắc phải 137951 Dày sừng mắc phải 77965 Ngón tay lò
+xo mắc phải 376707 Viêm kết mạc cấp tính
+
+4103640 Cụt bàn chân 73241 Polyp hậu môn và trực tràng 133655 Bỏng
+cẳng tay 73560 Gai xương gót
+
+434327 Lạm dụng cần sa
+
+4213540 Rối loạn chức năng thân cổ 140842 Thay đổi cấu trúc da 81378
+Nhuyễn sụn bánh chè 432303 Lạm dụng cocaine
+
+4201390 Hiện diện lỗ mở thông đại tràng
+
+ID khái niệm Tên khái niệm
+
+46269889 Biến chứng do bệnh Crohn 134438 Viêm da tiếp xúc
+
+78619 Dập nát đầu gối 201606 Bệnh Crohn 76786 Trật khớp gối
+
+4115402 Khó ngủ
+
+45757370 Mất cân đối vú sau tái tạo 433111 Ảnh hưởng của việc đói
+
+433527 Lạc nội mạc tử cung
+
+4170770 Nang thượng bì 4092896 Phân bất thường 259995 Dị vật trong lỗ
+tự nhiên 40481632 Nang hoạt dịch
+
+4166231 Tiền sử di truyền
+
+433577 Ngón chân hình búa
+
+4231770 Huyết khối di truyền
+
+440329 Zona không biến chứng 4012570 Hành vi tình dục nguy cơ cao
+
+4012934 Đồng niệu cystine
+
+441788 Nhiễm virus u nhú ở người (HPV) 4201717 Hiện diện lỗ mở thông
+hồi tràng
+
+374375 Nút ráy tai
+
+4344500 Hội chứng chèn ép vùng vai 139099 Móng chọc thịt
+
+444132 Chấn thương đầu gối 196168 Kinh nguyệt không đều
+
+432593 Kwashiorkor (suy dinh dưỡng thể phù)
+
+434203 Di chứng của dập nát
+
+438329 Di chứng của tai nạn xe cơ giới 195873 Khí hư
+
+4083487 Drusen võng mạc
+
+4103703 Đi ngoài phân đen
+
+4209423 Lệ thuộc nicotine 377572 Ảnh hưởng của tiếng ồn đến tai trong
+
+40480893 Phản ứng xét nghiệm tuberculin không đặc hiệu 136368 Bướu
+giáp đa nhân không độc 140648 Nấm móng do nấm da 438130 Lạm dụng thuốc
+phiện
+
+4091513 Trung tiện
+
+4202045 Hội chứng mệt mỏi sau virus 373478 Viễn thị
+
+46286594 Vấn đề liên quan đến lối sống 439790 Đau tâm lý
 
 1.  *ACEi và THZ 405*
 
-> ID khái niệm Tên khái niệm 81634 Vú sa trễ
->
-> 380706 Loạn thị đều
->
-> 141932 Dày sừng tuổi già
->
-> 36713918 Rối loạn chức năng cơ thể vùng thắt lưng 443172 Dị vật ở mặt,
-> không có vết thương hở lớn 81151 Bong gân cổ chân
->
-> 72748 Căng cơ bao chóp xoay 378427 Thiếu hụt màng phim nước mắt
->
-> 437264 Hội chứng lệ thuộc thuốc lá 194083 Viêm âm đạo và viêm âm hộ
-> 140641 Mụn cóc thông thường
->
-> 440193 Bàn tay rủ 4115367 Đau khớp cổ tay
+ID khái niệm Tên khái niệm 81634 Vú sa trễ
+
+380706 Loạn thị đều
+
+141932 Dày sừng tuổi già
+
+36713918 Rối loạn chức năng cơ thể vùng thắt lưng 443172 Dị vật ở mặt,
+không có vết thương hở lớn 81151 Bong gân cổ chân
+
+72748 Căng cơ bao chóp xoay 378427 Thiếu hụt màng phim nước mắt
+
+437264 Hội chứng lệ thuộc thuốc lá 194083 Viêm âm đạo và viêm âm hộ
+140641 Mụn cóc thông thường
+
+440193 Bàn tay rủ 4115367 Đau khớp cổ tay
 

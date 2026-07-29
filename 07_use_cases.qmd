@@ -2,24 +2,14 @@
 title: "Chương 7: Các trường hợp sử dụng phân tích dữ liệu"
 ---
 
-# Chương 7: Các trường hợp sử dụng phân tích dữ liệu
-
-> Phần III
-
-# Phân tích dữ liệu
-
-> 99
->
-> Chương 7
-
 # Các trường hợp sử dụng phân tích dữ liệu
 
-> *Chủ biên chương: David Madigan*
->
-> Sự hợp tác OHDSI tập trung vào việc tạo ra bằng chứng đáng tin cậy từ
-> dữ liệu chăm sóc sức khỏe thực tế, thường ở dạng cơ sở dữ liệu yêu cầu
-> thanh toán hoặc cơ sở dữ liệu hồ sơ sức khỏe điện tử. Các trường hợp
-> sử dụng mà OHDSI tập trung vào thuộc ba danh mục chính:
+*Chủ biên chương: David Madigan*
+
+Sự hợp tác OHDSI tập trung vào việc tạo ra bằng chứng đáng tin cậy từ
+dữ liệu chăm sóc sức khỏe thực tế, thường ở dạng cơ sở dữ liệu yêu cầu
+thanh toán hoặc cơ sở dữ liệu hồ sơ sức khỏe điện tử. Các trường hợp
+sử dụng mà OHDSI tập trung vào thuộc ba danh mục chính:
 
 - Đặc điểm hóa
 
@@ -27,22 +17,22 @@ title: "Chương 7: Các trường hợp sử dụng phân tích dữ liệu"
 
 - Dự đoán cấp độ bệnh nhân
 
-> Chúng tôi mô tả chi tiết những điều này dưới đây. Lưu ý, đối với tất
-> cả các trường hợp sử dụng, bằng chứng chúng tôi tạo ra kế thừa các hạn
-> chế của dữ liệu; chúng tôi thảo luận chi tiết về những hạn chế này
-> trong phần sách về Chất lượng bằng chứng (Chương 14 -
-> 18)
+Chúng tôi mô tả chi tiết những điều này dưới đây. Lưu ý, đối với tất
+cả các trường hợp sử dụng, bằng chứng chúng tôi tạo ra kế thừa các hạn
+chế của dữ liệu; chúng tôi thảo luận chi tiết về những hạn chế này
+trong phần sách về Chất lượng bằng chứng (Chương 14 -
+18)
 
 ## Đặc điểm hóa
 
-> Đặc điểm hóa cố gắng trả lời câu hỏi Điều gì đã xảy ra với họ?
->
-> Chúng tôi có thể sử dụng dữ liệu để cung cấp câu trả lời cho các câu
-> hỏi về đặc điểm của những người trong một nhóm thuần tập hoặc toàn bộ
-> cơ sở dữ liệu, thực hành chăm sóc sức khỏe và nghiên cứu cách những
-> điều này thay đổi theo thời gian.
->
-> Dữ liệu có thể cung cấp câu trả lời cho các câu hỏi như:
+Đặc điểm hóa cố gắng trả lời câu hỏi Điều gì đã xảy ra với họ?
+
+Chúng tôi có thể sử dụng dữ liệu để cung cấp câu trả lời cho các câu
+hỏi về đặc điểm của những người trong một nhóm thuần tập hoặc toàn bộ
+cơ sở dữ liệu, thực hành chăm sóc sức khỏe và nghiên cứu cách những
+điều này thay đổi theo thời gian.
+
+Dữ liệu có thể cung cấp câu trả lời cho các câu hỏi như:
 
 - Đối với bệnh nhân mới được chẩn đoán rung nhĩ, có bao nhiêu người nhận
 được đơn thuốc warfarin?
@@ -52,8 +42,6 @@ bao nhiêu?
 
 - Tỷ lệ mắc bệnh viêm phổi ở bệnh nhân trên 65 tuổi là bao nhiêu? Các
 câu hỏi đặc điểm hóa điển hình được xây dựng như sau&#58;
-
-> 101
 
 - Có bao nhiêu bệnh nhân...?
 
@@ -114,25 +102,25 @@ thể, có thể là ước tính, không phải dự đoán)
 
 ## Ước tính cấp độ quần thể
 
-> Ở một mức độ hạn chế, dữ liệu có thể hỗ trợ các suy luận nhân quả về
-> tác động của các can thiệp chăm sóc sức khỏe, trả lời câu hỏi
->
-> Các tác động nhân quả là gì?
->
-> Chúng tôi muốn hiểu các tác động nhân quả để hiểu hậu quả của các hành
-> động. Ví dụ, nếu chúng tôi quyết định thực hiện một phương pháp điều
-> trị nào đó, điều đó thay đổi những gì xảy ra với chúng tôi trong tương
-> lai như thế nào?
->
-> Dữ liệu có thể cung cấp câu trả lời cho các câu hỏi như:
+Ở một mức độ hạn chế, dữ liệu có thể hỗ trợ các suy luận nhân quả về
+tác động của các can thiệp chăm sóc sức khỏe, trả lời câu hỏi
+
+Các tác động nhân quả là gì?
+
+Chúng tôi muốn hiểu các tác động nhân quả để hiểu hậu quả của các hành
+động. Ví dụ, nếu chúng tôi quyết định thực hiện một phương pháp điều
+trị nào đó, điều đó thay đổi những gì xảy ra với chúng tôi trong tương
+lai như thế nào?
+
+Dữ liệu có thể cung cấp câu trả lời cho các câu hỏi như:
 
 - Đối với bệnh nhân mới được chẩn đoán rung nhĩ, trong năm đầu tiên sau
 khi bắt đầu
 
 3.  *Dự đoán cấp độ bệnh nhân 103*
 
-> điều trị, warfarin có gây ra nhiều biến cố chảy máu nghiêm trọng hơn
-> dabigatran không?
+điều trị, warfarin có gây ra nhiều biến cố chảy máu nghiêm trọng hơn
+dabigatran không?
 
 - Tác động nhân quả của metformin đối với tiêu chảy có thay đổi theo độ
 tuổi không? Các câu hỏi ước tính tác động cấp độ quần thể điển hình
@@ -169,13 +157,13 @@ muốn là&#58;
 
 ## Dự đoán cấp độ bệnh nhân
 
-> Dựa trên lịch sử sức khỏe bệnh nhân được thu thập trong cơ sở dữ liệu,
-> chúng tôi có thể đưa ra các dự đoán cấp độ bệnh nhân về các biến cố
-> sức khỏe trong tương lai, trả lời câu hỏi
->
-> Điều gì sẽ xảy ra với tôi?
->
-> Dữ liệu có thể cung cấp câu trả lời cho các câu hỏi như:
+Dựa trên lịch sử sức khỏe bệnh nhân được thu thập trong cơ sở dữ liệu,
+chúng tôi có thể đưa ra các dự đoán cấp độ bệnh nhân về các biến cố
+sức khỏe trong tương lai, trả lời câu hỏi
+
+Điều gì sẽ xảy ra với tôi?
+
+Dữ liệu có thể cung cấp câu trả lời cho các câu hỏi như:
 
 - Đối với một bệnh nhân cụ thể mới được chẩn đoán mắc chứng rối loạn
 trầm cảm nặng, xác suất bệnh nhân sẽ tự tử trong năm đầu tiên sau khi
@@ -185,7 +173,7 @@ chẩn đoán là bao nhiêu?
 đầu tiên sau khi bắt đầu điều trị bằng warfarin, xác suất bệnh nhân bị
 đột quỵ do thiếu máu cục bộ là bao nhiêu?
 
-> Các câu hỏi dự đoán cấp độ bệnh nhân điển hình được xây dựng như sau:
+Các câu hỏi dự đoán cấp độ bệnh nhân điển hình được xây dựng như sau:
 
 - Cơ hội để bệnh nhân này... là bao nhiêu?
 
@@ -199,19 +187,19 @@ chẩn đoán là bao nhiêu?
 
 - Kiểu hình xác suất
 
-> Ước tính cấp độ quần thể và dự đoán cấp độ bệnh nhân chồng chéo ở một
-> mức độ nhất định. Ví dụ, một trường hợp sử dụng quan trọng của dự đoán
-> là dự đoán kết quả cho một bệnh nhân cụ thể nếu thuốc A được kê đơn và
-> cũng dự đoán cùng kết quả đó nếu thuốc B được kê đơn. Hãy giả sử rằng
-> trong thực tế, chỉ một trong những loại thuốc này được kê đơn (giả sử
-> là thuốc A) nên chúng ta có thể thấy liệu kết quả sau khi điều trị
-> bằng A có thực sự xảy ra hay không. Vì thuốc B không được kê đơn, kết
-> quả sau khi điều trị bằng B, mặc dù có thể dự đoán được, là "phản thực
-> tế" vì nó không bao giờ được quan sát thấy. Mỗi nhiệm vụ dự đoán này
-> thuộc về dự đoán cấp độ bệnh nhân. Tuy nhiên, sự khác biệt giữa (hoặc
-> tỷ lệ của) hai kết quả là một tác động nhân quả cấp đơn vị, và nên
-> được ước tính bằng cách sử dụng các phương pháp ước tính tác động nhân
-> quả thay thế.
+Ước tính cấp độ quần thể và dự đoán cấp độ bệnh nhân chồng chéo ở một
+mức độ nhất định. Ví dụ, một trường hợp sử dụng quan trọng của dự đoán
+là dự đoán kết quả cho một bệnh nhân cụ thể nếu thuốc A được kê đơn và
+cũng dự đoán cùng kết quả đó nếu thuốc B được kê đơn. Hãy giả sử rằng
+trong thực tế, chỉ một trong những loại thuốc này được kê đơn (giả sử
+là thuốc A) nên chúng ta có thể thấy liệu kết quả sau khi điều trị
+bằng A có thực sự xảy ra hay không. Vì thuốc B không được kê đơn, kết
+quả sau khi điều trị bằng B, mặc dù có thể dự đoán được, là "phản thực
+tế" vì nó không bao giờ được quan sát thấy. Mỗi nhiệm vụ dự đoán này
+thuộc về dự đoán cấp độ bệnh nhân. Tuy nhiên, sự khác biệt giữa (hoặc
+tỷ lệ của) hai kết quả là một tác động nhân quả cấp đơn vị, và nên
+được ước tính bằng cách sử dụng các phương pháp ước tính tác động nhân
+quả thay thế.
 
 ![People have a natural tendency to erroneously interpret predictive
 models as if they are causal models. But a predictive model can only
@@ -219,69 +207,69 @@ show correlation, never cau-sation. For example, diabetic drug use might
 be a strong predictor for myocardial infarction (MI) because diabetes is
 a strong risk factor for MI. However, that does not mean that stopping
 the diabetic drugs will prevent
-MI!](/Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image6.png){width="0.45499890638670165in"
+MI!](media/image6.png){width="0.45499890638670165in"
 height="0.45499890638670165in"}
 
 ## Các trường hợp sử dụng ví dụ trong tăng huyết áp
 
-> Bạn là một nhà nghiên cứu quan tâm đến việc nghiên cứu tác động của
-> liệu pháp đơn trị liệu bằng thuốc ức chế ACE so với liệu pháp đơn trị
-> liệu bằng thuốc lợi tiểu thiazide đối với các kết quả là nhồi máu cơ
-> tim cấp và phù mạch như là phương pháp điều trị đầu tay cho bệnh tăng
-> huyết áp. Bạn hiểu rằng dựa trên tài liệu OHDSI, bạn đang đặt một câu
-> hỏi ước tính tác động cấp độ quần thể nhưng trước hết, bạn cần làm bài
-> tập về nhà về cách đặc điểm hóa phương pháp điều trị cụ thể mà bạn
-> quan tâm này.
+Bạn là một nhà nghiên cứu quan tâm đến việc nghiên cứu tác động của
+liệu pháp đơn trị liệu bằng thuốc ức chế ACE so với liệu pháp đơn trị
+liệu bằng thuốc lợi tiểu thiazide đối với các kết quả là nhồi máu cơ
+tim cấp và phù mạch như là phương pháp điều trị đầu tay cho bệnh tăng
+huyết áp. Bạn hiểu rằng dựa trên tài liệu OHDSI, bạn đang đặt một câu
+hỏi ước tính tác động cấp độ quần thể nhưng trước hết, bạn cần làm bài
+tập về nhà về cách đặc điểm hóa phương pháp điều trị cụ thể mà bạn
+quan tâm này.
 
 ### Các câu hỏi đặc điểm hóa
 
-> Nhồi máu cơ tim cấp là một biến chứng tim mạch có thể xảy ra ở bệnh
-> nhân bị huyết áp cao, vì vậy phương pháp điều trị hiệu quả cho tăng
-> huyết áp sẽ làm giảm nguy cơ này. Phù mạch là một tác dụng phụ đã biết
-> của thuốc ức chế ACE, hiếm gặp nhưng có khả năng nghiêm trọng. Bạn bắt
-> đầu bằng cách tạo các nhóm thuần tập (xem Chương 10) cho các phơi
-> nhiễm mà bạn quan tâm (những người mới dùng thuốc ức chế ACE và những
-> người mới dùng thuốc lợi tiểu thiazide). Bạn thực hiện một phân tích
-> đặc điểm hóa (xem Chương 11) để tóm tắt các đặc điểm cơ bản của các
-> quần thể phơi nhiễm này, bao gồm nhân khẩu học, các tình trạng bệnh
-> đồng mắc và các thuốc dùng kèm. Bạn thực hiện một phân tích đặc điểm
-> hóa khác để ước tính tỷ lệ mắc các kết quả được chọn trong các quần
-> thể phơi nhiễm này. Ở đây, bạn hỏi 'bao lâu thì 1) nhồi máu cơ tim cấp
-> và 2) phù mạch xảy ra trong thời gian phơi nhiễm với thuốc ức chế ACE
-> và thuốc lợi tiểu thiazide?' Những đặc điểm hóa này cho phép chúng ta
-> đánh giá tính khả thi của việc thực hiện một nghiên cứu ước tính cấp
-> độ quần thể, đánh giá xem hai nhóm điều trị có thể so sánh được hay
-> không và xác định các 'yếu tố nguy cơ' có thể dự đoán lựa chọn điều
-> trị mà bệnh nhân đã thực hiện.
->
-> *7.5. Các hạn chế của nghiên cứu quan sát 105*
+Nhồi máu cơ tim cấp là một biến chứng tim mạch có thể xảy ra ở bệnh
+nhân bị huyết áp cao, vì vậy phương pháp điều trị hiệu quả cho tăng
+huyết áp sẽ làm giảm nguy cơ này. Phù mạch là một tác dụng phụ đã biết
+của thuốc ức chế ACE, hiếm gặp nhưng có khả năng nghiêm trọng. Bạn bắt
+đầu bằng cách tạo các nhóm thuần tập (xem Chương 10) cho các phơi
+nhiễm mà bạn quan tâm (những người mới dùng thuốc ức chế ACE và những
+người mới dùng thuốc lợi tiểu thiazide). Bạn thực hiện một phân tích
+đặc điểm hóa (xem Chương 11) để tóm tắt các đặc điểm cơ bản của các
+quần thể phơi nhiễm này, bao gồm nhân khẩu học, các tình trạng bệnh
+đồng mắc và các thuốc dùng kèm. Bạn thực hiện một phân tích đặc điểm
+hóa khác để ước tính tỷ lệ mắc các kết quả được chọn trong các quần
+thể phơi nhiễm này. Ở đây, bạn hỏi 'bao lâu thì 1) nhồi máu cơ tim cấp
+và 2) phù mạch xảy ra trong thời gian phơi nhiễm với thuốc ức chế ACE
+và thuốc lợi tiểu thiazide?' Những đặc điểm hóa này cho phép chúng ta
+đánh giá tính khả thi của việc thực hiện một nghiên cứu ước tính cấp
+độ quần thể, đánh giá xem hai nhóm điều trị có thể so sánh được hay
+không và xác định các 'yếu tố nguy cơ' có thể dự đoán lựa chọn điều
+trị mà bệnh nhân đã thực hiện.
+
+*7.5. Các hạn chế của nghiên cứu quan sát 105*
 
 ### Câu hỏi ước tính cấp độ quần thể
 
-> Nghiên cứu ước tính tác động cấp độ quần thể (xem Chương 12) ước tính
-> nguy cơ tương đối của việc sử dụng thuốc ức chế ACE so với thuốc lợi
-> tiểu thiazide đối với các kết quả là AMI và phù mạch. Ở đây, bạn đánh
-> giá thêm thông qua các chẩn đoán nghiên cứu và các đối chứng âm tính
-> xem liệu chúng ta có thể tạo ra một ước tính đáng tin cậy về tác động
-> điều trị trung bình hay không.
+Nghiên cứu ước tính tác động cấp độ quần thể (xem Chương 12) ước tính
+nguy cơ tương đối của việc sử dụng thuốc ức chế ACE so với thuốc lợi
+tiểu thiazide đối với các kết quả là AMI và phù mạch. Ở đây, bạn đánh
+giá thêm thông qua các chẩn đoán nghiên cứu và các đối chứng âm tính
+xem liệu chúng ta có thể tạo ra một ước tính đáng tin cậy về tác động
+điều trị trung bình hay không.
 
 ### Câu hỏi dự đoán cấp độ bệnh nhân
 
-> Độc lập với việc liệu có tác động nhân quả của các phơi nhiễm hay
-> không, bạn cũng quan tâm đến việc cố gắng xác định bệnh nhân nào có
-> nguy cơ cao nhất đối với các kết quả. Đây là một vấn đề dự đoán cấp độ
-> bệnh nhân (xem Chương 13). Ở đây, bạn phát triển một mô hình dự đoán
-> đánh giá: trong số các bệnh nhân mới sử dụng thuốc ức chế ACE, bệnh
-> nhân nào có nguy cơ cao nhất phát triển nhồi máu cơ tim cấp trong 1
-> năm sau khi bắt đầu điều trị. Mô hình cho phép chúng ta dự đoán, đối
-> với một bệnh nhân vừa được kê đơn ACE lần đầu tiên, dựa trên các biến
-> cố quan sát được từ lịch sử y tế của họ, cơ hội họ trải qua AMI trong
-> 1 năm tới là bao nhiêu.
+Độc lập với việc liệu có tác động nhân quả của các phơi nhiễm hay
+không, bạn cũng quan tâm đến việc cố gắng xác định bệnh nhân nào có
+nguy cơ cao nhất đối với các kết quả. Đây là một vấn đề dự đoán cấp độ
+bệnh nhân (xem Chương 13). Ở đây, bạn phát triển một mô hình dự đoán
+đánh giá: trong số các bệnh nhân mới sử dụng thuốc ức chế ACE, bệnh
+nhân nào có nguy cơ cao nhất phát triển nhồi máu cơ tim cấp trong 1
+năm sau khi bắt đầu điều trị. Mô hình cho phép chúng ta dự đoán, đối
+với một bệnh nhân vừa được kê đơn ACE lần đầu tiên, dựa trên các biến
+cố quan sát được từ lịch sử y tế của họ, cơ hội họ trải qua AMI trong
+1 năm tới là bao nhiêu.
 
 ## Các hạn chế của nghiên cứu quan sát
 
-> Có nhiều câu hỏi quan trọng về chăm sóc sức khỏe mà các cơ sở dữ liệu
-> OHDSI không thể cung cấp câu trả lời. Những câu hỏi này bao gồm:
+Có nhiều câu hỏi quan trọng về chăm sóc sức khỏe mà các cơ sở dữ liệu
+OHDSI không thể cung cấp câu trả lời. Những câu hỏi này bao gồm:
 
 - Các tác động nhân quả của các can thiệp so với giả dược. Đôi khi, có
 thể xem xét tác động nhân quả của một phương pháp điều trị so với việc
@@ -299,33 +287,33 @@ thể trở nên khó nắm bắt.
 
 ### Dữ liệu sai lệch
 
-> Dữ liệu lâm sàng được ghi lại trong các cơ sở dữ liệu OHDSI có thể sai
-> lệch so với thực tế lâm sàng. Ví dụ, hồ sơ của một bệnh nhân có thể
-> bao gồm mã nhồi máu cơ tim mặc dù bệnh nhân đó chưa bao giờ bị nhồi
-> máu cơ tim. Tương tự, một giá trị xét nghiệm có thể bị sai hoặc một mã
-> thủ thuật không chính xác có thể xuất hiện trong cơ sở dữ liệu. Chương
-> 15 và 16 thảo luận về một số vấn đề này và các phương pháp thực hành
-> tốt nhằm xác định và điều chỉnh càng nhiều vấn đề loại này càng tốt.
-> Tuy nhiên, dữ liệu sai lệch vẫn tồn tại ở một mức độ nào đó và có thể
-> làm suy yếu tính hợp lệ của các phân tích tiếp theo. Một lượng lớn tài
-> liệu tập trung vào việc điều chỉnh các suy luận thống kê để giải quyết
-> các sai sót trong dữ liệu - xem ví dụ: Fuller (2009).
+Dữ liệu lâm sàng được ghi lại trong các cơ sở dữ liệu OHDSI có thể sai
+lệch so với thực tế lâm sàng. Ví dụ, hồ sơ của một bệnh nhân có thể
+bao gồm mã nhồi máu cơ tim mặc dù bệnh nhân đó chưa bao giờ bị nhồi
+máu cơ tim. Tương tự, một giá trị xét nghiệm có thể bị sai hoặc một mã
+thủ thuật không chính xác có thể xuất hiện trong cơ sở dữ liệu. Chương
+15 và 16 thảo luận về một số vấn đề này và các phương pháp thực hành
+tốt nhằm xác định và điều chỉnh càng nhiều vấn đề loại này càng tốt.
+Tuy nhiên, dữ liệu sai lệch vẫn tồn tại ở một mức độ nào đó và có thể
+làm suy yếu tính hợp lệ của các phân tích tiếp theo. Một lượng lớn tài
+liệu tập trung vào việc điều chỉnh các suy luận thống kê để giải quyết
+các sai sót trong dữ liệu - xem ví dụ: Fuller (2009).
 
 ### Dữ liệu bị thiếu
 
-> Sự thiếu hụt dữ liệu trong các cơ sở dữ liệu OHDSI đặt ra những thách
-> thức tinh vi. Một sự kiện sức khỏe (ví dụ: đơn thuốc, giá trị xét
-> nghiệm, v.v.) lẽ ra phải được ghi lại trong cơ sở dữ liệu nhưng lại
-> không có, thì được coi là "bị thiếu". Tài liệu thống kê phân biệt giữa
-> các loại thiếu hụt như "thiếu hoàn toàn ngẫu nhiên", "thiếu ngẫu
-> nhiên" và "thiếu không ngẫu nhiên", và các phương pháp có độ phức tạp
-> ngày càng tăng đang cố gắng giải quyết các loại này. Perkins và cộng
-> sự (2017) cung cấp một phần giới thiệu hữu ích về chủ đề
-> này.
+Sự thiếu hụt dữ liệu trong các cơ sở dữ liệu OHDSI đặt ra những thách
+thức tinh vi. Một sự kiện sức khỏe (ví dụ: đơn thuốc, giá trị xét
+nghiệm, v.v.) lẽ ra phải được ghi lại trong cơ sở dữ liệu nhưng lại
+không có, thì được coi là "bị thiếu". Tài liệu thống kê phân biệt giữa
+các loại thiếu hụt như "thiếu hoàn toàn ngẫu nhiên", "thiếu ngẫu
+nhiên" và "thiếu không ngẫu nhiên", và các phương pháp có độ phức tạp
+ngày càng tăng đang cố gắng giải quyết các loại này. Perkins và cộng
+sự (2017) cung cấp một phần giới thiệu hữu ích về chủ đề
+này.
 
 ## Tóm tắt
 
-![](/Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image4.png){width="0.4455205599300088in"
+![](media/image4.png){width="0.4455205599300088in"
 height="0.4644783464566929in"}
 
 - In observational research we distinguish three large categories of
@@ -347,8 +335,8 @@ healthcare data.
 
 ## Bài tập
 
-> **Bài tập 7.1. Những câu hỏi này thuộc các danh mục trường hợp sử dụng
-> nào?**
+**Bài tập 7.1. Những câu hỏi này thuộc các danh mục trường hợp sử dụng
+nào?**
 
 1.  Tính tỷ lệ xuất huyết tiêu hóa (GI) ở những bệnh nhân mới tiếp xúc
 với NSAID.
@@ -359,12 +347,10 @@ tới, dựa trên các đặc điểm cơ bản của họ.
 3.  Ước tính nguy cơ gia tăng xuất huyết tiêu hóa do diclofenac so với
 celecoxib.
 
-> **Bài tập 7.2. Bạn muốn ước tính nguy cơ gia tăng xuất huyết tiêu hóa
-> do diclofenac so với không tiếp xúc (giả dược). Điều này có thể thực
-> hiện được bằng cách sử dụng dữ liệu chăm sóc sức khỏe quan sát
-> không?**
->
-> Các câu trả lời gợi ý có thể được tìm thấy trong Phụ lục E.4.
->
-> Chương 8
+**Bài tập 7.2. Bạn muốn ước tính nguy cơ gia tăng xuất huyết tiêu hóa
+do diclofenac so với không tiếp xúc (giả dược). Điều này có thể thực
+hiện được bằng cách sử dụng dữ liệu chăm sóc sức khỏe quan sát
+không?**
+
+Các câu trả lời gợi ý có thể được tìm thấy trong Phụ lục E.4.
 

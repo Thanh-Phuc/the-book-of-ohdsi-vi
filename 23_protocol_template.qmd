@@ -2,8 +2,6 @@
 title: "Phụ lục C: Mẫu giao thức"
 ---
 
-# Phụ lục C: Mẫu giao thức
-
 # Mẫu giao thức
 
 1.  Mục lục
@@ -63,8 +61,6 @@ title: "Phụ lục C: Mẫu giao thức"
 - Tính so sánh của nhóm thuần tập
 
 - Đánh giá sai số hệ thống
-
-> 407
 
 11. Điểm mạnh và hạn chế của các phương pháp nghiên cứu
 
