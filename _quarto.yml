@@ -24,7 +24,7 @@ book:
     collapse-level: 1
   page-footer:
     left: "Sách OHDSI (The Book of OHDSI - Bản tiếng Việt)"
-    center: "OHDSI Vietnam Chapter"
+    center: "🚧 Đang trong quá trình phát triển — OHDSI Vietnam Chapter"
     right: "Quarto Book"
 
   chapters:

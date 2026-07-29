@@ -6,6 +6,12 @@ title: "Lời tựa & Giới thiệu"
 
 > Sách OHDSI: Khoa học Dữ liệu Y tế Quan sát và Tin học
 
+::: {.callout-warning}
+## 🚧 Đang trong quá trình phát triển
+
+Bản dịch tiếng Việt này đang được xây dựng và hiệu đính. Nội dung có thể còn thiếu sót hoặc thay đổi trước khi hoàn thiện.
+:::
+
 ## Lời tựa
 
 Đây là cuốn sách về cộng đồng hợp tác Observational Health Data

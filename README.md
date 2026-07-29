@@ -1,5 +1,7 @@
 # Sách OHDSI - Bản tiếng Việt (The Book of OHDSI - Vietnamese Edition)
 
+> 🚧 **Dự án đang trong quá trình phát triển (Work in Progress).** Nội dung dịch thuật và cấu trúc sách có thể còn thay đổi trước khi hoàn thiện.
+
 Đây là bản dịch tiếng Việt của [The Book of OHDSI](https://github.com/OHDSI/TheBookOfOhdsi), tài liệu chính thức của cộng đồng OHDSI (Observational Health Data Sciences and Informatics) về khoa học dữ liệu y tế quan sát và tin học mạng lưới. Bản gốc tiếng Anh được xuất bản tại [book.ohdsi.org](https://ohdsi.github.io/TheBookOfOhdsi/).
 
 Dự án này được thực hiện bởi Cộng đồng OHDSI Việt Nam nhằm giúp cộng đồng nghiên cứu và y tế trong nước tiếp cận dễ dàng hơn với các khái niệm, công cụ và quy trình của OHDSI.
