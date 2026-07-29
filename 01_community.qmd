@@ -285,13 +285,7 @@ bệnh nhân và tiết lộ những khác biệt địa lý to lớn và sự k
 nhất của bệnh nhân trong các lựa chọn điều trị mà trước đây chưa từng
 quan sát được. (Hripcsak et al., 2016) OHDSI đã phát triển các phương
 pháp thống kê mới để điều chỉnh sai lệch (Tian et al., 2018) và đánh
-giá tính hợp lệ của
-
-^2^<https://github.com/OHDSI>
-
-5.  *Hợp tác trong OHDSI 9*
-
-bằng chứng quan sát cho suy luận nhân quả, (Schuemie et al., 2018a) và
+giá tính hợp lệ của bằng chứng quan sát cho suy luận nhân quả, (Schuemie et al., 2018a) và
 nó đã áp dụng các cách tiếp cận này trong nhiều bối cảnh, từ một câu
 hỏi giám sát an toàn cá nhân trong bệnh động kinh (Duke et al., 2017)
 đến hiệu quả so sánh của các thuốc tiểu đường dòng thứ hai (Vashisht
@@ -302,6 +296,10 @@ cho cách áp dụng có trách nhiệm các thuật toán học máy vào dữ 
 chăm sóc sức khỏe quan sát, (Reps et al., 2018) đã được áp dụng trên
 nhiều lĩnh vực trị liệu khác nhau. (Johnston et al., 2019; Cepeda et
 al., 2018; Reps et al., 2019)
+
+^2^<https://github.com/OHDSI>
+
+5.  *Hợp tác trong OHDSI 9*
 
 ## Hợp tác trong OHDSI
 
@@ -336,17 +334,8 @@ hành trình, hãy xem Chương 2 ("Nơi bắt đầu") để biết cách bắt
 ![](media/image4.png){width="0.4455205599300088in"
 height="0.4644783464566929in"}
 
-- OHDSI's mission is to improve health by empowering a community to
-col-laboratively generate the evidence that promotes better health
-decisions and better care.
+- –	Sứ mệnh của OHDSI là cải thiện sức khỏe bằng cách trao quyền cho cộng đồng cùng nhau tạo ra bằng chứng thúc đẩy các quyết định y tế tốt hơn và dịch vụ chăm sóc tốt hơn.
 
-- Our vision is a world in which observational research produces a
-comprehen-sive understanding of health and disease, which will be
-achieved through our objectives of innovation, reproducibility,
-community, collaboration, open-ness, and beneficence.
-
-**--** OHDSI collaborators are focused on open-community data
-standards, methodological research, open-source analytics development,
-and clinical applications to improve the journey from data to
-evidence.
+- –	Tầm nhìn của chúng tôi là một thế giới nơi nghiên cứu quan sát tạo ra sự hiểu biết toàn diện về sức khỏe và bệnh tật, điều này sẽ đạt được thông qua các mục tiêu của chúng tôi về đổi mới, khả năng tái lập, cộng đồng, hợp tác, cởi mở và lòng nhân ái.
+**--** – Các cộng tác viên của OHDSI tập trung vào các tiêu chuẩn dữ liệu cộng đồng mở, nghiên cứu phương pháp luận, phát triển phân tích mã nguồn mở và các ứng dụng lâm sàng để cải thiện hành trình từ dữ liệu đến bằng chứng.
 
