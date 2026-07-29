@@ -8,6 +8,10 @@ book:
   author:
     - name: "Cộng đồng OHDSI Việt Nam & OHDSI Global"
       affiliation: "Observational Health Data Sciences and Informatics"
+    - name: "Phan Thanh-Phuc, PhD"
+      affiliation: "University Medical Center Ho Chi Minh City, Viet Nam"
+      email: "phanthahphuc@ohdsi.org"
+      role: "translator"
   repo-url: https://github.com/Thanh-Phuc/the-book-of-ohdsi-vi
   repo-branch: main
   repo-actions: [edit, issue]

@@ -74,6 +74,12 @@ Suchard, Joel Swerdel, Devin Tian, Don Torok, Kees van Bochove, Mui Van
 Zandt, Erica Voss, Kristin Waite, Mike Warfe, Jamie Weaver, James
 Wiggins, Andrew Williams, Seng Chan You
 
+## Người phụ trách bản dịch tiếng Việt
+
+**Phan Thanh-Phuc, PhD**
+University Medical Center Ho Chi Minh City, Viet Nam
+Email: phanthahphuc@ohdsi.org
+
 ## Các phiên bản phần mềm
 
 Một phần lớn của cuốn sách này nói về phần mềm mã nguồn mở của OHDSI,

@@ -46,3 +46,9 @@ Theo bản gốc, nội dung dịch được phát hành dưới giấy phép [C
 
 - Bản gốc tiếng Anh: [OHDSI/TheBookOfOhdsi](https://github.com/OHDSI/TheBookOfOhdsi), thực hiện bởi Cộng đồng OHDSI toàn cầu.
 - Bản dịch tiếng Việt: Cộng đồng OHDSI Việt Nam.
+
+## Người phụ trách bản dịch tiếng Việt
+
+**Phan Thanh-Phuc, PhD**
+University Medical Center Ho Chi Minh City, Viet Nam
+Email: phanthahphuc@ohdsi.org

@@ -6,6 +6,12 @@ Tài liệu này hướng dẫn cách đóng góp cho bản dịch tiếng Việ
 
 Đối với các thay đổi về **nội dung gốc** (không phải bản dịch), vui lòng đóng góp trực tiếp vào [repo gốc OHDSI/TheBookOfOhdsi](https://github.com/OHDSI/TheBookOfOhdsi).
 
+## Người phụ trách bản dịch
+
+**Phan Thanh-Phuc, PhD**
+University Medical Center Ho Chi Minh City, Viet Nam
+Email: phanthahphuc@ohdsi.org
+
 # Hướng dẫn
 
 ## Cấu trúc chương
