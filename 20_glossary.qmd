@@ -1,0 +1,270 @@
+---
+title: "Bảng thuật ngữ"
+---
+
+# Bảng thuật ngữ
+
+# Bảng thuật ngữ
+
+> **ACHILLES Một báo cáo đặc điểm hóa cấp cơ sở dữ liệu.**
+>
+> **ARACHNE Nền tảng OHDSI đang được phát triển để cho phép phối hợp và
+> thực hiện các nghiên cứu mạng lưới phân tán.**
+>
+> **ATLAS Một ứng dụng dựa trên web được cài đặt trên các cơ sở tham gia
+> để hỗ trợ thiết kế và thực hiện các phân tích quan sát nhằm tạo ra
+> bằng chứng thế giới thực từ dữ liệu lâm sàng cấp bệnh nhân.**
+>
+> **Sai lệch (Bias) Giá trị kỳ vọng của sai số (sự khác biệt giữa giá
+> trị thực và giá trị ước tính).**
+>
+> **Boolean Biến chỉ có hai giá trị (đúng hoặc sai).**
+>
+> **Cơ sở chăm sóc (Care site) Một đơn vị tổ chức (vật lý hoặc tổ chức)
+> được xác định duy nhất nơi thực hiện cung cấp dịch vụ chăm sóc sức
+> khỏe (văn phòng, khoa, bệnh viện, phòng khám, v.v.).**
+>
+> **Case control Một loại thiết kế nghiên cứu hồi cứu cho ước tính hiệu
+> ứng cấp độ quần thể. Các nghiên cứu bệnh-chứng ghép cặp \"các trường
+> hợp\" với kết cục mục tiêu với \"các đối chứng\" không có kết cục mục
+> tiêu. Sau đó, họ nhìn lại quá khứ và so sánh tỷ lệ chênh (odds) của
+> phơi nhiễm ở các trường hợp và các đối chứng.**
+>
+> **Hiệu ứng nhân quả (Causal effect) Điều mà ước tính cấp độ quần thể
+> quan tâm. Một định nghĩa coi \"hiệu ứng nhân quả\" là trung bình của
+> \"các hiệu ứng nhân quả cấp đơn vị\" trong một quần thể mục tiêu. Hiệu
+> ứng nhân quả cấp đơn vị là sự tương phản giữa kết cục nếu một cá nhân
+> đã bị phơi nhiễm và kết cục nếu cá nhân đó không bị phơi nhiễm (hoặc
+> đã bị phơi nhiễm với A so với B).**
+>
+> **Đặc điểm hóa (Characterization) Nghiên cứu mô tả về một nhóm thuần
+> tập hoặc toàn bộ cơ sở dữ liệu. Xem Chương 11. Dữ liệu yêu cầu thanh
+> toán (Claims data) Dữ liệu được tạo ra cho mục đích thanh toán cho một
+> công ty bảo hiểm y tế. Thử nghiệm lâm sàng Nghiên cứu lâm sàng can
+> thiệp.**
+>
+> **Nhóm thuần tập (Cohort) Một tập hợp những người đáp ứng một hoặc
+> nhiều tiêu chí bao gồm trong một khoảng thời gian.**
+>
+> Xem Chương 10.
+>
+> **Khái niệm (Concept) Một thuật ngữ (có mã) được xác định trong một
+> thuật ngữ y tế (ví dụ: SNOMED CT).**
+>
+> Xem Chương 5.
+>
+> **Tập hợp khái niệm (Concept set) Một tập hợp khái niệm là một biểu
+> thức đại diện cho một danh sách các khái niệm có thể được sử dụng như
+> một thành phần có thể tái sử dụng trong các phân tích khác nhau. Xem
+> Chương 10.**
+>
+> 381
+>
+> **Mô hình dữ liệu chung (CDM) Một quy ước để biểu diễn dữ liệu chăm
+> sóc sức khỏe cho phép tính di động của phân tích (cùng một phân tích
+> không sửa đổi có thể được thực hiện trên nhiều tập dữ liệu). Xem
+> Chương 4.**
+>
+> **Hiệu quả so sánh (Comparative Effectiveness) Một sự so sánh các hiệu
+> ứng của hai phơi nhiễm khác nhau trên một kết cục quan tâm. Xem Chương
+> 12.**
+>
+> **Tình trạng (Condition) Một chẩn đoán, một dấu hiệu, hoặc một triệu
+> chứng, được quan sát bởi một nhà cung cấp hoặc được báo cáo bởi bệnh
+> nhân.**
+>
+> **Nhiễu (Confounding) Nhiễu là một sự biến dạng (không chính xác)
+> trong thước đo liên quan được ước tính xảy ra khi phơi nhiễm chính
+> quan tâm bị trộn lẫn với một yếu tố khác có liên quan đến kết cục.**
+>
+> **Hiệp biến (Covariate) Phần tử dữ liệu (ví dụ: cân nặng) được sử dụng
+> trong một mô hình thống kê như một biến độc lập.**
+>
+> **Chất lượng dữ liệu Trạng thái hoàn chỉnh, tính hợp lệ, tính nhất
+> quán, tính kịp thời và độ chính xác làm cho dữ liệu phù hợp cho một
+> mục đích cụ thể.**
+>
+> **Thiết bị (Device) Một vật thể hoặc công cụ vật lý nước ngoài được sử
+> dụng cho các mục đích chẩn đoán hoặc điều trị thông qua một cơ chế
+> vượt ra ngoài tác động hóa học. Các thiết bị bao gồm các vật thể có
+> thể cấy ghép (ví dụ: máy tạo nhịp tim, stent, khớp nhân tạo), thiết bị
+> và vật tư y tế (ví dụ: băng, nạng, ống tiêm), các công cụ khác được sử
+> dụng trong các thủ thuật y tế (ví dụ: chỉ khâu, máy khử rung tim) và
+> vật liệu được sử dụng trong chăm sóc lâm sàng (ví dụ: chất kết dính,
+> vật liệu cơ thể, vật liệu nha khoa, vật liệu phẫu thuật).**
+>
+> **Thuốc (Drug) Thuốc là một chất sinh hóa được xây dựng theo cách mà
+> khi được dùng cho một Người, nó sẽ tạo ra một hiệu ứng sinh lý nhất
+> định. Thuốc bao gồm các loại thuốc kê đơn và không kê đơn, vắc-xin, và
+> các liệu pháp sinh học phân tử lớn. Các thiết bị phóng xạ được ăn vào
+> hoặc áp dụng cục bộ không được tính là Thuốc.**
+>
+> **Miền (Domain) Một Miền xác định tập hợp các Khái niệm được phép cho
+> các trường chuẩn hóa trong các bảng CDM. Ví dụ, Miền \"Tình trạng\"
+> chứa các Khái niệm mô tả tình trạng của bệnh nhân, và các Khái niệm
+> này chỉ có thể được lưu trữ trong trường condition_concept_id của các
+> bảng CONDITION_OCCURRENCE và CONDITION_ERA.**
+>
+> **Hồ sơ sức khỏe điện tử (EHR) Dữ liệu được tạo ra trong quá trình
+> chăm sóc và được ghi lại trong một hệ thống điện tử.**
+>
+> **Dịch tễ học Nghiên cứu về sự phân bố, các mô hình và các yếu tố
+> quyết định của các tình trạng sức khỏe và bệnh tật trong các quần thể
+> được xác định.**
+>
+> **Y học dựa trên bằng chứng Việc sử dụng bằng chứng thực nghiệm và
+> khoa học trong việc đưa ra các quyết định về việc chăm sóc từng bệnh
+> nhân.**
+>
+> **ETL (Trích xuất - Chuyển đổi - Nạp) Quy trình chuyển đổi dữ liệu từ
+> định dạng này sang định dạng khác, ví dụ từ định dạng nguồn sang CDM.
+> Xem Chương 6.**
+>
+> **Ghép cặp (Matching) Nhiều phương pháp ước tính hiệu ứng cấp độ quần
+> thể cố gắng xác định các hiệu ứng nhân quả của các phơi nhiễm bằng
+> cách so sánh các kết cục ở bệnh nhân bị phơi nhiễm với chính các kết
+> cục đó ở bệnh nhân không bị phơi nhiễm (hoặc bị phơi nhiễm với A so
+> với B). Vì hai nhóm bệnh nhân này có thể khác nhau theo những cách
+> khác ngoài phơi nhiễm, \"ghép cặp\" cố gắng tạo ra các nhóm bệnh nhân
+> bị phơi nhiễm và không bị phơi nhiễm giống nhau nhất có thể ít nhất là
+> về các đặc điểm bệnh nhân được đo lường.**
+>
+> **Phép đo (Measurement) Một giá trị có cấu trúc (số hoặc phân loại)
+> thu được thông qua kiểm tra hoặc thử nghiệm có hệ thống**
+
+383
+
+> và chuẩn hóa của một người hoặc mẫu của người đó.
+>
+> **Sai số đo lường (Measurement error) Xảy ra khi một phép đo được ghi
+> lại (ví dụ: huyết áp, tuổi bệnh nhân, thời gian điều trị) khác với
+> phép đo thực tế tương ứng.**
+>
+> **Siêu dữ liệu (Metadata) Một tập hợp dữ liệu mô tả và cung cấp thông
+> tin về các dữ liệu khác và bao gồm siêu dữ liệu mô tả, siêu dữ liệu
+> cấu trúc, siêu dữ liệu hành chính, siêu dữ liệu tham chiếu và siêu dữ
+> liệu thống kê.**
+>
+> **Thư viện phương pháp: Một tập hợp các gói R được cộng đồng OHDSI
+> phát triển để thực hiện các nghiên cứu quan sát.**
+>
+> **Sai lệch mô hình: Nhiều phương pháp OHDSI sử dụng các mô hình thống
+> kê như hồi quy rủi ro tỷ lệ hoặc rừng ngẫu nhiên. Trong chừng mực cơ
+> chế tạo ra dữ liệu lệch khỏi mô hình giả định, mô hình đó được gọi là
+> "sai lệch" (misspecified).**
+>
+> **Đối chứng âm: Một cặp phơi nhiễm-kết quả trong đó phơi nhiễm được
+> cho là không gây ra hoặc ngăn ngừa kết quả đó. Có thể được sử dụng để
+> đánh giá liệu các phương pháp ước tính hiệu quả có tạo ra kết quả phù
+> hợp với thực tế hay không. Xem Chương 18.**
+>
+> **Quan sát: Một sự kiện lâm sàng về một Người bệnh thu được trong bối
+> cảnh thăm khám, hỏi bệnh hoặc thực hiện thủ thuật.**
+>
+> **Thời gian quan sát: Khoảng thời gian mà một người có nguy cơ ghi
+> nhận các sự kiện lâm sàng trong các hệ thống nguồn, ngay cả khi thực
+> tế không có sự kiện nào được ghi lại (bệnh nhân khỏe mạnh không có
+> tương tác y tế).**
+>
+> **Nghiên cứu quan sát: Một nghiên cứu trong đó nhà nghiên cứu không có
+> quyền kiểm soát đối với sự can thiệp. OHDSI SQL: Một phương ngữ SQL có
+> thể được tự động chuyển đổi sang các phương ngữ SQL khác nhau bằng
+> cách sử dụng gói R SqlRender. OHDSI SQL chủ yếu là một tập con của
+> SQL**
+>
+> Server SQL, nhưng cho phép tham số hóa bổ sung. Xem Chương 9.
+>
+> **Khoa học mở: Phong trào làm cho nghiên cứu khoa học (bao gồm các ấn
+> phẩm, dữ liệu, mẫu vật lý và phần mềm) và việc phổ biến nghiên cứu đó
+> trở nên dễ tiếp cận với mọi cấp độ của xã hội tìm tòi, dù là nghiệp dư
+> hay chuyên nghiệp. Xem Chương 3.**
+>
+> **Kết quả: Một quan sát cung cấp trọng tâm cho một phân tích. Ví dụ,
+> một mô hình dự đoán cấp độ bệnh nhân có thể dự đoán kết quả "đột quỵ".
+> Hoặc một ước tính cấp độ quần thể có thể ước tính tác động nhân quả
+> của một loại thuốc đối với kết quả "đau đầu".**
+>
+> **Dự đoán cấp độ bệnh nhân: Phát triển và ứng dụng các mô hình dự đoán
+> để tạo ra các xác suất cụ thể cho từng bệnh nhân về việc gặp phải một
+> kết quả trong tương lai dựa trên các đặc điểm cơ bản.**
+>
+> **Kiểu hình: Một mô tả về các đặc điểm vật lý. Điều này bao gồm các
+> đặc điểm có thể nhìn thấy như cân nặng và màu tóc, nhưng cũng bao gồm
+> sức khỏe tổng thể, tiền sử bệnh và hành vi của bạn.**
+>
+> **Ước tính cấp độ quần thể: Một nghiên cứu về các tác động nhân quả.
+> Ước tính quy mô tác động trung bình (cấp độ quần thể).**
+>
+> **Đối chứng dương: Một cặp phơi nhiễm-kết quả trong đó phơi nhiễm được
+> cho là gây ra hoặc ngăn ngừa kết quả đó. Có thể được sử dụng để đánh
+> giá liệu các phương pháp ước tính hiệu quả có tạo ra kết quả phù hợp
+> với thực tế hay không. Xem Chương 18.**
+>
+> **Thủ thuật: Hoạt động hoặc quy trình do nhà cung cấp dịch vụ chăm sóc
+> sức khỏe chỉ định hoặc thực hiện trên bệnh nhân nhằm mục đích chẩn
+> đoán hoặc điều trị.**
+>
+> **Điểm xu hướng (PS): Một số liệu duy nhất được sử dụng trong ước tính
+> cấp độ quần thể để cân bằng**
+>
+> các quần thể nhằm bắt chước sự ngẫu nhiên hóa giữa hai nhóm điều trị
+> trong một nghiên cứu quan sát. PS đại diện cho xác suất một bệnh nhân
+> nhận được phương pháp điều trị quan tâm như một hàm của tập hợp các
+> biến đồng biến cơ bản được quan sát. Nó thường được tính toán bằng
+> cách sử dụng mô hình hồi quy logistic, trong đó kết quả nhị phân được
+> đặt là một cho nhóm nhận phương pháp điều trị mục tiêu quan tâm và
+> bằng không cho phương pháp điều trị so sánh. Xem Chương 12.
+>
+> **Đề cương nghiên cứu: Một tài liệu con người có thể đọc được, xác
+> định đầy đủ thiết kế của một nghiên cứu.**
+>
+> **Rabbit-in-a-Hat: Một công cụ phần mềm tương tác giúp xác định ETL từ
+> định dạng nguồn sang CDM. Sử dụng hồ sơ cơ sở dữ liệu do White Rabbit
+> tạo ra làm đầu vào. Xem Chương 7.**
+>
+> **Sai lệch chọn lọc: Một loại sai lệch xảy ra khi tập hợp bệnh nhân
+> trong dữ liệu của bạn sai lệch so với các bệnh nhân trong quần thể
+> theo những cách làm sai lệch các phân tích thống kê.**
+>
+> **Thiết kế tự kiểm soát: Các thiết kế nghiên cứu so sánh kết quả trong
+> các lần phơi nhiễm khác nhau trên cùng một bệnh nhân.**
+>
+> **Phân tích độ nhạy: Một biến thể của phân tích chính được sử dụng
+> trong một nghiên cứu để đánh giá tác động của một lựa chọn phân tích
+> mà ở đó tồn tại sự không chắc chắn.**
+>
+> **SNOMED: Một bộ sưu tập các thuật ngữ y tế được tổ chức một cách có
+> hệ thống, có thể xử lý bằng máy tính, cung cấp các mã, thuật ngữ, từ
+> đồng nghĩa và định nghĩa được sử dụng trong tài liệu lâm sàng và báo
+> cáo.**
+>
+> **Chẩn đoán nghiên cứu: Tập hợp các bước phân tích nhằm xác định xem
+> một phương pháp phân tích nhất định có thể được sử dụng (có hợp lệ) để
+> trả lời một câu hỏi nghiên cứu nhất định hay không. Xem Chương 18.**
+>
+> **Gói nghiên cứu: Một chương trình có thể thực thi trên máy tính giúp
+> thực hiện đầy đủ nghiên cứu. Xem Chương 17.**
+>
+> **Mã nguồn: Một mã được sử dụng trong cơ sở dữ liệu nguồn. Ví dụ: mã
+> ICD-10.**
+>
+> **Khái niệm chuẩn: Một khái niệm được chỉ định là khái niệm hợp lệ và
+> được phép xuất hiện trong CDM.**
+>
+> **THEMIS: Nhóm làm việc của OHDSI giải quyết định dạng dữ liệu mục
+> tiêu có độ chi tiết và cụ thể cao hơn đối với các thông số kỹ thuật
+> của mô hình CDM.**
+>
+> **Lượt khám: Khoảng thời gian một người liên tục nhận các dịch vụ y tế
+> từ một hoặc nhiều nhà cung cấp tại một cơ sở chăm sóc trong một bối
+> cảnh nhất định trong hệ thống chăm sóc sức khỏe.**
+>
+> **Từ vựng: Danh sách các từ và thường là các cụm từ, thường được sắp
+> xếp theo thứ tự bảng chữ cái và được định nghĩa hoặc dịch. Xem Chương
+> 5.**
+>
+> **White Rabbit: Một công cụ phần mềm để lập hồ sơ cơ sở dữ liệu trước
+> khi xác định ETL sang CDM. Xem Chương 6.**
+>
+> Chương B
+

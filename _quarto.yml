@@ -1,0 +1,110 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Sách OHDSI (The Book of OHDSI)"
+  subtitle: "Khoa học Dữ liệu Y tế Quan sát và Tin học Mạng lưới"
+  author:
+    - name: "Cộng đồng OHDSI Việt Nam & OHDSI Global"
+      affiliation: "Observational Health Data Sciences and Informatics"
+  repo-url: https://github.com/Thanh-Phuc/the-book-of-ohdsi-vi
+  repo-branch: main
+  repo-actions: [edit, issue]
+  page-navigation: true
+  back-to-top-navigation: true
+  search: true
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
+  page-footer:
+    left: "Sách OHDSI (The Book of OHDSI - Bản tiếng Việt)"
+    center: "OHDSI Vietnam Chapter"
+    right: "Quarto Book"
+
+  chapters:
+    - text: "Lời tựa & Giới thiệu"
+      file: index.qmd
+    - part: "Phần I — Cộng đồng OHDSI"
+      chapters:
+        - text: "Chương 1: Cộng đồng OHDSI"
+          file: 01_community.qmd
+        - text: "Chương 2: Nơi bắt đầu"
+          file: 02_where_to_begin.qmd
+        - text: "Chương 3: Khoa học mở"
+          file: 03_open_science.qmd
+    - part: "Phần II — Chuẩn hóa Dữ liệu"
+      chapters:
+        - text: "Chương 4: Mô hình Dữ liệu Chung (CDM)"
+          file: 04_cdm.qmd
+        - text: "Chương 5: Từ vựng Chuẩn hóa"
+          file: 05_vocabularies.qmd
+        - text: "Chương 6: Trích xuất - Chuyển đổi - Nạp (ETL)"
+          file: 06_etl.qmd
+    - part: "Phần III — Phân tích Dữ liệu"
+      chapters:
+        - text: "Chương 7: Các trường hợp sử dụng phân tích"
+          file: 07_use_cases.qmd
+        - text: "Chương 8: Công cụ phân tích OHDSI"
+          file: 08_tools.qmd
+        - text: "Chương 9: SQL và R"
+          file: 09_sql_and_r.qmd
+        - text: "Chương 10: Định nghĩa nhóm thuần tập"
+          file: 10_cohort_definitions.qmd
+        - text: "Chương 11: Đặc điểm hóa"
+          file: 11_characterization.qmd
+        - text: "Chương 12: Ước tính cấp độ quần thể"
+          file: 12_population_level_estimation.qmd
+        - text: "Chương 13: Dự đoán cấp độ bệnh nhân"
+          file: 13_patient_level_prediction.qmd
+    - part: "Phần IV — Chất lượng Bằng chứng"
+      chapters:
+        - text: "Chương 14: Chất lượng dữ liệu"
+          file: 14_data_quality.qmd
+        - text: "Chương 15: Tính hợp lệ lâm sàng"
+          file: 15_clinical_validity.qmd
+        - text: "Chương 16: Tính hợp lệ của phần mềm"
+          file: 16_software_validity.qmd
+        - text: "Chương 17: Tính hợp lệ của phương pháp"
+          file: 17_method_validity.qmd
+    - part: "Phần V — Các nghiên cứu OHDSI"
+      chapters:
+        - text: "Chương 18: Các bước nghiên cứu"
+          file: 18_study_steps.qmd
+        - text: "Chương 19: Nghiên cứu mạng lưới OHDSI"
+          file: 19_network_studies.qmd
+    - part: "Phần VI — Phụ lục & Tài liệu tham khảo"
+      chapters:
+        - text: "Bảng thuật ngữ"
+          file: 20_glossary.qmd
+        - text: "Phụ lục A: Định nghĩa nhóm thuần tập"
+          file: 21_cohort_definitions_appendix.qmd
+        - text: "Phụ lục B: Các đối chứng âm tính"
+          file: 22_negative_controls.qmd
+        - text: "Phụ lục C: Mẫu giao thức"
+          file: 23_protocol_template.qmd
+        - text: "Phụ lục D: Gợi ý trả lời"
+          file: 24_hints.qmd
+        - text: "Thư mục tài liệu tham khảo & Chỉ mục"
+          file: 25_references_and_index.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: custom.css
+    toc: true
+    toc-depth: 4
+    toc-location: right
+    toc-title: "Nội dung chính"
+    toc-expand: true
+    smooth-scroll: true
+    number-sections: false
+    html-math-method: katex
+    code-copy: true
+    code-overflow: wrap
+    code-tools: true
+    link-external-icon: true
+    link-external-newwindow: true

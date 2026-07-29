@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Sách OHDSI (The Book of OHDSI) - Chương 1: Cộng đồng OHDSI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./02_where_to_begin.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_community.html">Phần I — Cộng đồng OHDSI</a></li><li class="breadcrumb-item"><a href="./01_community.html"><span class="chapter-title">Chương 1: Cộng đồng OHDSI</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Sách OHDSI (The Book of OHDSI)</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/Thanh-Phuc/the-book-of-ohdsi-vi" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lời tựa &amp; Giới thiệu</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Phần I — Cộng đồng OHDSI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_community.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Chương 1: Cộng đồng OHDSI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_where_to_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 2: Nơi bắt đầu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_open_science.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 3: Khoa học mở</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Phần II — Chuẩn hóa Dữ liệu</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_cdm.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 4: Mô hình Dữ liệu Chung (CDM)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_vocabularies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 5: Từ vựng Chuẩn hóa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_etl.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 6: Trích xuất - Chuyển đổi - Nạp (ETL)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Phần III — Phân tích Dữ liệu</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_use_cases.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 7: Các trường hợp sử dụng phân tích</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 8: Công cụ phân tích OHDSI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_sql_and_r.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 9: SQL và R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10_cohort_definitions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 10: Định nghĩa nhóm thuần tập</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./11_characterization.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 11: Đặc điểm hóa</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./12_population_level_estimation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 12: Ước tính cấp độ quần thể</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./13_patient_level_prediction.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 13: Dự đoán cấp độ bệnh nhân</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Phần IV — Chất lượng Bằng chứng</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./14_data_quality.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 14: Chất lượng dữ liệu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./15_clinical_validity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 15: Tính hợp lệ lâm sàng</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./16_software_validity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 16: Tính hợp lệ của phần mềm</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./17_method_validity.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 17: Tính hợp lệ của phương pháp</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Phần V — Các nghiên cứu OHDSI</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./18_study_steps.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 18: Các bước nghiên cứu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./19_network_studies.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chương 19: Nghiên cứu mạng lưới OHDSI</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Phần VI — Phụ lục &amp; Tài liệu tham khảo</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./20_glossary.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bảng thuật ngữ</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./21_cohort_definitions_appendix.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Phụ lục A: Định nghĩa nhóm thuần tập</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./22_negative_controls.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Phụ lục B: Các đối chứng âm tính</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./23_protocol_template.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Phụ lục C: Mẫu giao thức</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./24_hints.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Phụ lục D: Gợi ý trả lời</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./25_references_and_index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Thư mục tài liệu tham khảo &amp; Chỉ mục</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Nội dung chính</h2>
+   
+  <ul>
+  <li><a href="#chương-1-cộng-đồng-ohdsi" id="toc-chương-1-cộng-đồng-ohdsi" class="nav-link active" data-scroll-target="#chương-1-cộng-đồng-ohdsi">Chương 1: Cộng đồng OHDSI</a></li>
+  <li><a href="#cộng-đồng-ohdsi" id="toc-cộng-đồng-ohdsi" class="nav-link" data-scroll-target="#cộng-đồng-ohdsi">Cộng đồng OHDSI</a></li>
+  <li><a href="#cộng-đồng-ohdsi-1" id="toc-cộng-đồng-ohdsi-1" class="nav-link" data-scroll-target="#cộng-đồng-ohdsi-1">Cộng đồng OHDSI</a>
+  <ul>
+  <li><a href="#hành-trình-từ-dữ-liệu-đến-bằng-chứng" id="toc-hành-trình-từ-dữ-liệu-đến-bằng-chứng" class="nav-link" data-scroll-target="#hành-trình-từ-dữ-liệu-đến-bằng-chứng">Hành trình từ dữ liệu đến bằng chứng</a></li>
+  <li><a href="#đối-tác-kết-quả-y-tế-quan-sát" id="toc-đối-tác-kết-quả-y-tế-quan-sát" class="nav-link" data-scroll-target="#đối-tác-kết-quả-y-tế-quan-sát">Đối tác Kết quả Y tế Quan sát</a></li>
+  <li><a href="#ohdsi-như-một-cộng-đồng-hợp-tác-khoa-học-mở" id="toc-ohdsi-như-một-cộng-đồng-hợp-tác-khoa-học-mở" class="nav-link" data-scroll-target="#ohdsi-như-một-cộng-đồng-hợp-tác-khoa-học-mở">OHDSI như một cộng đồng hợp tác khoa học mở</a>
+  <ul class="collapse">
+  <li><a href="#sứ-mệnh-của-chúng-tôi" id="toc-sứ-mệnh-của-chúng-tôi" class="nav-link" data-scroll-target="#sứ-mệnh-của-chúng-tôi">Sứ mệnh của chúng tôi</a></li>
+  <li><a href="#tầm-nhìn-của-chúng-tôi" id="toc-tầm-nhìn-của-chúng-tôi" class="nav-link" data-scroll-target="#tầm-nhìn-của-chúng-tôi">Tầm nhìn của chúng tôi</a></li>
+  <li><a href="#mục-tiêu-của-chúng-tôi" id="toc-mục-tiêu-của-chúng-tôi" class="nav-link" data-scroll-target="#mục-tiêu-của-chúng-tôi">Mục tiêu của chúng tôi</a></li>
+  </ul></li>
+  <li><a href="#tiến-độ-của-ohdsi" id="toc-tiến-độ-của-ohdsi" class="nav-link" data-scroll-target="#tiến-độ-của-ohdsi">Tiến độ của OHDSI</a></li>
+  <li><a href="#hợp-tác-trong-ohdsi" id="toc-hợp-tác-trong-ohdsi" class="nav-link" data-scroll-target="#hợp-tác-trong-ohdsi">Hợp tác trong OHDSI</a></li>
+  <li><a href="#tóm-tắt" id="toc-tóm-tắt" class="nav-link" data-scroll-target="#tóm-tắt">Tóm tắt</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/Thanh-Phuc/the-book-of-ohdsi-vi/edit/main/01_community.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Thanh-Phuc/the-book-of-ohdsi-vi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01_community.html">Phần I — Cộng đồng OHDSI</a></li><li class="breadcrumb-item"><a href="./01_community.html"><span class="chapter-title">Chương 1: Cộng đồng OHDSI</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Chương 1: Cộng đồng OHDSI</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="chương-1-cộng-đồng-ohdsi" class="level1">
+<h1>Chương 1: Cộng đồng OHDSI</h1>
+<blockquote class="blockquote">
+<p>Phần I</p>
+</blockquote>
+</section>
+<section id="cộng-đồng-ohdsi" class="level1">
+<h1>Cộng đồng OHDSI</h1>
+<blockquote class="blockquote">
+<p>1</p>
+<p>Chương 1</p>
+</blockquote>
+</section>
+<section id="cộng-đồng-ohdsi-1" class="level1">
+<h1>Cộng đồng OHDSI</h1>
+<blockquote class="blockquote">
+<p><em>Trưởng chương: Patrick Ryan &amp; George Hripcsak</em></p>
+<p>Đến với nhau là một sự khởi đầu; giữ được nhau là sự tiến bộ; làm việc cùng nhau là thành công. Henry Ford</p>
+</blockquote>
+<section id="hành-trình-từ-dữ-liệu-đến-bằng-chứng" class="level2">
+<h2 class="anchored" data-anchor-id="hành-trình-từ-dữ-liệu-đến-bằng-chứng">Hành trình từ dữ liệu đến bằng chứng</h2>
+<blockquote class="blockquote">
+<p>Ở khắp mọi nơi trong lĩnh vực chăm sóc sức khỏe, trên toàn thế giới, trong các trung tâm y tế học thuật và các phòng khám tư nhân, các cơ quan quản lý và nhà sản xuất sản phẩm y tế, các công ty bảo hiểm và các trung tâm chính sách, và tại trung tâm của mọi tương tác giữa bệnh nhân và nhà cung cấp dịch vụ, có một thách thức chung: làm thế nào để chúng ta áp dụng những gì đã học từ quá khứ để đưa ra quyết định tốt hơn cho tương lai?</p>
+<p>Trong hơn một thập kỷ, nhiều người đã ủng hộ tầm nhìn về một hệ thống chăm sóc sức khỏe học tập, “được thiết kế để tạo ra và áp dụng bằng chứng tốt nhất cho các lựa chọn chăm sóc sức khỏe hợp tác của mỗi bệnh nhân và nhà cung cấp; để thúc đẩy quá trình khám phá như một kết quả tự nhiên của việc chăm sóc bệnh nhân; và để đảm bảo sự đổi mới, chất lượng, an toàn và giá trị trong chăm sóc sức khỏe”. (Olsen et al., 2007) Một thành phần chính của tham vọng này dựa trên triển vọng thú vị rằng dữ liệu cấp độ bệnh nhân thu thập được trong quá trình chăm sóc lâm sàng thường quy có thể được phân tích để tạo ra bằng chứng thực tế, từ đó có thể được phổ biến khắp hệ thống chăm sóc sức khỏe để thông tin cho thực hành lâm sàng. Năm 2007, Viện Y học Roundtable về Y học dựa trên bằng chứng đã đưa ra một báo cáo thiết lập mục tiêu rằng “Đến năm 2020, 90 phần trăm các quyết định lâm sàng sẽ được hỗ trợ bởi thông tin lâm sàng chính xác, kịp thời và cập nhật, và sẽ phản ánh bằng chứng tốt nhất hiện có.” (Olsen et al., 2007) Mặc dù đã đạt được những tiến bộ to lớn trên nhiều mặt trận khác nhau, chúng ta vẫn còn cách xa những khát vọng đáng khen ngợi này.</p>
+<p>Tại sao? Một phần là vì hành trình từ dữ liệu cấp độ bệnh nhân đến bằng chứng đáng tin cậy là một hành trình gian nan. Không có con đường duy nhất được xác định từ dữ liệu đến bằng chứng, và không có bản đồ duy nhất nào có thể giúp điều hướng trên con đường đó. Trên thực tế, không có khái niệm duy nhất về “dữ liệu”, cũng như không có khái niệm duy nhất về “bằng chứng”.</p>
+<p>3</p>
+<p><img src="./Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image2.jpeg" style="width:5.48542in;height:3.61771in"></p>
+<p>Hình 1.1: Hành trình từ dữ liệu đến bằng chứng</p>
+<p>Có nhiều loại cơ sở dữ liệu quan sát khác nhau thu thập dữ liệu cấp độ bệnh nhân khác biệt trong các hệ thống nguồn. Các cơ sở dữ liệu này đa dạng như chính hệ thống chăm sóc sức khỏe, phản ánh các quần thể, môi trường chăm sóc và quy trình thu thập dữ liệu khác nhau. Cũng có nhiều loại bằng chứng có thể hữu ích để thông tin cho việc ra quyết định, có thể được phân loại theo các trường hợp sử dụng phân tích về đặc điểm lâm sàng, ước tính hiệu quả cấp độ quần thể và dự đoán cấp độ bệnh nhân. Độc lập với nguồn gốc (dữ liệu nguồn) và đích đến mong muốn (bằng chứng), thách thức còn trở nên phức tạp hơn bởi sự rộng lớn của các năng lực lâm sàng, khoa học và kỹ thuật cần thiết để thực hiện hành trình. Nó đòi hỏi sự hiểu biết thấu đáo về tin học y tế, bao gồm toàn bộ nguồn gốc của dữ liệu nguồn từ điểm tương tác chăm sóc giữa bệnh nhân và nhà cung cấp thông qua các hệ thống hành chính và lâm sàng và vào kho lưu trữ cuối cùng, với sự đánh giá cao về những sai lệch có thể phát sinh như một phần của chính sách y tế và các động lực hành vi liên quan đến quy trình thu thập và quản lý dữ liệu. Nó đòi hỏi sự thông thạo các nguyên tắc dịch tễ học và phương pháp thống kê để dịch một câu hỏi lâm sàng thành một thiết kế nghiên cứu quan sát phù hợp để tạo ra câu trả lời thích hợp. Nó đòi hỏi khả năng kỹ thuật để triển khai và thực hiện các thuật toán khoa học dữ liệu hiệu quả về mặt tính toán trên các tập dữ liệu chứa hàng triệu bệnh nhân với hàng tỷ quan sát lâm sàng qua nhiều năm theo dõi dọc. Nó đòi hỏi kiến thức lâm sàng để tổng hợp những gì đã học được trên một mạng lưới dữ liệu quan sát với bằng chứng từ các nguồn thông tin khác, và để xác định cách thức kiến thức mới này nên tác động đến chính sách y tế và thực hành lâm sàng. Theo đó, rất hiếm khi bất kỳ cá nhân nào sở hữu đủ các kỹ năng và nguồn lực cần thiết để tự mình thực hiện thành công hành trình từ dữ liệu đến bằng chứng. Thay vào đó, hành trình thường yêu-</p>
+<p><em>1.2. Đối tác Kết quả Y tế Quan sát 5</em></p>
+<p>cầu sự hợp tác giữa nhiều cá nhân và tổ chức để đảm bảo rằng dữ liệu tốt nhất hiện có được phân tích bằng các phương pháp phù hợp nhất để tạo ra bằng chứng mà tất cả các bên liên quan có thể tin tưởng và sử dụng trong quy trình ra quyết định của họ.</p>
+</blockquote>
+</section>
+<section id="đối-tác-kết-quả-y-tế-quan-sát" class="level2">
+<h2 class="anchored" data-anchor-id="đối-tác-kết-quả-y-tế-quan-sát">Đối tác Kết quả Y tế Quan sát</h2>
+<blockquote class="blockquote">
+<p>Một ví dụ đáng chú ý về sự hợp tác trong nghiên cứu quan sát là Observational Medical Outcomes Partnership (OMOP). OMOP là một quan hệ đối tác công-tư, do Cục Quản lý Thực phẩm và Dược phẩm Hoa Kỳ (FDA) chủ trì, được quản lý bởi Quỹ Viện Y tế Quốc gia và được tài trợ bởi một tập đoàn các công ty dược phẩm hợp tác với các nhà nghiên cứu học thuật và các đối tác dữ liệu y tế để thiết lập một chương trình nghiên cứu nhằm thúc đẩy khoa học về giám sát an toàn sản phẩm y tế chủ động sử dụng dữ liệu chăm sóc sức khỏe quan sát. (Stang et al., 2010) OMOP đã thiết lập một cấu trúc quản trị đa bên và thiết kế một loạt các thí nghiệm phương pháp luận để thử nghiệm thực nghiệm hiệu suất của các thiết kế dịch tễ học và phương pháp thống kê thay thế khi áp dụng cho một loạt các cơ sở dữ liệu yêu cầu thanh toán hành chính và hồ sơ sức khỏe điện tử cho nhiệm vụ xác định các liên kết an toàn thuốc thực sự và phân biệt chúng với các kết quả dương tính giả.</p>
+<p>Nhận thức được những thách thức kỹ thuật trong việc thực hiện nghiên cứu trên các cơ sở dữ liệu quan sát khác biệt trong cả môi trường tập trung và mạng lưới nghiên cứu phân tán, nhóm đã thiết kế Mô hình dữ liệu chung OMOP (CDM) như một cơ chế để chuẩn hóa cấu trúc, nội dung và ngữ nghĩa của dữ liệu quan sát và giúp việc viết mã phân tích thống kê một lần có thể được tái sử dụng tại mỗi cơ sở dữ liệu. (Overhage et al., 2012) Các thí nghiệm của OMOP đã chứng minh rằng có thể thiết lập một mô hình dữ liệu chung và các từ vựng chuẩn hóa có thể chứa các loại dữ liệu khác nhau từ các môi trường chăm sóc khác nhau và được đại diện bởi các từ vựng nguồn khác nhau theo cách có thể tạo điều kiện cho sự hợp tác liên tổ chức và phân tích hiệu quả về mặt tính toán.</p>
+<p>Ngay từ khi thành lập, OMOP đã áp dụng cách tiếp cận khoa học mở, đặt tất cả các sản phẩm công việc của mình, bao gồm thiết kế nghiên cứu, tiêu chuẩn dữ liệu, mã phân tích và kết quả thực nghiệm, vào phạm vi công cộng để thúc đẩy tính minh bạch, xây dựng niềm tin vào nghiên cứu mà OMOP đang thực hiện, nhưng cũng để cung cấp một nguồn lực cộng đồng có thể được tái sử dụng để thúc đẩy các mục tiêu nghiên cứu của những người khác. Mặc dù trọng tâm ban đầu của OMOP là an toàn thuốc, OMOP CDM liên tục phát triển để hỗ trợ một tập hợp các trường hợp sử dụng phân tích mở rộng, bao gồm hiệu quả so sánh của các can thiệp y tế và chính sách hệ thống y tế.</p>
+<p>Và trong khi OMOP thành công trong việc hoàn thành các thí nghiệm thực nghiệm quy mô lớn của mình, (Ryan et al., 2012, 2013b) phát triển các đổi mới phương pháp luận, (Schuemie et al., 2014) và tạo ra tri thức hữu ích đã thông tin cho việc sử dụng thích hợp dữ liệu quan sát để ra quyết định an toàn, (Madigan et al., 2013b,a) di sản của OMOP có thể được nhớ đến nhiều hơn vì việc áp dụng sớm các nguyên tắc khoa học mở và sự kích thích thúc đẩy việc hình thành cộng đồng OHDSI.</p>
+<p>Khi dự án OMOP hoàn thành, sau khi hoàn thành nhiệm vụ thực hiện nghiên cứu phương pháp luận để thông tin cho các hoạt động giám sát chủ động của FDA, nhóm đã nhận ra</p>
+<p>kết thúc của hành trình OMOP cần trở thành sự khởi đầu của một hành trình mới cùng nhau. Mặc dù nghiên cứu phương pháp luận của OMOP cung cấp những hiểu biết hữu hình về các thực hành tốt nhất khoa học có thể chứng minh cải thiện chất lượng bằng chứng được tạo ra từ dữ liệu quan sát, việc áp dụng các thực hành tốt nhất đó diễn ra chậm chạp. Một số rào cản đã được xác định, bao gồm: 1) những lo ngại cơ bản về chất lượng dữ liệu quan sát được coi là ưu tiên cao hơn cần giải quyết trước các đổi mới phân tích; 2) sự hiểu biết khái niệm không đầy đủ về các vấn đề và giải pháp phương pháp luận; 3) không có khả năng tự triển khai các giải pháp trong môi trường địa phương của họ; 4) sự không chắc chắn về việc liệu các phương pháp này có áp dụng được cho các vấn đề lâm sàng mà họ quan tâm hay không. Một chủ đề chung cho mọi rào cản là cảm giác rằng một người đơn độc không có tất cả những gì họ cần để thực hiện thay đổi, nhưng với sự hỗ trợ hợp tác, tất cả các vấn đề đều có thể được vượt qua. Nhưng cần có một số lĩnh vực hợp tác:</p>
+</blockquote>
+<ul>
+<li><p>Hợp tác trong việc thiết lập các tiêu chuẩn dữ liệu cộng đồng mở, các từ vựng chuẩn hóa và các quy ước ETL (Trích xuất - Chuyển đổi - Nạp) sẽ tăng cường niềm tin vào chất lượng dữ liệu cơ bản và thúc đẩy tính nhất quán trong cấu trúc, nội dung và ngữ nghĩa để cho phép phân tích chuẩn hóa.</p></li>
+<li><p>Hợp tác trong nghiên cứu phương pháp luận ngoài an toàn thuốc để thiết lập các thực hành tốt nhất rộng rãi hơn cho đặc điểm lâm sàng, ước tính hiệu quả cấp độ quần thể và dự đoán cấp độ bệnh nhân. Hợp tác trong phát triển phân tích mã nguồn mở, để hệ thống hóa các thực hành tốt nhất khoa học đã được chứng minh thông qua nghiên cứu phương pháp luận và làm cho chúng có thể tiếp cận được dưới dạng các công cụ công khai có thể dễ dàng được cộng đồng nghiên cứu áp dụng.</p></li>
+<li><p>Hợp tác trong các ứng dụng lâm sàng giải quyết các câu hỏi sức khỏe quan trọng mà cộng đồng cùng quan tâm bằng cách cùng nhau điều hướng hành trình từ dữ liệu đến bằng chứng.</p></li>
+</ul>
+<blockquote class="blockquote">
+<p>Từ cái nhìn sâu sắc này, OHDSI đã ra đời.</p>
+</blockquote>
+</section>
+<section id="ohdsi-như-một-cộng-đồng-hợp-tác-khoa-học-mở" class="level2">
+<h2 class="anchored" data-anchor-id="ohdsi-như-một-cộng-đồng-hợp-tác-khoa-học-mở">OHDSI như một cộng đồng hợp tác khoa học mở</h2>
+<blockquote class="blockquote">
+<p>Observational Health Data Sciences and Informatics (OHDSI, phát âm là “Odyssey”) là một cộng đồng khoa học mở nhằm cải thiện sức khỏe bằng cách trao quyền cho cộng đồng cùng nhau tạo ra bằng chứng thúc đẩy các quyết định sức khỏe tốt hơn và dịch vụ chăm sóc tốt hơn. (Hripcsak et al., 2015) OHDSI thực hiện nghiên cứu phương pháp luận để thiết lập các thực hành tốt nhất khoa học cho việc sử dụng thích hợp dữ liệu sức khỏe quan sát, phát triển phần mềm phân tích mã nguồn mở hệ thống hóa các thực hành này thành các giải pháp nhất quán, minh bạch, có thể tái lập và áp dụng các công cụ và thực hành này vào các câu hỏi lâm sàng để tạo ra bằng chứng có thể hướng dẫn chính sách chăm sóc sức khỏe và chăm sóc bệnh nhân.</p>
+</blockquote>
+<section id="sứ-mệnh-của-chúng-tôi" class="level3">
+<h3 class="anchored" data-anchor-id="sứ-mệnh-của-chúng-tôi">Sứ mệnh của chúng tôi</h3>
+<blockquote class="blockquote">
+<p>Cải thiện sức khỏe bằng cách trao quyền cho một cộng đồng cùng nhau tạo ra bằng chứng thúc đẩy các quyết định sức khỏe tốt hơn và dịch vụ chăm sóc tốt hơn.</p>
+</blockquote>
+<ol start="4" type="1">
+<li><em>Tiến độ của OHDSI 7</em></li>
+</ol>
+</section>
+<section id="tầm-nhìn-của-chúng-tôi" class="level3">
+<h3 class="anchored" data-anchor-id="tầm-nhìn-của-chúng-tôi">Tầm nhìn của chúng tôi</h3>
+<blockquote class="blockquote">
+<p>Một thế giới mà nghiên cứu quan sát tạo ra sự hiểu biết toàn diện về sức khỏe và bệnh tật.</p>
+</blockquote>
+</section>
+<section id="mục-tiêu-của-chúng-tôi" class="level3">
+<h3 class="anchored" data-anchor-id="mục-tiêu-của-chúng-tôi">Mục tiêu của chúng tôi</h3>
+<ul>
+<li><p><strong>Đổi mới: Nghiên cứu quan sát là một lĩnh vực sẽ được hưởng lợi rất nhiều từ tư duy đột phá. Chúng tôi tích cực tìm kiếm và khuyến khích các cách tiếp cận phương pháp luận mới mẻ trong công việc của mình.</strong></p></li>
+<li><p><strong>Tính tái lập: Bằng chứng chính xác, có thể tái lập và được hiệu chuẩn tốt là cần thiết cho việc cải thiện sức khỏe.</strong></p></li>
+<li><p><strong>Cộng đồng: Mọi người đều được chào đón tham gia tích cực vào OHDSI, cho dù bạn là bệnh nhân, chuyên gia y tế, nhà nghiên cứu hay bất kỳ ai tin tưởng vào mục tiêu của chúng tôi.</strong></p></li>
+<li><p><strong>Hợp tác: Chúng tôi làm việc tập thể để ưu tiên và giải quyết các nhu cầu thực tế của những người tham gia cộng đồng của chúng tôi.</strong></p></li>
+<li><p><strong>Tính mở: Chúng tôi cố gắng làm cho tất cả các thành quả của cộng đồng chúng tôi trở nên mở và công khai, bao gồm các phương pháp, công cụ và bằng chứng mà chúng tôi tạo ra.</strong></p></li>
+<li><p><strong>Tính nhân văn: Chúng tôi tìm cách bảo vệ quyền của các cá nhân và tổ chức trong cộng đồng của mình mọi lúc.</strong></p></li>
+</ul>
+</section>
+</section>
+<section id="tiến-độ-của-ohdsi" class="level2">
+<h2 class="anchored" data-anchor-id="tiến-độ-của-ohdsi">Tiến độ của OHDSI</h2>
+<blockquote class="blockquote">
+<p>OHDSI đã phát triển kể từ khi thành lập vào năm 2014 với hơn 2.500 cộng tác viên trên các diễn đàn trực tuyến từ các bên liên quan khác nhau, bao gồm học viện, ngành công nghiệp sản phẩm y tế, cơ quan quản lý, chính phủ, người trả tiền, nhà cung cấp công nghệ, hệ thống y tế, bác sĩ lâm sàng, bệnh nhân và đại diện cho các ngành khác nhau, bao gồm khoa học máy tính, dịch tễ học, thống kê, tin học y sinh, chính sách y tế và khoa học lâm sàng. Danh sách các cộng tác viên OHDSI tự xác định có sẵn trên trang web OHDSI. 1 Bản đồ cộng tác viên OHDSI (Hình 1.2) làm nổi bật sự rộng lớn và đa dạng của cộng đồng quốc tế.</p>
+<p>Tính đến tháng 8 năm 2019, OHDSI cũng đã thiết lập một mạng lưới dữ liệu gồm hơn 100 cơ sở dữ liệu chăm sóc sức khỏe khác nhau từ hơn 20 quốc gia, cùng nhau thu thập hơn một tỷ hồ sơ bệnh nhân bằng cách áp dụng cách tiếp cận mạng lưới phân tán sử dụng tiêu chuẩn dữ liệu cộng đồng mở mà nó duy trì, OMOP CDM. Một mạng lưới phân tán có nghĩa là dữ liệu cấp độ bệnh nhân không cần phải được chia sẻ giữa các cá nhân hoặc tổ chức. Thay vào đó, các câu hỏi nghiên cứu được đặt ra bởi các cá nhân trong cộng đồng dưới dạng một giao thức nghiên cứu và kèm theo mã phân tích tạo ra bằng chứng dưới dạng một tập hợp các số liệu thống kê tóm tắt tổng hợp, và chỉ những số liệu thống kê tóm tắt này mới được chia sẻ giữa các đối tác</p>
+<p><sup>1</sup><a href="https://www.ohdsi.org/who-we-are/collaborators/" class="uri">https://www.ohdsi.org/who-we-are/collaborators/</a></p>
+<p><img src="./Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image3.jpeg" style="width:5.34375in;height:3.0625in"></p>
+<p>Hình 1.2: Bản đồ cộng tác viên OHDSI tính đến tháng 8 năm 2019</p>
+<p>lựa chọn hợp tác trong nghiên cứu. Với mạng lưới phân tán OHDSI, mỗi đối tác dữ liệu giữ toàn quyền tự chủ đối với việc sử dụng dữ liệu cấp độ bệnh nhân của họ và tiếp tục tuân thủ các chính sách quản trị dữ liệu trong các tổ chức tương ứng của họ.</p>
+<p>Cộng đồng nhà phát triển OHDSI đã tạo ra một thư viện mạnh mẽ các công cụ phân tích mã nguồn mở trên OMOP CDM để hỗ trợ 3 trường hợp sử dụng: 1) đặc điểm lâm sàng cho lịch sử tự nhiên của bệnh, sử dụng điều trị và cải thiện chất lượng; 2) ước tính hiệu quả cấp độ quần thể để áp dụng các phương pháp suy luận nhân quả cho giám sát an toàn sản phẩm y tế và hiệu quả so sánh; và 3) dự đoán cấp độ bệnh nhân để áp dụng các thuật toán học máy cho y học chính xác và ngăn chặn bệnh tật. Các nhà phát triển OHDSI cũng đã phát triển các ứng dụng để hỗ trợ việc áp dụng OMOP CDM, đánh giá chất lượng dữ liệu và tạo điều kiện cho các nghiên cứu mạng lưới OHDSI. Các công cụ này bao gồm các gói thống kê phụ trợ được xây dựng bằng R và Python, và các ứng dụng web giao diện người dùng được phát triển bằng HTML và Javascript. Tất cả các công cụ OHDSI đều là mã nguồn mở và công khai thông qua Github.2</p>
+<p>Cách tiếp cận cộng đồng khoa học mở của OHDSI, cùng với các công cụ mã nguồn mở của nó, đã cho phép những tiến bộ to lớn trong nghiên cứu quan sát. Một trong những phân tích mạng lưới OHDSI đầu tiên đã kiểm tra các lộ trình điều trị trên ba bệnh mãn tính: tiểu đường, trầm cảm và tăng huyết áp. Được xuất bản trong Kỷ yếu của Viện Hàn lâm Khoa học Quốc gia, đây là một trong những nghiên cứu quan sát lớn nhất từng được thực hiện, với kết quả từ 11 nguồn dữ liệu bao gồm hơn 250 triệu bệnh nhân và tiết lộ những khác biệt địa lý to lớn và sự không đồng nhất của bệnh nhân trong các lựa chọn điều trị mà trước đây chưa từng quan sát được. (Hripcsak et al., 2016) OHDSI đã phát triển các phương pháp thống kê mới để điều chỉnh sai lệch (Tian et al., 2018) và đánh giá tính hợp lệ của</p>
+<p><sup>2</sup><a href="https://github.com/OHDSI" class="uri">https://github.com/OHDSI</a></p>
+</blockquote>
+<ol start="5" type="1">
+<li><em>Hợp tác trong OHDSI 9</em></li>
+</ol>
+<blockquote class="blockquote">
+<p>bằng chứng quan sát cho suy luận nhân quả, (Schuemie et al., 2018a) và nó đã áp dụng các cách tiếp cận này trong nhiều bối cảnh, từ một câu hỏi giám sát an toàn cá nhân trong bệnh động kinh (Duke et al., 2017) đến hiệu quả so sánh của các thuốc tiểu đường dòng thứ hai (Vashisht et al., 2018) đến một nghiên cứu ước tính hiệu quả cấp độ quần thể quy mô lớn về an toàn so sánh của các phương pháp điều trị trầm cảm. (Schuemie et al., 2018b) Cộng đồng OHDSI cũng đã thiết lập một khung cho cách áp dụng có trách nhiệm các thuật toán học máy vào dữ liệu chăm sóc sức khỏe quan sát, (Reps et al., 2018) đã được áp dụng trên nhiều lĩnh vực trị liệu khác nhau. (Johnston et al., 2019; Cepeda et al., 2018; Reps et al., 2019)</p>
+</blockquote>
+</section>
+<section id="hợp-tác-trong-ohdsi" class="level2">
+<h2 class="anchored" data-anchor-id="hợp-tác-trong-ohdsi">Hợp tác trong OHDSI</h2>
+<blockquote class="blockquote">
+<p>Vì OHDSI là một cộng đồng nhằm trao quyền hợp tác để tạo ra bằng chứng, việc trở thành một cộng tác viên OHDSI có ý nghĩa gì? Nếu bạn là người tin vào sứ mệnh của OHDSI và quan tâm đến việc đóng góp ở bất kỳ đâu dọc theo hành trình từ dữ liệu đến bằng chứng, thì OHDSI có thể là cộng đồng dành cho bạn. Các cộng tác viên có thể là những cá nhân có quyền truy cập vào dữ liệu cấp độ bệnh nhân quan tâm đến việc thấy dữ liệu đó được sử dụng để tạo ra bằng chứng. Các cộng tác viên có thể là các nhà phương pháp luận quan tâm đến việc thiết lập các thực hành tốt nhất khoa học và đánh giá các cách tiếp cận thay thế. Các cộng tác viên có thể là các nhà phát triển phần mềm quan tâm đến việc áp dụng các kỹ năng lập trình của họ để tạo ra các công cụ có thể được phần còn lại của cộng đồng sử dụng. Các cộng tác viên có thể là các nhà nghiên cứu lâm sàng có các câu hỏi sức khỏe cộng đồng quan trọng và đang tìm cách cung cấp bằng chứng cho những câu hỏi đó cho cộng đồng chăm sóc sức khỏe rộng lớn hơn thông qua xuất bản và các hình thức phổ biến khác. Các cộng tác viên có thể là các cá nhân hoặc tổ chức tin tưởng vào mục tiêu chung này vì sức khỏe cộng đồng và muốn cung cấp các nguồn lực để đảm bảo rằng cộng đồng có thể duy trì chính mình và tiếp tục sứ mệnh của mình, bao gồm tổ chức các hoạt động cộng đồng và các buổi đào tạo trên khắp thế giới. Bất kể nền tảng kỷ luật hay sự liên kết với bên liên quan của bạn là gì, OHDSI tìm cách trở thành một nơi mà các cá nhân có thể làm việc cùng nhau hướng tới một mục đích chung, mỗi người thực hiện những đóng góp cá nhân của mình, cùng nhau có thể thúc đẩy chăm sóc sức khỏe. Nếu bạn quan tâm đến việc tham gia hành trình, hãy xem Chương 2 (“Nơi bắt đầu”) để biết cách bắt đầu.</p>
+</blockquote>
+</section>
+<section id="tóm-tắt" class="level2">
+<h2 class="anchored" data-anchor-id="tóm-tắt">Tóm tắt</h2>
+<p><img src="./Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image4.png" style="width:0.44552in;height:0.46448in"></p>
+<ul>
+<li><p>OHDSI’s mission is to improve health by empowering a community to col-laboratively generate the evidence that promotes better health decisions and better care.</p></li>
+<li><p>Our vision is a world in which observational research produces a comprehen-sive understanding of health and disease, which will be achieved through our objectives of innovation, reproducibility, community, collaboration, open-ness, and beneficence.</p></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>–</strong> OHDSI collaborators are focused on open-community data standards, methodological research, open-source analytics development, and clinical applications to improve the journey from data to evidence.</p>
+<p>Chương 2</p>
+</blockquote>
+
+
+<!-- -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Lời tựa &amp; Giới thiệu">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Lời tựa &amp; Giới thiệu</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./02_where_to_begin.html" class="pagination-link" aria-label="Chương 2: Nơi bắt đầu">
+        <span class="nav-page-text"><span class="chapter-title">Chương 2: Nơi bắt đầu</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Chương 1: Cộng đồng OHDSI"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># Chương 1: Cộng đồng OHDSI</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Phần I</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu"># Cộng đồng OHDSI</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 1</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Chương 1</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu"># Cộng đồng OHDSI</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Trưởng chương: Patrick Ryan &amp; George Hripcsak*</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Đến với nhau là một sự khởi đầu; giữ được nhau là sự tiến bộ; làm việc</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cùng nhau là thành công. Henry Ford</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hành trình từ dữ liệu đến bằng chứng</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Ở khắp mọi nơi trong lĩnh vực chăm sóc sức khỏe, trên toàn thế giới,</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; trong các trung tâm y tế học thuật và các phòng khám tư nhân, các cơ</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; quan quản lý và nhà sản xuất sản phẩm y tế, các công ty bảo hiểm và</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các trung tâm chính sách, và tại trung tâm của mọi tương tác giữa bệnh</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nhân và nhà cung cấp dịch vụ, có một thách thức chung: làm thế nào để</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chúng ta áp dụng những gì đã học từ quá khứ để đưa ra quyết định tốt</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hơn cho tương lai?</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Trong hơn một thập kỷ, nhiều người đã ủng hộ tầm nhìn về một hệ thống</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chăm sóc sức khỏe học tập, "được thiết kế để tạo ra và áp dụng bằng</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chứng tốt nhất cho các lựa chọn chăm sóc sức khỏe hợp tác của mỗi bệnh</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nhân và nhà cung cấp; để thúc đẩy quá trình khám phá như một kết quả</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tự nhiên của việc chăm sóc bệnh nhân; và để đảm bảo sự đổi mới, chất</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lượng, an toàn và giá trị trong chăm sóc sức khỏe". (Olsen et al.,</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 2007) Một thành phần chính của tham vọng này dựa trên triển vọng thú</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; vị rằng dữ liệu cấp độ bệnh nhân thu thập được trong quá trình chăm</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; sóc lâm sàng thường quy có thể được phân tích để tạo ra bằng chứng</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; thực tế, từ đó có thể được phổ biến khắp hệ thống chăm sóc sức khỏe để</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; thông tin cho thực hành lâm sàng. Năm 2007, Viện Y học Roundtable về Y</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; học dựa trên bằng chứng đã đưa ra một báo cáo thiết lập mục tiêu rằng</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Đến năm 2020, 90 phần trăm các quyết định lâm sàng sẽ được hỗ trợ bởi</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; thông tin lâm sàng chính xác, kịp thời và cập nhật, và sẽ phản ánh</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; bằng chứng tốt nhất hiện có." (Olsen et al., 2007) Mặc dù đã đạt được</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; những tiến bộ to lớn trên nhiều mặt trận khác nhau, chúng ta vẫn còn</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cách xa những khát vọng đáng khen ngợi này.</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Tại sao? Một phần là vì hành trình từ dữ liệu cấp độ bệnh nhân đến</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; bằng chứng đáng tin cậy là một hành trình gian nan. Không có con đường</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; duy nhất được xác định từ dữ liệu đến bằng chứng, và không có bản đồ</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; duy nhất nào có thể giúp điều hướng trên con đường đó. Trên thực tế,</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; không có khái niệm duy nhất về "dữ liệu", cũng như không có khái niệm</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; duy nhất về "bằng chứng".</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 3</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="al">![](/Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image2.jpeg)</span><span class="at">{width="5.485416666666667in"</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; height="3.617707786526684in"}</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Hình 1.1: Hành trình từ dữ liệu đến bằng chứng</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Có nhiều loại cơ sở dữ liệu quan sát khác nhau thu thập dữ liệu cấp độ</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; bệnh nhân khác biệt trong các hệ thống nguồn. Các cơ sở dữ liệu này đa</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; dạng như chính hệ thống chăm sóc sức khỏe, phản ánh các quần thể, môi</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; trường chăm sóc và quy trình thu thập dữ liệu khác nhau. Cũng có nhiều</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; loại bằng chứng có thể hữu ích để thông tin cho việc ra quyết định, có</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; thể được phân loại theo các trường hợp sử dụng phân tích về đặc điểm</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lâm sàng, ước tính hiệu quả cấp độ quần thể và dự đoán cấp độ bệnh</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nhân. Độc lập với nguồn gốc (dữ liệu nguồn) và đích đến mong muốn</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; (bằng chứng), thách thức còn trở nên phức tạp hơn bởi sự rộng lớn của</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các năng lực lâm sàng, khoa học và kỹ thuật cần thiết để thực hiện</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hành trình. Nó đòi hỏi sự hiểu biết thấu đáo về tin học y tế, bao gồm</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; toàn bộ nguồn gốc của dữ liệu nguồn từ điểm tương tác chăm sóc giữa</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; bệnh nhân và nhà cung cấp thông qua các hệ thống hành chính và lâm</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; sàng và vào kho lưu trữ cuối cùng, với sự đánh giá cao về những sai</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lệch có thể phát sinh như một phần của chính sách y tế và các động lực</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hành vi liên quan đến quy trình thu thập và quản lý dữ liệu. Nó đòi</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hỏi sự thông thạo các nguyên tắc dịch tễ học và phương pháp thống kê</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; để dịch một câu hỏi lâm sàng thành một thiết kế nghiên cứu quan sát</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; phù hợp để tạo ra câu trả lời thích hợp. Nó đòi hỏi khả năng kỹ thuật</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; để triển khai và thực hiện các thuật toán khoa học dữ liệu hiệu quả về</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; mặt tính toán trên các tập dữ liệu chứa hàng triệu bệnh nhân với hàng</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tỷ quan sát lâm sàng qua nhiều năm theo dõi dọc. Nó đòi hỏi kiến thức</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lâm sàng để tổng hợp những gì đã học được trên một mạng lưới dữ liệu</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; quan sát với bằng chứng từ các nguồn thông tin khác, và để xác định</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cách thức kiến thức mới này nên tác động đến chính sách y tế và thực</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hành lâm sàng. Theo đó, rất hiếm khi bất kỳ cá nhân nào sở hữu đủ các</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; kỹ năng và nguồn lực cần thiết để tự mình thực hiện thành công hành</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; trình từ dữ liệu đến bằng chứng. Thay vào đó, hành trình thường yêu-</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *1.2. Đối tác Kết quả Y tế Quan sát 5*</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cầu sự hợp tác giữa nhiều cá nhân và tổ chức để đảm bảo rằng dữ liệu</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tốt nhất hiện có được phân tích bằng các phương pháp phù hợp nhất để</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tạo ra bằng chứng mà tất cả các bên liên quan có thể tin tưởng và sử</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; dụng trong quy trình ra quyết định của họ.</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="fu">## Đối tác Kết quả Y tế Quan sát</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Một ví dụ đáng chú ý về sự hợp tác trong nghiên cứu quan sát là</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Observational Medical Outcomes Partnership (OMOP). OMOP là một quan hệ</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đối tác công-tư, do Cục Quản lý Thực phẩm và Dược phẩm Hoa Kỳ (FDA)</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chủ trì, được quản lý bởi Quỹ Viện Y tế Quốc gia và được tài trợ bởi</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; một tập đoàn các công ty dược phẩm hợp tác với các nhà nghiên cứu học</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; thuật và các đối tác dữ liệu y tế để thiết lập một chương trình nghiên</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cứu nhằm thúc đẩy khoa học về giám sát an toàn sản phẩm y tế chủ động</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; sử dụng dữ liệu chăm sóc sức khỏe quan sát. (Stang et al., 2010) OMOP</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đã thiết lập một cấu trúc quản trị đa bên và thiết kế một loạt các thí</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nghiệm phương pháp luận để thử nghiệm thực nghiệm hiệu suất của các</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; thiết kế dịch tễ học và phương pháp thống kê thay thế khi áp dụng cho</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; một loạt các cơ sở dữ liệu yêu cầu thanh toán hành chính và hồ sơ sức</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; khỏe điện tử cho nhiệm vụ xác định các liên kết an toàn thuốc thực sự</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; và phân biệt chúng với các kết quả dương tính giả.</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Nhận thức được những thách thức kỹ thuật trong việc thực hiện nghiên</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cứu trên các cơ sở dữ liệu quan sát khác biệt trong cả môi trường tập</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; trung và mạng lưới nghiên cứu phân tán, nhóm đã thiết kế Mô hình dữ</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; liệu chung OMOP (CDM) như một cơ chế để chuẩn hóa cấu trúc, nội dung</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; và ngữ nghĩa của dữ liệu quan sát và giúp việc viết mã phân tích thống</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; kê một lần có thể được tái sử dụng tại mỗi cơ sở dữ liệu. (Overhage et</span></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; al., 2012) Các thí nghiệm của OMOP đã chứng minh rằng có thể thiết lập</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; một mô hình dữ liệu chung và các từ vựng chuẩn hóa có thể chứa các</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; loại dữ liệu khác nhau từ các môi trường chăm sóc khác nhau và được</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đại diện bởi các từ vựng nguồn khác nhau theo cách có thể tạo điều</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; kiện cho sự hợp tác liên tổ chức và phân tích hiệu quả về mặt tính</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; toán.</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Ngay từ khi thành lập, OMOP đã áp dụng cách tiếp cận khoa học mở, đặt</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tất cả các sản phẩm công việc của mình, bao gồm thiết kế nghiên cứu,</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tiêu chuẩn dữ liệu, mã phân tích và kết quả thực nghiệm, vào phạm vi</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; công cộng để thúc đẩy tính minh bạch, xây dựng niềm tin vào nghiên cứu</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; mà OMOP đang thực hiện, nhưng cũng để cung cấp một nguồn lực cộng đồng</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; có thể được tái sử dụng để thúc đẩy các mục tiêu nghiên cứu của những</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; người khác. Mặc dù trọng tâm ban đầu của OMOP là an toàn thuốc, OMOP</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; CDM liên tục phát triển để hỗ trợ một tập hợp các trường hợp sử dụng</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; phân tích mở rộng, bao gồm hiệu quả so sánh của các can thiệp y tế và</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chính sách hệ thống y tế.</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Và trong khi OMOP thành công trong việc hoàn thành các thí nghiệm thực</span></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nghiệm quy mô lớn của mình, (Ryan et al., 2012, 2013b) phát triển các</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đổi mới phương pháp luận, (Schuemie et al., 2014) và tạo ra tri thức</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hữu ích đã thông tin cho việc sử dụng thích hợp dữ liệu quan sát để ra</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; quyết định an toàn, (Madigan et al., 2013b,a) di sản của OMOP có thể</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; được nhớ đến nhiều hơn vì việc áp dụng sớm các nguyên tắc khoa học mở</span></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; và sự kích thích thúc đẩy việc hình thành cộng đồng OHDSI.</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Khi dự án OMOP hoàn thành, sau khi hoàn thành nhiệm vụ thực hiện</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nghiên cứu phương pháp luận để thông tin cho các hoạt động giám sát</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chủ động của FDA, nhóm đã nhận ra</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; kết thúc của hành trình OMOP cần trở thành sự khởi đầu của một hành</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; trình mới cùng nhau. Mặc dù nghiên cứu phương pháp luận của OMOP cung</span></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cấp những hiểu biết hữu hình về các thực hành tốt nhất khoa học có thể</span></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chứng minh cải thiện chất lượng bằng chứng được tạo ra từ dữ liệu quan</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; sát, việc áp dụng các thực hành tốt nhất đó diễn ra chậm chạp. Một số</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; rào cản đã được xác định, bao gồm: 1) những lo ngại cơ bản về chất</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lượng dữ liệu quan sát được coi là ưu tiên cao hơn cần giải quyết</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; trước các đổi mới phân tích; 2) sự hiểu biết khái niệm không đầy đủ về</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các vấn đề và giải pháp phương pháp luận; 3) không có khả năng tự</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; triển khai các giải pháp trong môi trường địa phương của họ; 4) sự</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; không chắc chắn về việc liệu các phương pháp này có áp dụng được cho</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các vấn đề lâm sàng mà họ quan tâm hay không. Một chủ đề chung cho mọi</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; rào cản là cảm giác rằng một người đơn độc không có tất cả những gì họ</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cần để thực hiện thay đổi, nhưng với sự hỗ trợ hợp tác, tất cả các vấn</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đề đều có thể được vượt qua. Nhưng cần có một số lĩnh vực hợp tác:</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hợp tác trong việc thiết lập các tiêu chuẩn dữ liệu cộng đồng mở, các</span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>từ vựng chuẩn hóa và các quy ước ETL (Trích xuất - Chuyển đổi - Nạp)</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>sẽ tăng cường niềm tin vào chất lượng dữ liệu cơ bản và thúc đẩy tính</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>nhất quán trong cấu trúc, nội dung và ngữ nghĩa để cho phép phân tích</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>chuẩn hóa.</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hợp tác trong nghiên cứu phương pháp luận ngoài an toàn thuốc để thiết</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>lập các thực hành tốt nhất rộng rãi hơn cho đặc điểm lâm sàng, ước</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>tính hiệu quả cấp độ quần thể và dự đoán cấp độ bệnh nhân. Hợp tác</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>trong phát triển phân tích mã nguồn mở, để hệ thống hóa các thực hành</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>tốt nhất khoa học đã được chứng minh thông qua nghiên cứu phương pháp</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>luận và làm cho chúng có thể tiếp cận được dưới dạng các công cụ công</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>khai có thể dễ dàng được cộng đồng nghiên cứu áp dụng.</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Hợp tác trong các ứng dụng lâm sàng giải quyết các câu hỏi sức khỏe</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>quan trọng mà cộng đồng cùng quan tâm bằng cách cùng nhau điều hướng</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>hành trình từ dữ liệu đến bằng chứng.</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Từ cái nhìn sâu sắc này, OHDSI đã ra đời.</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a><span class="fu">## OHDSI như một cộng đồng hợp tác khoa học mở</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Observational Health Data Sciences and Informatics (OHDSI, phát âm là</span></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; "Odyssey") là một cộng đồng khoa học mở nhằm cải thiện sức khỏe bằng</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cách trao quyền cho cộng đồng cùng nhau tạo ra bằng chứng thúc đẩy các</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; quyết định sức khỏe tốt hơn và dịch vụ chăm sóc tốt hơn. (Hripcsak et</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; al., 2015) OHDSI thực hiện nghiên cứu phương pháp luận để thiết lập</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các thực hành tốt nhất khoa học cho việc sử dụng thích hợp dữ liệu sức</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; khỏe quan sát, phát triển phần mềm phân tích mã nguồn mở hệ thống hóa</span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các thực hành này thành các giải pháp nhất quán, minh bạch, có thể tái</span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lập và áp dụng các công cụ và thực hành này vào các câu hỏi lâm sàng</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; để tạo ra bằng chứng có thể hướng dẫn chính sách chăm sóc sức khỏe và</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chăm sóc bệnh nhân.</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="fu">### Sứ mệnh của chúng tôi</span></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Cải thiện sức khỏe bằng cách trao quyền cho một cộng đồng cùng nhau</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tạo ra bằng chứng thúc đẩy các quyết định sức khỏe tốt hơn và dịch vụ</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chăm sóc tốt hơn.</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>*Tiến độ của OHDSI 7*</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="fu">### Tầm nhìn của chúng tôi</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Một thế giới mà nghiên cứu quan sát tạo ra sự hiểu biết toàn diện về</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; sức khỏe và bệnh tật.</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a><span class="fu">### Mục tiêu của chúng tôi</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Đổi mới<span class="dv">&amp;#58;</span> Nghiên cứu quan sát là một lĩnh vực sẽ được hưởng lợi rất</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>nhiều từ tư duy đột phá. Chúng tôi tích cực tìm kiếm và khuyến khích</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>các cách tiếp cận phương pháp luận mới mẻ trong công việc của mình.**</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tính tái lập<span class="dv">&amp;#58;</span> Bằng chứng chính xác, có thể tái lập và được hiệu</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>chuẩn tốt là cần thiết cho việc cải thiện sức khỏe.**</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Cộng đồng<span class="dv">&amp;#58;</span> Mọi người đều được chào đón tham gia tích cực vào OHDSI,</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>cho dù bạn là bệnh nhân, chuyên gia y tế, nhà nghiên cứu hay bất kỳ ai</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>tin tưởng vào mục tiêu của chúng tôi.**</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Hợp tác<span class="dv">&amp;#58;</span> Chúng tôi làm việc tập thể để ưu tiên và giải quyết các nhu</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>cầu thực tế của những người tham gia cộng đồng của chúng tôi.**</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tính mở: Chúng tôi cố gắng làm cho tất cả các thành quả của cộng</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>đồng chúng tôi trở nên mở và công khai, bao gồm các phương pháp, công</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>cụ và bằng chứng mà chúng tôi tạo ra.**</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Tính nhân văn<span class="dv">&amp;#58;</span> Chúng tôi tìm cách bảo vệ quyền của các cá nhân và tổ</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>chức trong cộng đồng của mình mọi lúc.**</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tiến độ của OHDSI</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; OHDSI đã phát triển kể từ khi thành lập vào năm 2014 với hơn 2.500</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cộng tác viên trên các diễn đàn trực tuyến từ các bên liên quan khác</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nhau, bao gồm học viện, ngành công nghiệp sản phẩm y tế, cơ quan quản</span></span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lý, chính phủ, người trả tiền, nhà cung cấp công nghệ, hệ thống y tế,</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; bác sĩ lâm sàng, bệnh nhân và đại diện cho các ngành khác nhau, bao</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; gồm khoa học máy tính, dịch tễ học, thống kê, tin học y sinh, chính</span></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; sách y tế và khoa học lâm sàng. Danh sách các cộng tác viên OHDSI tự</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; xác định có sẵn trên trang web OHDSI. 1 Bản đồ cộng tác viên OHDSI</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; (Hình 1.2) làm nổi bật sự rộng lớn và đa dạng của cộng đồng quốc tế.</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Tính đến tháng 8 năm 2019, OHDSI cũng đã thiết lập một mạng lưới dữ</span></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; liệu gồm hơn 100 cơ sở dữ liệu chăm sóc sức khỏe khác nhau từ hơn 20</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; quốc gia, cùng nhau thu thập hơn một tỷ hồ sơ bệnh nhân bằng cách áp</span></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; dụng cách tiếp cận mạng lưới phân tán sử dụng tiêu chuẩn dữ liệu cộng</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đồng mở mà nó duy trì, OMOP CDM. Một mạng lưới phân tán có nghĩa là dữ</span></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; liệu cấp độ bệnh nhân không cần phải được chia sẻ giữa các cá nhân</span></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hoặc tổ chức. Thay vào đó, các câu hỏi nghiên cứu được đặt ra bởi các</span></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cá nhân trong cộng đồng dưới dạng một giao thức nghiên cứu và kèm theo</span></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; mã phân tích tạo ra bằng chứng dưới dạng một tập hợp các số liệu thống</span></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; kê tóm tắt tổng hợp, và chỉ những số liệu thống kê tóm tắt này mới</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; được chia sẻ giữa các đối tác</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; ^1^</span><span class="ot">&lt;https://www.ohdsi.org/who-we-are/collaborators/&gt;</span></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="al">![](/Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image3.jpeg)</span><span class="at">{width="5.34375in"</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; height="3.0625in"}</span></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Hình 1.2: Bản đồ cộng tác viên OHDSI tính đến tháng 8 năm 2019</span></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; lựa chọn hợp tác trong nghiên cứu. Với mạng lưới phân tán OHDSI, mỗi</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đối tác dữ liệu giữ toàn quyền tự chủ đối với việc sử dụng dữ liệu cấp</span></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; độ bệnh nhân của họ và tiếp tục tuân thủ các chính sách quản trị dữ</span></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; liệu trong các tổ chức tương ứng của họ.</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Cộng đồng nhà phát triển OHDSI đã tạo ra một thư viện mạnh mẽ các công</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cụ phân tích mã nguồn mở trên OMOP CDM để hỗ trợ 3 trường hợp sử</span></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; dụng: 1) đặc điểm lâm sàng cho lịch sử tự nhiên của bệnh, sử dụng điều</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; trị và cải thiện chất lượng; 2) ước tính hiệu quả cấp độ quần thể để</span></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; áp dụng các phương pháp suy luận nhân quả cho giám sát an toàn sản</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; phẩm y tế và hiệu quả so sánh; và 3) dự đoán cấp độ bệnh nhân để áp</span></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; dụng các thuật toán học máy cho y học chính xác và ngăn chặn bệnh tật.</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Các nhà phát triển OHDSI cũng đã phát triển các ứng dụng để hỗ trợ</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; việc áp dụng OMOP CDM, đánh giá chất lượng dữ liệu và tạo điều kiện</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cho các nghiên cứu mạng lưới OHDSI. Các công cụ này bao gồm các gói</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; thống kê phụ trợ được xây dựng bằng R và Python, và các ứng dụng web</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; giao diện người dùng được phát triển bằng HTML và Javascript. Tất cả</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các công cụ OHDSI đều là mã nguồn mở và công khai thông qua Github.2</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Cách tiếp cận cộng đồng khoa học mở của OHDSI, cùng với các công cụ mã</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nguồn mở của nó, đã cho phép những tiến bộ to lớn trong nghiên cứu</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; quan sát. Một trong những phân tích mạng lưới OHDSI đầu tiên đã kiểm</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tra các lộ trình điều trị trên ba bệnh mãn tính: tiểu đường, trầm cảm</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; và tăng huyết áp. Được xuất bản trong Kỷ yếu của Viện Hàn lâm Khoa học</span></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Quốc gia, đây là một trong những nghiên cứu quan sát lớn nhất từng</span></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; được thực hiện, với kết quả từ 11 nguồn dữ liệu bao gồm hơn 250 triệu</span></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; bệnh nhân và tiết lộ những khác biệt địa lý to lớn và sự không đồng</span></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nhất của bệnh nhân trong các lựa chọn điều trị mà trước đây chưa từng</span></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; quan sát được. (Hripcsak et al., 2016) OHDSI đã phát triển các phương</span></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; pháp thống kê mới để điều chỉnh sai lệch (Tian et al., 2018) và đánh</span></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; giá tính hợp lệ của</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; ^2^</span><span class="ot">&lt;https://github.com/OHDSI&gt;</span></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>*Hợp tác trong OHDSI 9*</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; bằng chứng quan sát cho suy luận nhân quả, (Schuemie et al., 2018a) và</span></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nó đã áp dụng các cách tiếp cận này trong nhiều bối cảnh, từ một câu</span></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hỏi giám sát an toàn cá nhân trong bệnh động kinh (Duke et al., 2017)</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đến hiệu quả so sánh của các thuốc tiểu đường dòng thứ hai (Vashisht</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; et al., 2018) đến một nghiên cứu ước tính hiệu quả cấp độ quần thể quy</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; mô lớn về an toàn so sánh của các phương pháp điều trị trầm cảm.</span></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; (Schuemie et al., 2018b) Cộng đồng OHDSI cũng đã thiết lập một khung</span></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; cho cách áp dụng có trách nhiệm các thuật toán học máy vào dữ liệu</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chăm sóc sức khỏe quan sát, (Reps et al., 2018) đã được áp dụng trên</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nhiều lĩnh vực trị liệu khác nhau. (Johnston et al., 2019; Cepeda et</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; al., 2018; Reps et al., 2019)</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="fu">## Hợp tác trong OHDSI</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Vì OHDSI là một cộng đồng nhằm trao quyền hợp tác để tạo ra bằng</span></span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chứng, việc trở thành một cộng tác viên OHDSI có ý nghĩa gì? Nếu bạn</span></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; là người tin vào sứ mệnh của OHDSI và quan tâm đến việc đóng góp ở bất</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; kỳ đâu dọc theo hành trình từ dữ liệu đến bằng chứng, thì OHDSI có thể</span></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; là cộng đồng dành cho bạn. Các cộng tác viên có thể là những cá nhân</span></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; có quyền truy cập vào dữ liệu cấp độ bệnh nhân quan tâm đến việc thấy</span></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; dữ liệu đó được sử dụng để tạo ra bằng chứng. Các cộng tác viên có thể</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; là các nhà phương pháp luận quan tâm đến việc thiết lập các thực hành</span></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tốt nhất khoa học và đánh giá các cách tiếp cận thay thế. Các cộng tác</span></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; viên có thể là các nhà phát triển phần mềm quan tâm đến việc áp dụng</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các kỹ năng lập trình của họ để tạo ra các công cụ có thể được phần</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; còn lại của cộng đồng sử dụng. Các cộng tác viên có thể là các nhà</span></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nghiên cứu lâm sàng có các câu hỏi sức khỏe cộng đồng quan trọng và</span></span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; đang tìm cách cung cấp bằng chứng cho những câu hỏi đó cho cộng đồng</span></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chăm sóc sức khỏe rộng lớn hơn thông qua xuất bản và các hình thức phổ</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; biến khác. Các cộng tác viên có thể là các cá nhân hoặc tổ chức tin</span></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tưởng vào mục tiêu chung này vì sức khỏe cộng đồng và muốn cung cấp</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các nguồn lực để đảm bảo rằng cộng đồng có thể duy trì chính mình và</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; tiếp tục sứ mệnh của mình, bao gồm tổ chức các hoạt động cộng đồng và</span></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; các buổi đào tạo trên khắp thế giới. Bất kể nền tảng kỷ luật hay sự</span></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; liên kết với bên liên quan của bạn là gì, OHDSI tìm cách trở thành một</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; nơi mà các cá nhân có thể làm việc cùng nhau hướng tới một mục đích</span></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; chung, mỗi người thực hiện những đóng góp cá nhân của mình, cùng nhau</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; có thể thúc đẩy chăm sóc sức khỏe. Nếu bạn quan tâm đến việc tham gia</span></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; hành trình, hãy xem Chương 2 ("Nơi bắt đầu") để biết cách bắt đầu.</span></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tóm tắt</span></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="al">![](/Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image4.png)</span>{width="0.4455205599300088in"</span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>height="0.4644783464566929in"}</span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>OHDSI's mission is to improve health by empowering a community to</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>col-laboratively generate the evidence that promotes better health</span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>decisions and better care.</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Our vision is a world in which observational research produces a</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>comprehen-sive understanding of health and disease, which will be</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>achieved through our objectives of innovation, reproducibility,</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>community, collaboration, open-ness, and beneficence.</span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **--** OHDSI collaborators are focused on open-community data</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; standards, methodological research, open-source analytics development,</span></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; and clinical applications to improve the journey from data to</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; evidence.</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Chương 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Sách OHDSI (The Book of OHDSI - Bản tiếng Việt)</p>
+</div>   
+    <div class="nav-footer-center">
+<p>OHDSI Vietnam Chapter</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Thanh-Phuc/the-book-of-ohdsi-vi/edit/main/01_community.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Thanh-Phuc/the-book-of-ohdsi-vi/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Quarto Book</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

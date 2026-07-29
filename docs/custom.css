@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.75;
+  color: #1e293b;
+}
+
+h1, h2, h3, h4, h5, h6, .sidebar-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+code, pre {
+  font-family: 'Fira Code', monospace;
+}
+
+.medical-box {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 5px solid #0f4c81;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+.checklist-box {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-left: 5px solid #0284c7;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+.formula-box {
+  background: #fefce8;
+  border: 1px solid #fef08a;
+  border-left: 5px solid #eab308;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+.concept-box {
+  background: #f3e8ff;
+  border: 1px solid #d8b4fe;
+  border-left: 5px solid #9333ea;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+.note-box {
+  background: #fdf2f8;
+  border: 1px solid #fbcfe8;
+  border-left: 5px solid #db2777;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 24px 0;
+}
+
+/* Image adjustments */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 16px 0;
+}

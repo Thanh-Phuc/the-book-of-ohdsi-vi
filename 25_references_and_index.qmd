@@ -1,0 +1,1096 @@
+---
+title: "Thư mục tài liệu tham khảo & Chỉ mục"
+---
+
+# Thư mục tài liệu tham khảo & Chỉ mục
+
+# Thư mục tài liệu tham khảo
+
+> Allison, D. B., Brown, A. W., George, B. J., và Kaiser, K. A. (2016).
+> Khả năng tái lập: Một bi kịch của những sai lầm. Nature,
+> 530(7588):27--29.
+>
+> Arnold, B. F., Ercumen, A., Benjamin-Chung, J., và Colford, J. M.
+> (2016). Báo cáo ngắn: Kiểm soát tiêu cực để phát hiện sai lệch lựa
+> chọn và sai lệch đo lường trong các nghiên cứu dịch tễ học.
+> Epidemiology, 27(5):637--641.
+>
+> Austin, P. C. (2011). Độ rộng caliper tối ưu cho khớp điểm xu hướng
+> khi ước tính sự khác biệt về giá trị trung bình và sự khác biệt về tỷ
+> lệ trong các nghiên cứu quan sát. Pharmaceutical statistics,
+> 10(2):150--161.
+>
+> Banda, J. M., Halpern, Y., Sontag, D., và Shah, N. H. (2017). Định
+> kiểu hình điện tử với APHRODITE và mạng lưới dữ liệu Khoa học và Tin
+> học Y tế Quan sát (OHDSI). AMIA Jt Summits Transl Sci Proc,
+> 2017:48--57.
+
+Boland, M. R., Parhi, P., Li, L., Miotto, R., Carroll, R., Iqbal, U.,
+Nguyễn, P. A., Schuemie,
+
+M., Bạn, S. C., Smith, D., Mooney, S., Ryan, P., Li, Y. J., Park, R. W.,
+Denny, J., Dudley,
+
+> J. T., Hripcsak, G., Gentine, P., và Tatonetti, N. P. (2017). Khám phá
+> các yếu tố tiếp xúc chịu trách nhiệm cho các hiệu ứng mùa sinh - bệnh
+> tật: một nghiên cứu toàn cầu. J Am Med Inform Assoc.
+>
+> Botsis, T., Hartvigsen, G., Chen, F., và Weng, C. (2010). Sử dụng thứ
+> cấp hồ sơ sức khỏe điện tử: các vấn đề về chất lượng dữ liệu và cơ hội
+> tin học. Summit on Translational Bioinformatics, 2010:1.
+>
+> Byrd, J. B., Adam, A., và Brown, N. J. (2006). Phù mạch liên quan đến
+> thuốc ức chế men chuyển angiotensin. Immunol Allergy Clin North Am,
+> 26(4):725--737.
+>
+> Callahan, T. J., Bauck, A. E., Bertoch, D., Brown, J., Khare, R.,
+> Ryan, P. B., Staab, J., Zozus, M. N., và Kahn, M. G. (2017). So sánh
+> các kiểm tra đánh giá chất lượng dữ liệu trong sáu mạng lưới chia sẻ
+> dữ liệu. eGEMs, 5(1).
+>
+> Cepeda, M. S., Reps, J., Fife, D., Blacketer, C., Stang, P., và Ryan,
+> P. (2018). Tìm kiếm trầm cảm kháng điều trị trong dữ liệu thực tế:
+> Cách tiếp cận dựa trên dữ liệu so sánh với các phương pháp heuristic
+> dựa trên chuyên gia như thế nào. Depress Anxiety, 35(3):220--228.
+>
+> Chen, X., Dallmeier-Tiessen, S., Dassler, R., Feger, S., Fokianos, P.,
+> Gonzalez, J. B., Hir-vonzalo, H., Kousidis, D., Lavasa, A., Mele, S.,
+> Rodriguez, D. R., Shimko, T., Smith, T., T. Vic, T., T. Vicska, A., T.
+> A., Tsanaktsidis, I., Zimmermann, M., Cranmer, K., Heinrich,
+>
+> 439
+>
+> L., Watts, G., Hildreth, M., Iglesias, L. L., Lassila-Perini, K., và
+> Neubert, S. (2018). Mở là không đủ. Nature Physics, 15(2):113--119.
+>
+> Cicardi, M., Zingale, L. C., Bergamaschini, L., và Agostoni, A.
+> (2004). Phù mạch liên quan đến việc sử dụng thuốc ức chế men chuyển
+> angiotensin: kết quả sau khi chuyển sang phương pháp điều trị khác.
+> Arch. Intern. Med., 164(8):910--913.
+>
+> Dasu, T. và Johnson, T. (2003). Khai phá dữ liệu khám phá và làm sạch
+> dữ liệu, tập
+>
+> 479\. John Wiley & Sons.
+>
+> Defalco, F. J., Ryan, P. B., và Soledad Cepeda, M. (2013). Áp dụng các
+> thuật ngữ thuốc chuẩn hóa cho các cơ sở dữ liệu chăm sóc sức khỏe quan
+> sát: một nghiên cứu trường hợp về tiếp xúc opioid. Health Serv
+> Outcomes Res Methodol, 13(1):58--67.
+>
+> DerSimonian, R. và Laird, N. (1986). Phân tích tổng hợp trong các thử
+> nghiệm lâm sàng. Control Clin Trials, 7(3):177--188.
+>
+> Duke, J. D., Ryan, P. B., Suchard, M. A., Hripcsak, G., Jin, P.,
+> Reich, C., Schwalm, M. S.,
+>
+> Khoma, Y., Wu, Y., Xu, H., Shah, N. H., Banda, J. M., và Schuemie, M.
+> J. (2017). Nguy cơ phù mạch liên quan đến levetiracetam so với
+> phenytoin: Kết quả từ mạng lưới nghiên cứu khoa học và tin học dữ liệu
+> y tế quan sát. Epilepsia, 58(8):e101--e106.
+>
+> Farrington, C. P. (1995). Ước tính tỷ lệ mắc tương đối từ chuỗi trường
+> hợp để đánh giá an toàn vắc-xin. Biometrics, 51(1):228--235.
+>
+> Farrington, C. P., Anaya-Izquierdo, K., Whitaker, H. J., Hocine, M.
+> N., Douglas, I., và Smeeth, L. (2011). Phân tích chuỗi trường hợp tự
+> kiểm soát với các khoảng thời gian quan sát phụ thuộc vào sự kiện.
+> Journal of the American Statistical Association, 106(494):417--426.
+>
+> Fuller, W. A. (2009). Các mô hình sai số đo lường, tập 305. John Wiley
+> & Sons.
+>
+> Garza, M., Del Fiol, G., Tenenbaum, J., Walden, A., và Zozus, M. N.
+> (2016). Đánh giá các mô hình dữ liệu chung để sử dụng với một sổ đăng
+> ký cộng đồng dọc. J Biomed Inform, 64:333--341.
+>
+> Hernan, M. A., Hernandez-Diaz, S., Werler, M. M., và Mitchell, A. A.
+> (2002). Kiến thức nhân quả như một điều kiện tiên quyết để đánh giá sự
+> gây nhiễu: một ứng dụng cho dịch tễ học dị tật bẩm sinh. Am. J.
+> Epidemiol., 155(2):176--184.
+>
+> Hernan, M. A. và Robins, J. M. (2016). Sử dụng dữ liệu lớn để mô phỏng
+> một thử nghiệm mục tiêu khi không có thử nghiệm ngẫu nhiên. Am. J.
+> Epidemiol., 183(8):758--764.
+>
+> Hersh, W. R., Weiner, M. G., Embi, P. J., Logan, J. R., Payne, P. R.,
+> Bernstam, E. V., Lehmann, H. P., Hripcsak, G., Hartzog, T. H., Cimino,
+> J. J., et al. (2013). Các lưu ý đối với việc sử dụng dữ liệu hồ sơ sức
+> khỏe điện tử hoạt động trong nghiên cứu hiệu quả so sánh. Medical
+> care, 51(8 0 3):S30.
+>
+> Higgins, J. P., Thompson, S. G., Deeks, J. J., và Altman, D. G.
+> (2003). Đo lường sự không nhất quán trong các phân tích tổng hợp. BMJ,
+> 327(7414):557--560.
+>
+> Hill, A. B. (1965). MÔI TRƯỜNG VÀ BỆNH TẬT: LIÊN KẾT HAY NGUYÊN NHÂN?
+> Proc. R. Soc. Med., 58:295--300.
+>
+> Hripcsak, G. và Albers, D. J. (2017). Kiểu hình độ trung thực cao: sự
+> phong phú và không bị thiên lệch. J Am Med Inform Assoc.
+>
+> Hripcsak, G., Duke, J. D., Shah, N. H., Reich, C. G., Huser, V.,
+> Schuemie, M. J., Suchard,
+>
+> M. A., Park, R. W., Wong, I. C. K., Rijnbeek, P. R., van der Lei, J.,
+> Pratt, N., Norén,
+>
+> G. N., Li, Y.-C., Stang, P. E., Madigan, D., và Ryan, P. B. (2015).
+> Khoa học và Tin học Dữ liệu Y tế Quan sát (OHDSI): Cơ hội cho các nhà
+> nghiên cứu quan sát. Studies in health technology and informatics,
+> 216:574--578.
+>
+> Hripcsak, G., Levine, M. E., Shang, N., và Ryan, P. B. (2018). Ảnh
+> hưởng của việc ánh xạ từ vựng cho các tình trạng bệnh lý đối với các
+> nhóm thuần tập kiểu hình. J Am Med Inform Assoc, 25(12):1618--1625.
+>
+> Hripcsak, G., Ryan, P. B., Duke, J. D., Shah, N. H., Park, R. W.,
+> Huser, V., Suchard, M. A., Schuemie, M. J., DeFalco, F. J., Perotte,
+> A., Banda, J. M., Reich, C. G., Schilling,
+>
+> L. M., Matheny, M. E., Meeker, D., Pratt, N. và Madigan, D. (2016). Mô
+> tả các lộ trình điều trị ở quy mô lớn bằng cách sử dụng mạng OHDSI. Kỷ
+> yếu của Viện Hàn lâm Khoa học Quốc gia, 113(27):7329--7336.
+>
+> Hripcsak, G., Shang, N., Peissig, P. L., Rasmussen, L. V., Liu, C.,
+> Benoit, B., Carroll,
+>
+> R. J., Carrell, D. S., Denny, J. C., Dikilitas, O., Gainer, V. S.,
+> Marie Howell, K., Klann,
+>
+> J. G., Kullo, I. J., Lingren, T., Mentch, F. D., Murphy, S. N.,
+> Natarajan, K., Pacheco,
+>
+> J. A., Wei, W. Q., Wiley, K., và Weng, C. (2019). Tạo điều kiện chuyển
+> giao kiểu hình bằng mô hình dữ liệu chung. J Biomed Inform, trang
+> 103253.
+>
+> Huser, V., DeFalco, F. J., Schuemie, M., Ryan, P. B., Shang, N.,
+> Velez, M., Park, R. W., Boyce, R. D., Duke, J., Khare, R., Utidjian,
+> L., và Bailey, C. (2016). Đánh giá đa địa điểm về công cụ chất lượng
+> dữ liệu cho các tập dữ liệu lâm sàng cấp độ bệnh nhân. EGEMS
+> (Washington, DC), 4(1):1239.
+>
+> Huser, V., Kahn, M. G., Brown, J. S., và Gouripeddi, R. (2018). Các
+> phương pháp kiểm tra chất lượng dữ liệu trong các kho lưu trữ dữ liệu
+> tích hợp chăm sóc sức khỏe. Pacific Symposium on Biocomputing,
+> 23:628--633.
+>
+> Johnston, S. S., Morton, J. M., Kalsekar, I., Ammann, E. M., Hsiao, C.
+> W., và Reps, J. (2019). Sử dụng học máy áp dụng cho dữ liệu chăm sóc
+> sức khỏe thực tế để phân tích dự đoán: Một ví dụ áp dụng trong phẫu
+> thuật giảm béo. Value Health, 22(5):580--586.
+>
+> Kahn, M. G., Brown, J. S., Chun, A. T., Davidson, B. N., Meeker, D.,
+> Ryan, P. B., Schilling, L. M., Weiskopf, N. G., Williams, A. E., và
+> Zozus, M. N. (2015). Báo cáo minh bạch về chất lượng dữ liệu trong các
+> mạng lưới dữ liệu phân tán. EGEMS (Washington, DC), 3(1):1052.
+
+Kahn, M. G., Callahan, T. J., Barnard, J., Bauck, A. E., Brown, J.,
+Davidson, B. N., Esteri,
+
+H., Goerg, C., Holve, E., Johnson, S. G., Liaw, S.-T., Hamilton-Lopez,
+M., Meeker,
+
+D., Ong, T. C., Ryan, P. B., Shang, N., Weiskopf, N. G., Weng, C.,
+Zozus, M. N., và
+
+> Schilling, L. (2016). Thuật ngữ và khung đánh giá chất lượng dữ liệu
+> hài hòa cho việc sử dụng thứ cấp dữ liệu hồ sơ sức khỏe điện tử. EGEMS
+> (Washington, DC), 4(1):1244.
+>
+> Kahn, M. G., Raebel, M. A., Glanz, J. M., Riedlinger, K., và Steiner,
+> J. F. (2012). Một khuôn khổ thực dụng để đánh giá chất lượng dữ liệu
+> tại một cơ sở và đa cơ sở trong nghiên cứu lâm sàng dựa trên hồ sơ sức
+> khỏe điện tử. Medical care, 50.
+>
+> Liaw, S.-T., Rahimi, A., Ray, P., Taggart, J., Dennis, S., de
+> Lusignan, S., Jalaludin, B., Yeo, A., và Talaei-Khoei, A. (2013).
+> Hướng tới một hệ thống phân loại cho chất lượng dữ liệu trong quản lý
+> bệnh mãn tính tích hợp: một đánh giá thực tế về tài liệu.
+> International journal of medical informatics, 82(1):10--24.
+>
+> Lipsitch, M., Tchetgen Tchetgen, E., và Cohen, T. (2010). Đối chứng âm
+> tính: một công cụ để phát hiện nhiễu và sai lệch trong các nghiên cứu
+> quan sát. Epidemiology, 21(3):383--388.
+>
+> Maclure, M. (1991). Thiết kế case-crossover: một phương pháp nghiên
+> cứu các tác động tạm thời lên nguy cơ của các biến cố cấp tính. Am. J.
+> Epidemiol., 133(2):144--153.
+>
+> Madigan, D., Ryan, P. B., và Schuemie, M. (2013a). Thiết kế có quan
+> trọng không? Đánh giá hệ thống về tác động của các lựa chọn phân tích
+> đối với ước tính hiệu quả trong các nghiên cứu quan sát. Ther Adv Drug
+> Saf, 4(2):53--62.
+>
+> Madigan, D., Ryan, P. B., Schuemie, M., Stang, P. E., Overhage, J. M.,
+> Hartzema, A. G., Suchard, M. A., DuMouchel, W., và Berlin, J. A.
+> (2013b). Đánh giá tác động của sự không đồng nhất của cơ sở dữ liệu
+> đối với kết quả nghiên cứu quan sát. Am. J. Epidemiol.,
+> 178(4):645--651.
+>
+> Magid, D. J., Shetterly, S. M., Margolis, K. L., Tavel, H. M.,
+> O'Connor, P. J., Selby, J. V., và Ho, P. M. (2010). Hiệu quả so sánh
+> của các thuốc ức chế men chuyển angiotensin so với thuốc chẹn beta như
+> liệu pháp hàng thứ hai cho bệnh tăng huyết áp. Circ Cardiovasc Qual
+> Outcomes, 3(5):453--458.
+>
+> Makadia, R. và Ryan, P. B. (2014). Chuyển đổi Cơ sở dữ liệu Bệnh viện
+> Premier Perspective sang Mô hình dữ liệu chung (CDM) của Đối tác Kết
+> quả Y tế Quan sát (OMOP). EGEMS (Wash DC), 2(1):1110.
+>
+> Martin, R. C. (2008). Clean Code: Sổ tay về Kỹ thuật Phần mềm Agile.
+> Prentice Hall PTR, Upper Saddle River, NJ, Hoa Kỳ, ấn bản lần thứ 1.
+>
+> Matcho, A., Ryan, P., Fife, D., và Reich, C. (2014). Đánh giá độ trung
+> thực của việc chuyển đổi dữ liệu nghiên cứu thực hành lâm sàng sang mô
+> hình dữ liệu chung OMOP. Drug Saf, 37(11):945--959.
+>
+> Noren, G. N., Caster, O., Juhlin, K., và Lindquist, M. (2014). Vườn
+> thú hay thảo nguyên? Lựa chọn môi trường đào tạo cho dược cảnh giác
+> dựa trên bằng chứng. Drug Saf, 37(9):655--659.
+>
+> Norman, J. L., Holmes, W. L., Bell, W. A., và Finks, S. W. (2013). Đe
+> dọa tính mạng
+>
+> phù mạch do thuốc ức chế ACE sau mười một năm dùng lisinopril. J Pharm
+> Pract, 26(4):382--388.
+>
+> Oliveira, J. L., Trifan, A., và Silva, L. A. B. (2019). Danh mục EMIF:
+> Một nền tảng hợp tác để chia sẻ và tái sử dụng dữ liệu y sinh.
+> International Journal of Medical Informatics, 126:35--45.
+>
+> Olsen, L., Aisner, D., McGinnis, J. M., và cộng sự (2007). Hệ thống
+> chăm sóc sức khỏe học tập: tóm tắt hội thảo. Natl Academy Pr.
+>
+> O'Mara, N. B. và O'Mara, E. M. (1996). Khởi phát phù mạch chậm với
+> thuốc ức chế men chuyển angiotensin: báo cáo ca bệnh và tổng quan tài
+> liệu. Pharmacotherapy, 16(4):675--679.
+>
+> Overhage, J. M., Ryan, P. B., Reich, C. G., Hartzema, A. G., và Stang,
+> P. E. (2012). Xác thực mô hình dữ liệu chung cho nghiên cứu giám sát
+> an toàn chủ động. J Am Med Inform Assoc, 19(1):54--60.
+>
+> Perkins, N. J., Cole, S. R., Harel, O., Tchetgen Tchetgen, E. J., Sun,
+> B., Mitchell, E. M., và Schisterman, E. F. (2017). Các phương pháp
+> tiếp cận nguyên tắc đối với dữ liệu thiếu trong các nghiên cứu dịch tễ
+> học. American journal of epidemiology, 187(3):568--575.
+>
+> Powers, B. J., Coeytaux, R. R., Dolor, R. J., Hasselblad, V., Patel,
+> U. D., Yancy, W. S., Gray, R. N., Irvine, R. J., Kendrick, A. S., và
+> Sanders, G. D. (2012). Báo cáo cập nhật về hiệu quả so sánh của thuốc
+> ức chế ACE, ARB và thuốc ức chế renin trực tiếp cho bệnh nhân tăng
+> huyết áp thiết yếu: nhiều dữ liệu hơn, ít thông tin mới. J Gen Intern
+> Med, 27(6):716--729.
+>
+> Prasad, V. và Jena, A. B. (2013). Các điểm cuối làm giả được xác định
+> trước: liệu chúng có thể xác thực các mối liên hệ quan sát thực sự
+> không? JAMA, 309(3):241--242.
+>
+> Ramcharran, D., Qiu, H., Schuemie, M. J., và Ryan, P. B. (2017). Thuốc
+> chống loạn thần không điển hình và Nguy cơ Ngã và Gãy xương ở Người
+> cao tuổi: Phân tích mô phỏng và Đánh giá các Chiến lược Kiểm soát
+> Nhiễu bổ sung. J Clin Psychopharmacol, 37(2):162--168.
+>
+> Rassen, J. A., Shelat, A. A., Myers, J., Glynn, R. J., Rothman, K. J.,
+> and Schneeweiss, S. (2012). Ghép điểm xu hướng một-nhiều trong các
+> nghiên cứu đoàn hệ. Pharmacoepidemiol Drug Saf, 21 Suppl 2:69--80.
+>
+> Reps, J. M., Rijnbeek, P. R., và Ryan, P. B. (2019). Xác định NGƯỜI
+> CHẾT: Phát triển và Xác thực Mô hình cấp độ bệnh nhân để Dự đoán Tình
+> trạng Tử vong trong Dữ liệu yêu cầu thanh toán cấp độ quần thể. Drug
+> Saf.
+>
+> Reps, J. M., Schuemie, M. J., Suchard, M. A., Ryan, P. B., và
+> Rijnbeek, P. R. (2018). Thiết kế và triển khai một khuôn khổ chuẩn hóa
+> để tạo và đánh giá các mô hình dự đoán cấp độ bệnh nhân sử dụng dữ
+> liệu chăm sóc sức khỏe quan sát. Journal of the American Medical
+> Informatics Association, 25(8):969--975.
+>
+> Roebuck, K. (2012). Chất lượng dữ liệu: các chiến lược tác động
+> cao-những gì bạn cần biết: định nghĩa, áp dụng, tác động, lợi ích, sự
+> trưởng thành, nhà cung cấp. Emereo Publishing.
+>
+> Rosenbaum, P. (2005). Phân tích độ nhạy trong các nghiên cứu quan sát.
+> American Cancer Society.
+>
+> Rosenbaum, P. và Rubin, D. (1983). Vai trò trung tâm của điểm xu hướng
+> trong các nghiên cứu quan sát đối với các hiệu ứng nhân quả.
+> Biometrika, 70:41--55.
+>
+> Rubbo, B., Fitzpatrick, N. K., Denaxas, S., Daskalopoulou, M., Yu, N.,
+> Patel, R. S., Hemingway, H., Danesh, J., Allen, N., Atkinson, M.,
+> Blaveri, E., Brannan, R., Brayne, C., Brophy, S., Chaturvedi, N.,
+> Collins, R., deLusignan, S., Denaxas, S., Desai, P., Eastwood, S.,
+> Gallacher, J., Hemingway, H., Hotopf, M., Landray, M., Lyons, R.,
+> O'Neil, T., Pringle, M., Sprosen, T., Strachan, D., Sudlow, C.,
+> Sullivan, F., Zhang, Q., và Flaig, R. (2015). Sử dụng hồ sơ sức khỏe
+> điện tử để xác định, xác thực và kiểu hình nhồi máu cơ tim cấp tính:
+> Một đánh giá hệ thống và các khuyến nghị. Int. J. Cardiol.,
+> 187:705--711.
+>
+> Rubin, D. B. (2001). Sử dụng điểm xu hướng để hỗ trợ thiết kế các
+> nghiên cứu quan sát: ứng dụng vào các vụ kiện về thuốc lá. Health
+> Services and Outcomes Research Methodology, 2(3-4):169--188.
+>
+> Ryan, P. B., Buse, J. B., Schuemie, M. J., DeFalco, F., Yuan, Z.,
+> Stang, P. E., Berlin,
+>
+> J. A., và Rosenthal, N. (2018). Hiệu quả so sánh của canagliflozin,
+> thuốc ức chế SGLT2 và thuốc không ức chế SGLT2 đối với nguy cơ nhập
+> viện vì suy tim và cắt cụt chi ở bệnh nhân đái tháo đường loại 2: Một
+> phân tích tổng hợp thế giới thực từ 4 cơ sở dữ liệu quan sát
+> (OBSERVE-4D). Diabetes Obes Metab, 20(11):2585--2597.
+>
+> Ryan, P. B., Madigan, D., Stang, P. E., Overhage, J. M., Racoosin, J.
+> A., và Hartzema, 2010.
+>
+> A. G. (2012). Đánh giá thực nghiệm các phương pháp xác định nguy cơ
+> trong dữ liệu chăm sóc sức khỏe: kết quả từ các thí nghiệm của Đối tác
+> Kết quả Y tế Quan sát. Stat Med, 31(30):4401--4415.
+>
+> Ryan, P. B., Schuemie, M. J., và Madigan, D. (2013a). Hiệu suất thực
+> nghiệm của phương pháp nhóm thuần tập tự kiểm soát: bài học cho việc
+> phát triển hệ thống xác định và phân tích nguy cơ. Drug Saf, 36 Suppl
+> 1:95--106.
+>
+> Ryan, P. B., Schuemie, M. J., Ramcharran, D., và Stang, P. E. (2017).
+> Thuốc chống loạn thần không điển hình và Nguy cơ Tổn thương thận cấp
+> tính và các Kết quả liên quan ở Người cao tuổi: Phân tích tái lập và
+> Đánh giá các Chiến lược Kiểm soát Nhiễu thích ứng. Drugs Aging,
+> 34(3):211--219.
+>
+> Ryan, P. B., Stang, P. E., Overhage, J. M., Suchard, M. A., Hartzema,
+> A. G., DuMouchel, W., Reich, C. G., Schuemie, M. J., và Madigan, D.
+> (2013b). So sánh hiệu suất thực nghiệm của các phương pháp cho hệ
+> thống xác định nguy cơ. Drug Saf, 36 Suppl 1:S143--158.
+>
+> Sabroe, R. A. và Black, A. K. (1997). Thuốc ức chế men chuyển
+> angiotensin (ACE) và phù mạch. Br. J. Dermatol., 136(2):153--158.
+>
+> Schneeweiss, S. (2018). Phân tích thích ứng dữ liệu tự động cho dữ
+> liệu chăm sóc sức khỏe điện tử để nghiên cứu các tác động điều trị
+> nhân quả. Clin Epidemiol, 10:771--788.
+>
+> Schuemie, M. J., Hripcsak, G., Ryan, P. B., Madigan, D., và Suchard,
+> M. A. (2016). Hiệu chuẩn thực nghiệm mạnh mẽ của các giá trị p sử dụng
+> dữ liệu quan sát. Stat Med, 35(22):3883--3888.
+>
+> Schuemie, M. J., Hripcsak, G., Ryan, P. B., Madigan, D., và Suchard,
+> M. A. (2018a). Hiệu chuẩn khoảng tin cậy thực nghiệm cho các nghiên
+> cứu ước tính hiệu quả cấp độ quần thể trong dữ liệu chăm sóc sức khỏe
+> quan sát. Proc. Natl. Acad. Sci. U.S.A., 115(11):2571--2577.
+>
+> Schuemie, M. J., Ryan, P. B., DuMouchel, W., Suchard, M. A., và
+> Madigan, D. (2014). Giải thích các nghiên cứu quan sát: tại sao cần
+> hiệu chuẩn thực nghiệm để sửa các giá trị p. Stat Med, 33(2):209--218.
+>
+> Schuemie, M. J., Ryan, P. B., Hripcsak, G., Madigan, D., và Suchard,
+> M. A. (2018b). Cải thiện khả năng tái lập bằng cách sử dụng các nghiên
+> cứu quan sát thông lượng cao với hiệu chuẩn thực nghiệm. Philos Trans
+> A Math Phys Eng Sci, 376(2128).
+>
+> Sherman, R. E., Anderson, S. A., Dal Pan, G. J., Gray, G. W., Gross,
+> T., Hunter, N. L., LaVange, L., Marinac-Dabic, D., Marks, P. W., Robb,
+> M. A., và cộng sự (2016). Bằng chứng thực tế---nó là gì và nó có thể
+> cho chúng ta biết điều gì. N Engl J Med, 375(23):2293--2297.
+>
+> Simpson, S. E., Madigan, D., Zorych, I., Schuemie, M. J., Ryan, P. B.,
+> và Suchard, M. A. (2013). Nhiều chuỗi ca bệnh tự kiểm soát cho các cơ
+> sở dữ liệu quan sát dọc quy mô lớn. Biometrics, 69(4):893--902.
+>
+> Slater, E. E., Merrill, D. D., Guess, H. A., Roylance, P. J., Cooper,
+> W. D., Inman, W. H. W., và Ewan, P. W. (1988). Hồ sơ lâm sàng của Phù
+> mạch liên quan đến Ức chế men chuyển Angiotensin. JAMA,
+> 260(7):967--970.
+>
+> Stang, P. E., Ryan, P. B., Racoosin, J. A., Overhage, J. M., Hartzema,
+> A. G., Reich, C., Welebob, E., Scarnecchia, T., và Woodcock, J.
+> (2010). Thúc đẩy khoa học cho giám sát chủ động: cơ sở lý luận và
+> thiết kế cho Đối tác Kết quả Y tế Quan sát. Ann. Intern. Med.,
+> 153(9):600--606.
+>
+> Suchard, M. A., Simpson, S. E., Zorych, I., Ryan, P. B., và Madigan,
+> D. (2013). Song song hóa hàng loạt các thuật toán suy luận nối tiếp
+> cho một mô hình tuyến tính tổng quát phức tạp. ACM Trans. Model.
+> Comput. Simul., 23(1):10:1--10:17.
+>
+> Suissa, S. (1995). Thiết kế đối chứng theo thời gian ca bệnh.
+> Epidemiology, 6(3):248--253.
+>
+> Swerdel, J. N., Hripcsak, G., và Ryan, P. B. (2019). PheValuator: Phát
+> triển và Đánh giá Công cụ đánh giá thuật toán kiểu hình. J Biomed
+> Inform, trang 103258.
+>
+> Thompson, T. và Frable, M. A. (1993). Phù mạch đe dọa tính mạng do
+> thuốc được xem xét lại. Laryngoscope, 103(1 Pt 1):10--12.
+>
+> Tian, Y., Schuemie, M. J., và Suchard, M. A. (2018). Đánh giá hiệu
+> suất điểm xu hướng quy mô lớn thông qua các thí nghiệm dữ liệu thực tế
+> và tổng hợp. Int J Epidemiol, 47(6):2005--2014.
+>
+> Toh, S., Reichman, M. E., Houstoun, M., Ross Southworth, M., Ding, X.,
+> Hernandez,
+>
+> A. F., Levenson, M., Li, L., McCloskey, C., Shoaibi, A., Wu, E.,
+> Zornberg, G., và Hennessy, S. (2012). Nguy cơ so sánh đối với phù mạch
+> liên quan đến việc sử dụng các thuốc nhắm vào hệ
+> renin-angiotensin-aldosterone. Arch. Intern. Med., 172(20):1582--1589.
+>
+> van der Lei, J. (1991). Sử dụng và lạm dụng hồ sơ y tế lưu trữ bằng
+> máy tính. Methods of information in medicine, 30(02):79--80.
+>
+> Vandenbroucke, J. P. và Pearce, N. (2012). Các nghiên cứu bệnh-chứng:
+> các khái niệm cơ bản. Int J Epidemiol, 41(5):1480--1489.
+
+Vashisht, R., Jung, K., Schuler, A., Band, J. M., Park, R. W., Jin, S.,
+Li, L., Dudley, J. T., .
+
+Johnson, K. W., Shervey, M. M., Xu, H., Wu, Y., Natrajan, K., Hripcsak,
+G., Jin, P.,
+
+> Van Zandt, M., Reckard, A., Reich, C. G., Weaver, J., Schuemie, M. J.,
+> Ryan, P. B., Callahan, A., và Shah, N. H. (2018). Mối liên quan của
+> nồng độ Hemoglobin A1c với việc sử dụng Sulfonylurea, thuốc ức chế
+> Dipeptidyl Peptidase 4 và Thiazolidinedione ở bệnh nhân Đái tháo đường
+> loại 2 được điều trị bằng Metformin: Phân tích từ Sáng kiến Khoa học
+> và Tin học Dữ liệu Y tế Quan sát. JAMA Netw Open, 1(4):e181755.
+>
+> von Elm, E., Altman, D. G., Egger, M., Pocock, S. J., Gøtzsche, P. C.,
+> và Vandenbroucke,
+>
+> J. P. (2008). Tuyên bố tăng cường báo cáo các nghiên cứu quan sát
+> trong dịch tễ học (strobe): hướng dẫn báo cáo các nghiên cứu quan sát.
+> Journal of Clinical Epidemiology, 61(4):344 -- 349.
+>
+> Voss, E. A., Boyce, R. D., Ryan, P. B., van der Lei, J., Rijnbeek, P.
+> R., và Schuemie, M. J. (2016). Độ chính xác của Cơ sở tri thức tự động
+> để xác định các phản ứng có hại của thuốc. J Biomed Inform.
+>
+> Voss, E. A., Ma, Q., và Ryan, P. B. (2015a). Tác động của việc chuẩn
+> hóa định nghĩa các lần khám đối với tính nhất quán của nghiên cứu sức
+> khỏe quan sát đa cơ sở dữ liệu. BMC Med Res Methodol, 15:13.
+>
+> Voss, E. A., Makadia, R., Matcho, A., Ma, Q., Knoll, C., Schuemie, M.,
+> DeFalco, F. J., Londhe, A., Zhu, V., và Ryan, P. B. (2015b). Tính khả
+> thi và tiện ích của các ứng dụng mô hình dữ liệu chung cho nhiều cơ sở
+> dữ liệu sức khỏe quan sát khác nhau. J Am Med Inform Assoc,
+> 22(3):553--564.
+>
+> Walker, A. M., Patrick, A. R., Lauer, M. S., Hornbrook, M. C., Marin,
+> M. G., Platt, R., Roger, V. L., Stang, P., và Schneeweiss, S. (2013).
+> Một công cụ để đánh giá tính khả thi của nghiên cứu hiệu quả so sánh.
+> Comp Eff Res, 3:11--20.
+>
+> Wang, Y., Desai, M., Ryan, P. B., DeFalco, F. J., Schuemie, M. J.,
+> Stang, P. E., Berlin,
+>
+> J. A., và Yuan, Z. (2017). Tỷ lệ nhiễm toan ceton do đái tháo đường ở
+> bệnh nhân đái tháo đường loại 2 được điều trị bằng thuốc ức chế SGLT2
+> và các thuốc hạ đường huyết khác. Diabetes Res. Clin. Pract.,
+> 128:83--90.
+>
+> Weinstein, R. B., Ryan, P., Berlin, J. A., Matcho, A., Schuemie, M.,
+> Swerdel, J., Patel, K., và Fife, D. (2017). Kênh phân phối trong việc
+> sử dụng Paracetamol và Ibupro-
+>
+> fen không kê đơn trong Cơ sở dữ liệu Hồ sơ Y tế Điện tử: Bằng chứng và
+> Hệ quả. Drug Saf, 40(12):1279--1292.
+>
+> Weiskopf, N. G. và Weng, C. (2013). Các phương pháp và khía cạnh của
+> đánh giá chất lượng dữ liệu hồ sơ sức khỏe điện tử: cho phép tái sử
+> dụng cho nghiên cứu lâm sàng. Journal of the American Medical
+> Informatics Association: JAMIA, 20(1):144--151.
+>
+> Whelton, P. K., Carey, R. M., Aronow, W. S., Casey, D. E., Collins, K.
+> J., Denni-son Himmelfarb, C., DePalma, S. M., Gidding, S., Jamerson,
+> K. A., Jones, D. W., MacLaughlin, E. J., Muntner, P., Ovbiagele, B.,
+> Smith, S. C., Spencer, C. C., Stafford,
+>
+> R. S., Taler, S. J., Thomas, R. J., Williams, K. A., Williamson, J.
+> D., và Wright, J. T. (2018). 2017
+> ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA
+>
+> Hướng dẫn Phòng ngừa, Phát hiện, Đánh giá và Quản lý Huyết áp cao ở
+> Người lớn: Tóm tắt điều hành: Một báo cáo của Lực lượng đặc nhiệm của
+> Trường Cao đẳng Tim mạch Hoa Kỳ/Hiệp hội Tim mạch Hoa Kỳ về Hướng dẫn
+> thực hành lâm sàng. Circulation, 138(17):e426--e483.
+>
+> Whitaker, H. J., Farrington, C. P., Spiessens, B., và Musonda, P.
+> (2006). Hướng dẫn về thống kê sinh học: phương pháp chuỗi ca bệnh tự
+> kiểm soát. Stat Med, 25(10):1768--1797.
+>
+> Who, A. (2013). Tóm tắt toàn cầu về tăng huyết áp. Tổ chức Y tế Thế
+> giới. Wickham, H. (2015). Gói R. O'Reilly Media, Inc., ấn bản lần thứ
+> 1.
+>
+> Wikipedia (2019a). Khoa học mở --- Wikipedia, bách khoa toàn thư mở.
+> http://en.
+> wikipedia.org/w/index.php?title=Open%20science&oldid=900178688. \[Trực
+> tuyến; truy cập ngày 24 tháng 6 năm 2019\].
+>
+> Wikipedia (2019b). Khoa học 2.0 --- Wikipedia, bách khoa toàn thư mở.
+> http://en.wikipedia.
+> org/w/index.php?title=Science%202.0&oldid=887565958. \[Trực tuyến;
+> truy cập ngày 09 tháng 7 năm 2019\].
+>
+> Wikiquote (2019). Ronald fisher --- wikiquote,. \[Trực tuyến; truy cập
+> 02-08-2019\]. Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J.,
+> Appleton, G., Axton, M., Baak,
+>
+> A., Blomberg, N., Boiten, J. W., da Silva Santos, L. B., Bourne, P.
+> E., Bouwman,
+>
+> J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Duron, O.,
+> Edmunds, S., Evelo,
+>
+> C. T., Finkers, R., Gonzalez-Beltran, A., Gray, A. J., Groth, P.,
+> Goble, C., Grethe,
+>
+> J. S., Heringa, J., \'t Hoen, P. A., Hooft, R., Kuhn, T., Kok, R.,
+> Kok, J., Lusher, S. J., Martone, M. E., Mons, A., Packer, A. L.,
+> Persson, B., Rocca-Serra, P., Roos, M., Sanik, R., van Sanik, R. A.,
+> Schultes, E., Sengstag, T., Slater, T., Strawn, G., Swertz,
+>
+> M. A., Thompson, M., van der Lei, J., van Mulligen, E., Velterop, J.,
+> Waagmeester, A., Wittenburg, P., Wolstencroft, K., Zhao, J., và Mons,
+> B. (2016). Nguyên tắc hướng dẫn FAIR về quản lý và quản lý dữ liệu
+> khoa học. Dữ liệu khoa học, 3:160018.
+>
+> Yoon, D., Ahn, E. K., Park, M. Y., Cho, S. Y., Ryan, P., Schuemie, M.
+> J., Shin, D., Park, H., và Park, R. W. (2016). Chuyển đổi và Đánh giá
+> chất lượng dữ liệu hồ sơ sức khỏe điện tử tại một bệnh viện giảng dạy
+> đại học Hàn Quốc sang mô hình dữ liệu chung cho nghiên cứu mạng lưới
+> phân tán. Healthc Inform Res, 22(1):54--58.
+>
+> Yuan, Z., DeFalco, F. J., Ryan, P. B., Schuemie, M. J., Stang, P. E.,
+> Berlin, J. A., Desai, M., và Rosenthal, N. (2018). Nguy cơ cắt cụt chi
+> dưới ở người đái tháo đường loại 2 được điều trị bằng thuốc ức chế
+> đồng vận chuyển natri-glucose-2 tại Hoa Kỳ: Một nghiên cứu thuần tập
+> hồi cứu. Diabetes Obes Metab, 20(3):582--589.
+>
+> Zaadstra, B. M., Chorus, A. M., van Buuren, S., Kalsbeek, H., và van
+> Noort, J. M. (2008). Mối liên quan chọn lọc của bệnh đa xơ cứng với
+> bệnh tăng bạch cầu đơn nhân nhiễm khuẩn. Mult. Scler., 14(3):307--313.
+>
+> Zaman, M. A., Oparil, S., và Calhoun, D. A. (2002). Các thuốc nhắm vào
+> hệ renin-angiotensin-aldosterone. Nat Rev Drug Discov, 1(8):621--636.
+
+# Chỉ mục
+
+> độ chính xác, 249
+>
+> thuốc ức chế ACE, 252
+>
+> ACHILLES, [293](#_bookmark452)
+>
+> adaboost, [246](#_bookmark391)
+>
+> SQL bất định, xem SqlRender triển khai phân tích, 107
+>
+> phù mạch, 252
+>
+> APHRODITE, [152](#định-nghĩa-nhóm-thuần-tập-xác-suất)
+>
+> arachne, [377](#_bookmark558)
+>
+> diện tích dưới đường cong precision-recall, 251 ATHENA, 57
+>
+> ATLAS, [110](#_bookmark193), [255](#triển-khai-nghiên-cứu-trong-atlas)
+>
+> các đặc điểm đặc trưng, 186
+>
+> đặc điểm nhóm thuần tập, 111
+>
+> định nghĩa nhóm thuần tập, 111
+>
+> lộ trình nhóm thuần tập, 111
+>
+> tập khái niệm, 110
+>
+> cấu hình, 111
+>
+> Nguồn dữ liệu, 110
+>
+> tài liệu, 112
+>
+> phản hồi, 111
+>
+> tỷ lệ mắc bệnh, 111
+>
+> cài đặt, 112
+>
+> công việc, 111
+>
+> dự đoán cấp độ bệnh nhân, 111 ước tính cấp độ quần thể, 111 hồ sơ, 111
+>
+> bảo mật, 112
+>
+> tìm kiếm từ vựng, 110
+>
+> biểu đồ tiêu hao, 235
+>
+> AUC, [250](#_bookmark398)
+>
+> lan truyền ngược, 247 cân bằng, xem cân bằng biến đồng dạng
+>
+> thời gian cơ sở, 173
+>
+> thực tiễn tốt nhất cho nghiên cứu mạng lưới, 378 tính không đồng nhất
+> giữa các cơ sở dữ liệu, 342
+>
+> bigknn, [246](#_bookmark391)
+>
+> Bảng tử vong, 55
+>
+> hiệu chuẩn, 252
+>
+> thước đo (caliper), 205
+>
+> quy mô, 218
+>
+> thiết kế bệnh chứng, 206
+>
+> thiết kế vỏ chéo, 207
+>
+> thiết kế case-time-control, 208 CDM, xem Mô hình dữ liệu chung các
+> chương, 11, 18
+>
+> đặc điểm hóa, 101, 173
+>
+> nhóm thuần tập, 174
+>
+> cấp độ cơ sở dữ liệu, 174
+>
+> lộ trình điều trị, 174
+>
+> các lớp, 242
+>
+> khái niệm phân loại, 62
+>
+> Clem McDonald, 289 ra quyết định lâm sàng, 239 cân bằng lâm sàng, 205
+>
+> tính giá trị lâm sàng, 307
+>
+> bộ mã, 148
+>
+> nhóm thuần tập, 148
+>
+> sự kiện nhập, 150
+>
+> tiêu chí thoát, 150
+>
+> tiêu chí bao gồm, 150
+>
+> thiết kế xác suất, 152
+>
+> thiết kế dựa trên quy tắc, 149
+>
+> định nghĩa nhóm thuần tập, 148
+>
+> phương pháp nhóm thuần tập, 202
+>
+> colliders, [205](#_bookmark324)
+>
+> 449
+>
+> Mô hình dữ liệu chung, 31 tương thích ngược, 34
+>
+> các quy ước, 34
+>
+> ngăn chặn mất dữ liệu, 33 biểu đồ mô hình dữ liệu, 31 bảo vệ dữ liệu,
+> 33
+>
+> nguyên tắc thiết kế, 33
+>
+> các miền, 33
+>
+> khả năng mở rộng, 34
+>
+> Mã nguồn, 33
+>
+> bảng chuẩn hóa, 39 tính phù hợp với mục đích, 33 tính trung lập công
+> nghệ, 33
+>
+> mô hình dữ liệu chung, 327 cộng đồng, 7, 11, 289
+>
+> các cuộc gọi cộng đồng, 15 ước tính hiệu quả so sánh, 201
+>
+> hiệu quả so sánh, xem ước tính hiệu quả so sánh
+>
+> nhóm thuần tập đối chứng, 202
+>
+> khái niệm, 58
+>
+> tổ tiên, 69
+>
+> lớp, 61
+>
+> mã, 63
+>
+> phân cấp, 67
+>
+> định danh, 58
+>
+> ánh xạ, 65
+>
+> mối quan hệ, 65
+>
+> tập khái niệm, 151
+>
+> mô hình có điều kiện, 219
+>
+> hiệu chuẩn khoảng tin cậy, 341 biến gây nhiễu, 203
+>
+> giả thuyết kiểm soát, 114 mạng thần kinh tích chập, 248 phản thực tế,
+> 201
+
+cân bằng biến đồng dạng, 206
+
+> ví dụ, 234
+>
+> biến đồng dạng, 242
+>
+> mô hình rủi ro tỷ lệ Cox, xem hồi quy Cox
+>
+> hồi quy Cox, 203
+>
+> xác thực chéo, 245, 249
+>
+> Cyclops, [244](#_bookmark389)
+>
+> lập hồ sơ dữ liệu, xem White Rabbit
+>
+> chất lượng dữ liệu, 289, 291
+>
+> kiểm tra, 293
+>
+> tính đầy đủ, 293
+>
+> tính tuân thủ, 293
+>
+> kiểm tra chất lượng dữ liệu, 293 tính hợp lý, 293
+>
+> kiểm tra cụ thể cho nghiên cứu, 296
+>
+> xác thực, 293
+>
+> xác minh, 293
+>
+> Bảng điều khiển chất lượng dữ liệu, 293 DatabaseConnector, 122
+>
+> tạo kết nối, 131 truy vấn, 132
+>
+> biên quyết định, 243
+>
+> cây quyết định, 247
+>
+> học sâu, 248
+>
+> thống kê mô tả, xem thiết kế đặc điểm hóa, các cân nhắc cho nghiên cứu
+> mạng lưới,
+>
+> [371](#định-nghĩa-về-một-nghiên-cứu-mạng-lưới-ohdsi)
+>
+> kết quả chẩn đoán, 239 ước tính hiệu quả trực tiếp, 201 phân biệt, 250
+>
+> lịch sử tự nhiên của bệnh, xem miền đặc điểm hóa
+>
+> khái niệm, 59
+
+sử dụng thuốc, 174
+
+> hiệu chuẩn thực nghiệm, 340
+>
+> đánh giá thực nghiệm, 339
+>
+> ETL, xem trích xuất, chuyển đổi và nạp (ETL) các triển khai, 92
+>
+> kiểm soát chất lượng, 93
+>
+> kiểm thử đơn vị, 295
+>
+> thiết kế ETL, xem Rabbit-In-A-Hat đánh giá các mô hình dự đoán, 248
+> chất lượng bằng chứng, 287, 289
+>
+> FAIR, [25](#_bookmark46)
+>
+> âm tính giả, 250
+>
+> dương tính giả, 250
+>
+> phân tích đặc trưng, 181
+>
+> Tính năng Khai thác, 187
+>
+> diễn đàn, 13
+>
+> tăng cường độ dốc, 245
+>
+> *Mục lục 451*
+>
+> tương quan cao, 224
+>
+> siêu tham số, 245
+>
+> tỷ lệ mới mắc, 175
+>
+> tỷ lệ, 176
+>
+> tỷ suất, 176
+>
+> ngày chỉ số, 173, 242, 252
+>
+> biến công cụ, 205 tham gia hành trình, 11
+>
+> k-láng giềng gần nhất, 246
+>
+> Âm mưu Kaplan-Meier, 236
+>
+> nhãn, 242
+>
+> LASSO, [244](#_bookmark389)
+>
+> hạn chế của nghiên cứu quan sát, 105 hồi quy logistic, 203, 244
+>
+> hậu cần nghiên cứu mạng lưới, 372
+>
+> học máy, 240
+>
+> tính hợp lệ của phương pháp, 335
+>
+> thư viện phương pháp, 112
+>
+> nguy cơ tương đối tối thiểu có thể phát hiện (MDRR), 235
+>
+> dữ liệu thiếu, 106, 243
+>
+> sứ mệnh, 6
+>
+> ứng dụng xem mô hình, 272
+>
+> naive bayes, [246](#_bookmark391)
+>
+> dữ liệu gốc, xem dữ liệu thô các đối chứng âm, 336 nhóm thuần tập lồng
+>
+> thiết kế bệnh-chứng, 207
+>
+> nghiên cứu mạng lưới, 370
+>
+> mạng thần kinh, 247 không có bữa trưa miễn phí, 244
+>
+> mục tiêu, 7
+>
+> Điểm chuẩn phương thức OHDSI, 351 OHDSI SQL, xem SqlRender
+>
+> khoa học mở, 21
+>
+> dữ liệu mở, 24
+>
+> thảo luận mở, 24
+>
+> mã nguồn mở, 24
+>
+> tiêu chuẩn mở, 23
+>
+> mã mồ côi, 298
+>
+> nhóm thuần tập kết cục, 241
+>
+> thiết kế bệnh-chứng, 207
+>
+> thiết kế bệnh-chéo, 207
+>
+> phương pháp thuần tập, 202
+>
+> thiết kế SCCS, 208
+>
+> thiết kế thuần tập tự kiểm soát, 206 tình trạng kết cục, 242
+>
+> hiệu chuẩn p-value, 340
+>
+> hệ thống Pallas, 57
+>
+> dự đoán cấp độ bệnh nhân, 103, 239
+>
+> perceptron, [247](#_bookmark392)
+>
+> chỉ số hiệu suất, 249
+>
+> người-thời gian, 176
+>
+> kiểu hình, 148
+>
+> thư viện kiểu hình, 153
+>
+> PheValuator, [314](#_bookmark484)
+>
+> hồi quy Poisson, 203
+>
+> ước tính cấp độ quần thể, 102, 201
+>
+> đối chứng dương, 338
+>
+> tổng hợp, 338
+>
+> giá trị dự đoán dương tính, 249 thời gian sau chỉ số, 173
+>
+> công suất thống kê, 235
+>
+> mô hình dự đoán, 239
+
+điểm ưu tiên, 205
+
+ví dụ, 232
+
+> kết cục tiên lượng, 239 thực hành lập trình tốt nhất, 328 mô hình
+> khuynh hướng, 204
+>
+> ví dụ, 233
+>
+> điểm khuynh hướng, 203
+>
+> ghép cặp, 204
+>
+> phân tầng, 204
+>
+> cắt tỉa, 218
+>
+> trọng số, 204
+>
+> giao thức, 358
+>
+> python, [245](#_bookmark390)--[247](#_bookmark392)
+>
+> cải thiện chất lượng, xem đặc điểm lâm sàng Thư viện truy vấn, 122
+>
+> QueryLibrary, [137](#_bookmark237)
+>
+> R, [122](#_bookmark226)
+>
+> cài đặt, 115
+>
+> Rabbit-In-A-Hat, [80](#_bookmark138)
+>
+> rừng ngẫu nhiên, 245
+>
+> thử nghiệm ngẫu nhiên, 203
+>
+> dữ liệu thô, 75
+>
+> mạng thần kinh tái phát, 248 chính quy hóa, 244
+>
+> ra quyết định quản lý, 289
+>
+> mô hình dữ liệu quan hệ, xem Mô hình dữ liệu chung
+>
+> bằng chứng đáng tin cậy, 289
+>
+> mạng lưới nghiên cứu, 369
+>
+> ROC, [250](#_bookmark398)
+>
+> vận hành nghiên cứu mạng lưới, 374
+>
+> giám sát an toàn, 201
+>
+> thiết kế chuỗi bệnh tự kiểm soát (SCCS), 208
+>
+> thiết kế thuần tập tự kiểm soát, 206 độ nhạy, 249
+>
+> phân tích độ nhạy, 343
+>
+> sklearn, [245](#_bookmark390)
+>
+> quy trình phát triển phần mềm, 327 tính hợp lệ của phần mềm, 327
+>
+> ánh xạ mã nguồn, xem Usagi dữ liệu nguồn, xem dữ liệu thô
+>
+> xác minh hồ sơ nguồn, 311 độ đặc hiệu, 249
+>
+> SQL, [121](#_bookmark225)
+>
+> Thư viện truy vấn SQL, xem Thư viện truy vấn SqlRender, 122
+>
+> gỡ lỗi, 129
+>
+> tham số hóa, 122
+>
+> các hàm được hỗ trợ, 124
+>
+> dịch, 124
+>
+> khái niệm chuẩn, 61
+>
+> Phương ngữ SQL chuẩn, xem SqlRender từ vựng chuẩn hóa, 55
+>
+> tải xuống, 57
+>
+> tìm kiếm, 57
+>
+> mô hình phân tầng, xem mô hình có điều kiện mạnh mẽ có thể bỏ qua, 204
+>
+> ngôn ngữ truy vấn cấu trúc, xem SQL tính hợp lệ của mã nghiên cứu, 328
+>
+> chẩn đoán nghiên cứu, 335, 364 tính khả thi của nghiên cứu
+>
+> nghiên cứu đơn lẻ, 364
+>
+> gói nghiên cứu, 359
+>
+> study-a-thon, [22](#_bookmark34)
+>
+> học có giám sát, 242
+>
+> biểu đồ sống còn, xem biểu đồ Kaplan-Meier yêu cầu hệ thống, 115
+>
+> nhóm thuần tập mục tiêu, 241
+>
+> thiết kế bệnh-chứng, 207
+>
+> thiết kế bệnh-chéo, 207
+>
+> phương pháp thuần tập, 202
+>
+> thiết kế SCCS, 208
+>
+> thiết kế thuần tập tự kiểm soát, 206 thời gian nguy cơ, 241
+>
+> triển khai công cụ, 118
+>
+> Amazon AWS, [119](#_bookmark216)
+>
+> Broadsea, [119](#_bookmark216)
+>
+> sử dụng điều trị, xem đặc điểm lâm sàng TRIPOD, 240
+>
+> âm tính thật, 250
+>
+> dương tính thật, 250
+>
+> Usagi, 85 kiểm chứng
+>
+> kiểm chứng ngoài, 248
+>
+> kiểm chứng trong, 248
+>
+> kiểm chứng không gian, 249
+>
+> kiểm chứng thời gian, 249 ghép cặp tỷ lệ biến đổi, 204 phương sai, 245
+>
+> vignette, [114](#_bookmark203)
+>
+> tầm nhìn, 7
+>
+> từ vựng, 61
+>
+> White Rabbit, [76](#_bookmark132)
+>
+> nhóm làm việc, 11, 15
+>
+> xgboost, [245](#_bookmark390)
+>
+> nhóm thuần tập xSens, 317
+>
+> nhóm thuần tập xSpec, 316
+

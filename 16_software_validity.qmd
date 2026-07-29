@@ -1,0 +1,365 @@
+---
+title: "Chương 16: Tính hợp lệ của phần mềm"
+---
+
+# Chương 16: Tính hợp lệ của phần mềm
+
+# Tính hợp lệ của phần mềm
+
+> *Chủ nhiệm chương: Martijn Schuemie*
+>
+> Câu hỏi trung tâm của tính hợp lệ phần mềm là
+>
+> Phần mềm có thực hiện những gì nó được mong đợi thực hiện không?
+>
+> Tính hợp lệ của phần mềm là một thành phần thiết yếu của chất lượng
+> bằng chứng: chỉ khi phần mềm phân tích của chúng ta thực hiện những gì
+> nó được mong đợi thực hiện, chúng ta mới có thể tạo ra bằng chứng đáng
+> tin cậy. Như đã mô tả trong Mục 17.1.1, điều cần thiết là xem mỗi
+> nghiên cứu như một bài tập phát triển phần mềm, tạo ra một tập lệnh tự
+> động thực hiện toàn bộ phân tích, từ dữ liệu trong Mô hình dữ liệu
+> chung (CDM) đến các kết quả như ước tính, hình ảnh và bảng. Chính tập
+> lệnh này, và bất kỳ phần mềm nào được sử dụng trong tập lệnh này, phải
+> được xác nhận. Như đã mô tả trong Mục 8.1, chúng ta có thể viết toàn
+> bộ phân tích dưới dạng mã tùy chỉnh, hoặc chúng ta có thể sử dụng chức
+> năng khả dụng trong Thư viện phương pháp OHDSI. Ưu điểm của việc sử
+> dụng Thư viện phương pháp là sự cẩn trọng lớn đã được thực hiện để đảm
+> bảo tính hợp lệ của nó, vì vậy việc thiết lập tính hợp lệ của toàn bộ
+> phân tích trở nên ít gánh nặng hơn.
+>
+> Trong chương này, trước hết chúng ta mô tả các thực tiễn tốt nhất để
+> viết mã phân tích hợp lệ. Sau đó, chúng ta thảo luận về cách thư viện
+> Phương pháp được xác nhận thông qua quy trình phát triển phần mềm và
+> kiểm tra của nó.
+
+## Tính hợp lệ của mã nghiên cứu
+
+### Tự động hóa như một yêu cầu cho tính tái lập
+
+> Theo truyền thống, các nghiên cứu quan sát thường được xem là một hành
+> trình hơn là một quy trình: một chuyên gia cơ sở dữ liệu có thể trích
+> xuất một tập dữ liệu từ cơ sở dữ liệu và chuyển nó cho nhà phân tích
+> dữ liệu, người có thể mở nó trong trình chỉnh sửa bảng tính hoặc công
+> cụ tương tác khác và bắt đầu làm việc trên phân tích. Cuối cùng, một
+> kết quả được tạo ra, nhưng ít thông tin được lưu giữ về cách nó đạt
+> được. Điểm đến của hành trình đã đạt được, nhưng không thể truy xuất
+> lại các bước chính xác đã thực hiện để đến đó. Thực tiễn này hoàn toàn
+> không thể chấp nhận được, cả vì nó
+>
+> 327
+>
+> không thể tái lập, mà còn vì nó thiếu tính minh bạch; chúng ta không
+> biết chính xác những gì đã được thực hiện để tạo ra kết quả, vì vậy
+> chúng ta cũng không thể xác minh rằng không có sai lầm nào được thực
+> hiện.
+>
+> Do đó, mọi phân tích tạo ra bằng chứng phải được tự động hóa hoàn
+> toàn. Bằng cách tự động hóa, chúng tôi có nghĩa là phân tích nên được
+> triển khai dưới dạng một tập lệnh duy nhất và chúng ta có thể làm lại
+> toàn bộ phân tích từ cơ sở dữ liệu ở định dạng CDM đến kết quả, bao
+> gồm bảng và hình ảnh, với một lệnh duy nhất. Phân tích có thể có độ
+> phức tạp tùy ý, có thể chỉ tạo ra một số đếm đơn lẻ, hoặc tạo ra các
+> ước tính được hiệu chuẩn theo kinh nghiệm cho hàng triệu câu hỏi
+> nghiên cứu, nhưng cùng một nguyên tắc áp dụng. Tập lệnh có thể gọi các
+> tập lệnh khác, mà lần lượt có thể gọi các quy trình phân tích cấp thấp
+> hơn.
+>
+> Tập lệnh phân tích có thể được triển khai bằng bất kỳ ngôn ngữ máy
+> tính nào, mặc dù trong OHDSI, ngôn ngữ ưa thích là R. Nhờ gói R
+> DatabaseConnector, chúng ta có thể kết nối trực tiếp với dữ liệu ở
+> định dạng CDM, và nhiều phân tích nâng cao có sẵn thông qua các gói R
+> khác trong Thư viện phương pháp OHDSI.
+
+### Các thực tiễn lập trình tốt nhất
+
+> Các phân tích quan sát có thể trở nên rất phức tạp, với nhiều bước cần
+> thiết để tạo ra kết quả cuối cùng. Sự phức tạp này có thể làm cho việc
+> duy trì mã phân tích khó khăn hơn và tăng khả năng mắc lỗi, cũng như
+> làm cho việc nhận thấy lỗi khó hơn. May mắn thay, các lập trình viên
+> máy tính đã phát triển các thực tiễn tốt nhất trong nhiều năm để viết
+> mã có thể xử lý sự phức tạp, dễ đọc, tái sử dụng, điều chỉnh và xác
+> minh. (Martin, 2008) Một cuộc thảo luận đầy đủ về các thực tiễn tốt
+> nhất này có thể lấp đầy nhiều cuốn sách. Tại đây, chúng tôi làm nổi
+> bật bốn nguyên tắc quan trọng này:
+
+- **Trừu tượng hóa&#58; Thay vì viết một tập lệnh lớn duy nhất thực hiện mọi
+thứ, dẫn đến cái gọi là "mã spaghetti" nơi các phụ thuộc giữa các dòng
+mã có thể đi từ bất cứ đâu đến bất cứ đâu (ví dụ: một giá trị được đặt
+ở dòng 10 được sử dụng ở dòng 1.000), chúng ta có thể tổ chức mã của
+mình thành các đơn vị gọi là "hàm". Một hàm nên có một mục tiêu rõ
+ràng, ví dụ "lấy mẫu ngẫu nhiên", và khi đã tạo xong, chúng ta có thể
+sử dụng hàm này trong tập lệnh lớn hơn của mình mà không cần phải suy
+nghĩ về những chi tiết nhỏ nhặt về những gì hàm đó thực hiện; chúng ta
+có thể trừu tượng hóa hàm thành một khái niệm dễ hiểu.**
+
+- **Đóng gói (Encapsulation): Để tính trừu tượng hoạt động hiệu quả,
+chúng ta cần đảm bảo các phụ thuộc của hàm được giảm thiểu và xác định
+rõ ràng. Hàm lấy mẫu ví dụ của chúng ta chỉ nên có một vài đối số (ví
+dụ: tập dữ liệu và kích thước mẫu) và một đầu ra (ví dụ: mẫu). Không
+có yếu tố nào khác được ảnh hưởng đến hoạt động của hàm. Các \"biến
+toàn cục\" (global variables) - những biến được thiết lập bên ngoài
+hàm, không phải là đối số của hàm nhưng vẫn được sử dụng bên trong
+hàm - cần được tránh.**
+
+- **Đặt tên rõ ràng&#58; Các biến và hàm nên có tên gọi rõ ràng, giúp mã
+nguồn đọc gần giống như ngôn ngữ tự nhiên. Ví dụ, thay vì viết x \<-
+spl(y, 100), chúng ta có thể viết mã đọc như sampledPatients \<-
+takeSample(patients, sampleSize = 100). Hãy cố gắng tránh viết tắt.
+Các ngôn ngữ lập trình hiện đại không giới hạn độ dài của tên biến và
+tên hàm.**
+
+- **Tái sử dụng&#58; Một ưu điểm của việc viết các hàm rõ ràng, được đóng
+gói tốt là chúng thường có thể được tái sử dụng. Điều này không chỉ
+tiết kiệm thời gian mà còn giúp giảm bớt mã nguồn, từ đó**
+
+> giảm độ phức tạp và ít cơ hội xảy ra lỗi hơn.
+
+### Xác thực mã nguồn
+
+> Có nhiều phương pháp tồn tại để kiểm chứng tính hợp lệ của mã phần
+> mềm, nhưng hai phương pháp đặc biệt liên quan đến mã thực hiện nghiên
+> cứu quan sát:
+
+- **Đánh giá mã (Code review): Một người viết mã và người khác đánh giá
+mã đó.**
+
+- **Lập trình kép (Double coding): Hai người cùng độc lập viết mã phân
+tích, sau đó kết quả của hai tập lệnh được so sánh với nhau.**
+
+> Đánh giá mã có ưu điểm là thường ít tốn công sức hơn, nhưng nhược điểm
+> là người đánh giá có thể bỏ sót một số lỗi. Ngược lại, lập trình kép
+> thường rất tốn công sức, nhưng ít khả năng bỏ sót lỗi hơn, mặc dù
+> không phải là không thể. Một nhược điểm khác của lập trình kép là hai
+> bản thực hiện riêng biệt hầu như luôn tạo ra các kết quả khác nhau do
+> nhiều lựa chọn tùy ý nhỏ cần phải thực hiện (ví dụ: \"cho đến khi kết
+> thúc phơi nhiễm\" nên được hiểu là bao gồm cả ngày kết thúc phơi nhiễm
+> hay không?). Kết quả là, hai lập trình viên vốn độc lập thường cần làm
+> việc cùng nhau để điều chỉnh phân tích của họ, từ đó phá vỡ tính độc
+> lập của họ.
+>
+> Các phương pháp xác thực phần mềm khác như kiểm thử đơn vị (unit
+> testing) ít liên quan ở đây vì một nghiên cứu thường là hoạt động một
+> lần với các mối quan hệ phức tạp cao giữa đầu vào (dữ liệu trong CDM)
+> và đầu ra (kết quả nghiên cứu), khiến các phương pháp này ít khả dụng
+> hơn. Lưu ý rằng các phương pháp này được áp dụng trong Thư viện Phương
+> pháp (Methods Library).
+
+### Sử dụng Thư viện Phương pháp
+
+> Thư viện Phương pháp OHDSI cung cấp một tập hợp lớn các hàm, cho phép
+> hầu hết các nghiên cứu quan sát được thực hiện chỉ với vài dòng mã. Do
+> đó, việc sử dụng Thư viện Phương pháp chuyển hầu hết gánh nặng thiết
+> lập tính hợp lệ cho mã nghiên cứu sang Thư viện. Tính hợp lệ của Thư
+> viện Phương pháp được đảm bảo bởi quy trình phát triển phần mềm và
+> việc kiểm thử mở rộng.
+
+## Quy trình phát triển phần mềm Thư viện Phương pháp
+
+> Thư viện Phương pháp OHDSI được phát triển bởi cộng đồng OHDSI. Các
+> thay đổi đề xuất đối với Thư viện được thảo luận tại hai địa điểm:
+> Trình theo dõi vấn đề (issue tracker) trên GitHub (ví dụ: trình theo
+> dõi vấn đề CohortMethod1) và Diễn đàn OHDSI.2 Cả hai đều mở công khai.
+> Bất kỳ thành viên nào trong cộng đồng đều có thể đóng góp mã phần mềm
+> cho Thư viện, tuy nhiên, việc phê duyệt cuối cùng đối với bất kỳ thay
+> đổi nào được tích hợp vào các phiên bản phần mềm phát hành đều do ban
+> lãnh đạo Nhóm làm việc về Ước tính cấp độ quần thể OHDSI (Tiến sĩ Marc
+> Suchard và Martijn Schuemie) và ban lãnh đạo Nhóm làm việc về Dự đoán
+> cấp độ bệnh nhân OHDSI (Tiến sĩ Peter Rijnbeek và Jenna Reps) thực
+> hiện.
+>
+> ^1^<https://github.com/OHDSI/CohortMethod/issues>
+> ^2^<http://forums.ohdsi.org/>
+>
+> Người dùng có thể cài đặt Thư viện Phương pháp trong R trực tiếp từ
+> các nhánh chính (master branches) trong các kho lưu trữ GitHub, hoặc
+> thông qua một hệ thống có tên là "drat" luôn được cập nhật với các
+> nhánh chính. Một số gói của Thư viện Phương pháp có sẵn thông qua Mạng
+> lưu trữ R toàn diện (CRAN) của R, và con số này dự kiến sẽ tăng lên
+> theo thời gian.
+>
+> Các phương pháp phát triển và kiểm thử phần mềm hợp lý được OHDSI áp
+> dụng để tối đa hóa độ chính xác, độ tin cậy và tính nhất quán của hiệu
+> suất Thư viện Phương pháp. Quan trọng là, vì Thư viện Phương pháp được
+> phát hành theo các điều khoản của Giấy phép Apache V2, tất cả mã nguồn
+> cơ bản của Thư viện Phương pháp, dù là R, C++, SQL hay Java, đều có
+> sẵn để đánh giá ngang hàng bởi tất cả thành viên trong cộng đồng OHDSI
+> và công chúng nói chung. Do đó, tất cả các chức năng được tích hợp
+> trong Thư viện Phương pháp đều chịu sự phê bình và cải tiến liên tục
+> liên quan đến độ chính xác, độ tin cậy và tính nhất quán của nó.
+
+### Quản lý mã nguồn
+
+> Tất cả mã nguồn của Thư viện Phương pháp được quản lý trong hệ thống
+> kiểm soát phiên bản mã nguồn "git" có thể truy cập công khai qua
+> GitHub. Các kho lưu trữ Thư viện Phương pháp OHDSI được kiểm soát truy
+> cập. Bất kỳ ai trên thế giới đều có thể xem mã nguồn và bất kỳ thành
+> viên nào của cộng đồng OHDSI đều có thể gửi các thay đổi thông qua các
+> yêu cầu kéo (pull request). Chỉ ban lãnh đạo Nhóm làm việc về Ước tính
+> cấp độ quần thể và Nhóm làm việc về Dự đoán cấp độ bệnh nhân của OHDSI
+> mới có thể phê duyệt các yêu cầu đó, thực hiện thay đổi đối với các
+> nhánh chính và phát hành các phiên bản mới. Nhật ký liên tục về các
+> thay đổi mã nguồn được duy trì trong các kho lưu trữ GitHub và phản
+> ánh mọi khía cạnh thay đổi trong mã và tài liệu. Các nhật ký cam kết
+> (commit log) này có sẵn cho công chúng xem xét.
+>
+> Các phiên bản mới được phát hành bởi ban lãnh đạo Nhóm làm việc về Ước
+> tính cấp độ quần thể và Nhóm làm việc về Dự đoán cấp độ bệnh nhân của
+> OHDSI khi cần thiết. Một bản phát hành mới bắt đầu bằng việc đẩy các
+> thay đổi vào một nhánh chính với số phiên bản gói (được xác định trong
+> tệp DESCRIPTION bên trong gói) lớn hơn số phiên bản của bản phát hành
+> trước đó. Điều này tự động kích hoạt việc kiểm tra và kiểm thử gói.
+> Nếu tất cả các kiểm thử đều vượt qua, phiên bản mới sẽ tự động được
+> gắn thẻ trong hệ thống kiểm soát phiên bản và gói sẽ tự động được tải
+> lên kho lưu trữ drat của OHDSI. Các phiên bản mới được đánh số bằng số
+> phiên bản gồm ba thành phần:
+
+- Các phiên bản vi mô mới (ví dụ: từ 4.3.2 đến 4.3.3) chỉ biểu thị các
+bản sửa lỗi. Không có chức năng mới nào, và tính tương thích tiến và
+lùi được đảm bảo
+
+- Các phiên bản nhỏ mới (ví dụ: từ 4.3.3 đến 4.4.0) biểu thị chức năng
+được thêm vào. Chỉ tính tương thích lùi được đảm bảo
+
+- Các phiên bản chính mới (ví dụ: từ 4.4.0 đến 5.0.0) biểu thị các sửa
+đổi lớn. Không có đảm bảo nào được đưa ra về tính tương thích
+
+### Tài liệu
+
+> Tất cả các gói trong Thư viện Phương pháp được ghi chép tài liệu thông
+> qua khung tài liệu nội bộ của R. Mỗi gói có một hướng dẫn sử dụng gói
+> mô tả mọi hàm có sẵn trong gói. Để thúc đẩy sự đồng bộ giữa tài liệu
+> hàm và
+>
+> việc triển khai, phần mềm roxygen2 được sử dụng để kết hợp tài liệu và
+> mã nguồn của một hàm vào một tệp duy nhất. Hướng dẫn sử dụng gói có
+> sẵn theo yêu cầu thông qua giao diện dòng lệnh của R, dưới dạng PDF
+> trong các kho lưu trữ gói và dưới dạng trang web. Ngoài ra, nhiều gói
+> cũng có các tài liệu giới thiệu (vignette) làm nổi bật các trường hợp
+> sử dụng cụ thể của một gói. Tất cả tài liệu có thể được xem thông qua
+> trang web của Thư viện Phương pháp.3
+>
+> Tất cả mã nguồn của Thư viện Phương pháp đều có sẵn cho người dùng
+> cuối. Phản hồi từ cộng đồng được tạo điều kiện thuận lợi bằng cách sử
+> dụng hệ thống theo dõi vấn đề của GitHub và các diễn đàn OHDSI.
+
+### Tính khả dụng của các phiên bản lưu trữ hiện tại và lịch sử
+
+> Các phiên bản hiện tại và lịch sử của các gói Thư viện Phương pháp có
+> sẵn tại hai vị trí. Thứ nhất, hệ thống kiểm soát phiên bản GitHub chứa
+> toàn bộ lịch sử phát triển của mỗi gói, và trạng thái của một gói tại
+> mỗi thời điểm có thể được tái tạo và truy xuất. Quan trọng nhất, mỗi
+> phiên bản phát hành đều được gắn thẻ trong GitHub. Thứ hai, các gói mã
+> nguồn R đã phát hành được lưu trữ trong kho lưu trữ drat GitHub của
+> OHDSI.
+
+### Bảo trì, Hỗ trợ và Ngừng hoạt động
+
+> Mỗi phiên bản hiện tại của Thư viện Phương pháp đều được OHDSI hỗ trợ
+> tích cực liên quan đến báo cáo lỗi, bản sửa lỗi và bản vá. Các vấn đề
+> có thể được báo cáo thông qua hệ thống theo dõi vấn đề của GitHub và
+> thông qua các diễn đàn OHDSI. Mỗi gói đều có hướng dẫn sử dụng gói và
+> không, một hoặc vài tài liệu giới thiệu. Các hướng dẫn video trực
+> tuyến có sẵn và các hướng dẫn trực tiếp được cung cấp theo thời gian.
+
+### Nhân sự đủ năng lực
+
+> Các thành viên của cộng đồng OHDSI đại diện cho nhiều lĩnh vực thống
+> kê và làm việc tại các tổ chức học thuật, phi lợi nhuận và các tổ chức
+> liên kết với ngành trên nhiều châu lục.
+>
+> Tất cả các lãnh đạo của Nhóm làm việc về Ước tính cấp độ quần thể
+> OHDSI và Nhóm làm việc về Dự đoán cấp độ bệnh nhân OHDSI đều có bằng
+> Tiến sĩ từ các tổ chức học thuật được công nhận và đã xuất bản rộng
+> rãi trên các tạp chí bình duyệt.
+
+### Bảo mật vật lý và logic
+
+> Thư viện Phương pháp OHDSI được lưu trữ trên hệ thống GitHub4. Các
+> biện pháp bảo mật của GitHub được mô tả tại
+> https://github.com/security. Tên người dùng và mật khẩu là bắt buộc
+> đối với tất cả thành viên của cộng đồng OHDSI để đóng góp các sửa đổi
+> vào Thư viện Phương pháp, và chỉ ban lãnh đạo Nhóm làm việc về Ước
+> tính cấp độ quần thể và Nhóm làm việc về Dự đoán cấp độ bệnh nhân mới
+> có thể thực hiện thay đổi đối với các nhánh chính. Quyền truy cập tài
+> khoản người dùng bị hạn chế dựa trên các chính sách bảo mật tiêu chuẩn
+> và các yêu cầu chức năng.
+>
+> ^3^<https://ohdsi.github.io/MethodsLibrary/> ^4^<https://github.com/>
+
+### Khắc phục thảm họa
+
+> Thư viện Phương pháp OHDSI được lưu trữ trên hệ thống GitHub. Các cơ
+> sở khôi phục sau thảm họa của GitHub được mô tả tại
+> https://github.com/security.
+
+## Kiểm thử Thư viện Phương pháp
+
+> Chúng tôi phân biệt giữa hai loại kiểm thử được thực hiện trên Thư
+> viện Phương pháp: Kiểm thử cho các hàm riêng lẻ trong các gói (được
+> gọi là "kiểm thử đơn vị") và kiểm thử cho các chức năng phức tạp hơn
+> bằng cách sử dụng mô phỏng.
+
+### Kiểm thử đơn vị
+
+> Một tập hợp lớn các kiểm thử xác thực tự động được OHDSI duy trì và
+> nâng cấp để cho phép kiểm thử mã nguồn dựa trên dữ liệu đã biết và kết
+> quả đã biết. Mỗi kiểm thử bắt đầu bằng việc chỉ định một số dữ liệu
+> đầu vào đơn giản, sau đó thực thi một hàm trong một trong các gói trên
+> dữ liệu đầu vào này và đánh giá xem đầu ra có chính xác như mong đợi
+> hay không. Đối với các hàm đơn giản, kết quả mong đợi thường là hiển
+> nhiên (ví dụ: khi thực hiện ghép cặp điểm xu hướng trên dữ liệu ví dụ
+> chỉ chứa một vài đối tượng); đối với các hàm phức tạp hơn, kết quả
+> mong đợi có thể được tạo ra bằng cách sử dụng kết hợp các hàm khác có
+> sẵn trong R (ví dụ: Cyclops, công cụ hồi quy quy mô lớn của chúng tôi,
+> được kiểm thử cùng với những công cụ khác bằng cách so sánh kết quả
+> trên các bài toán đơn giản với các quy trình hồi quy khác trong R).
+> Chúng tôi hướng tới tổng số các kiểm thử này bao phủ 100% các dòng mã
+> nguồn có thể thực thi.
+>
+> Các kiểm thử này được tự động thực hiện khi các thay đổi được thực
+> hiện đối với một gói (cụ thể là khi các thay đổi được đẩy vào kho lưu
+> trữ gói). Bất kỳ lỗi nào được ghi nhận trong quá trình kiểm thử sẽ tự
+> động kích hoạt gửi email cho ban lãnh đạo các Nhóm làm việc và phải
+> được giải quyết trước khi phát hành phiên bản mới của một gói. Mã
+> nguồn và kết quả mong đợi cho các kiểm thử này có sẵn để xem xét và sử
+> dụng trong các ứng dụng khác khi phù hợp. Các kiểm thử này cũng có sẵn
+> cho người dùng cuối và/hoặc quản trị viên hệ thống và có thể được chạy
+> như một phần của quá trình cài đặt của họ để cung cấp thêm tài liệu và
+> bằng chứng khách quan về độ chính xác, độ tin cậy và tính nhất quán
+> của quá trình cài đặt Thư viện Phương pháp của họ.
+
+### Mô phỏng
+
+> Đối với các chức năng phức tạp hơn, không phải lúc nào cũng rõ ràng
+> kết quả đầu ra mong đợi là gì khi có đầu vào. Trong những trường hợp
+> này, các mô phỏng đôi khi được sử dụng, tạo ra đầu vào dựa trên một mô
+> hình thống kê cụ thể và xác định xem chức năng đó có tạo ra kết quả
+> phù hợp với mô hình đã biết này hay không. Ví dụ, trong gói
+> SelfControlledCaseSeries, các mô phỏng được sử dụng để xác minh rằng
+> phương pháp có khả năng phát hiện và lập mô hình phù hợp các xu hướng
+> theo thời gian trong dữ liệu mô phỏng.
+
+4.  *Tóm tắt 333*
+
+## Tóm tắt
+
+![](/Users/thanhphucphan/Library/CloudStorage/OneDrive-UMCHCMC/2_OHDSI/OHDSI Viet Nam/the-book-of-ohdsi-vi/media/image4.png){width="0.4455205599300088in"
+height="0.4644783464566929in"}
+
+- An observational study should be implemented as an automated script
+that executes the entire analysis, from data in the CDM to the
+results, to ensure reproducibility and transparency.
+
+- Custom study code should adhere to best programming practices,
+including abstraction, encapsulation, clear naming, and code reuse.
+
+- Custom study code can be validated using code review or double coding.
+
+- The Methods Library provides validated functionality that can be used
+in ob-servational studies.
+
+- The Methods Library is validated by using a software development
+process aimed at creating valid software, and by testing.
+
+> Chương 18
+

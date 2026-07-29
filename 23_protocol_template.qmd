@@ -1,0 +1,80 @@
+---
+title: "Phụ lục C: Mẫu giao thức"
+---
+
+# Phụ lục C: Mẫu giao thức
+
+# Mẫu giao thức
+
+1.  Mục lục
+
+2.  Danh mục từ viết tắt
+
+3.  Tóm tắt
+
+4.  Các sửa đổi và cập nhật
+
+5.  Các cột mốc quan trọng
+
+6.  Cơ sở lý luận và bối cảnh
+
+7.  Mục tiêu nghiên cứu
+
+- Giả thuyết chính
+
+- Giả thuyết phụ
+
+- Mục tiêu chính
+
+- Mục tiêu phụ
+
+8.  Phương pháp nghiên cứu
+
+- Thiết kế nghiên cứu
+
+- (Các) nguồn dữ liệu
+
+- Đối tượng nghiên cứu
+
+- Các yếu tố phơi nhiễm
+
+- Các kết cục
+
+- Các biến đồng thời
+
+9.  Kế hoạch phân tích dữ liệu
+
+- Tính toán thời gian có nguy cơ
+
+- Đặc tả mô hình
+
+- Gộp các ước tính hiệu quả giữa các cơ sở dữ liệu
+
+- Các phân tích cần thực hiện
+
+- Đầu ra
+
+- Đánh giá bằng chứng
+
+10. Chẩn đoán nghiên cứu
+
+- Cỡ mẫu và sức mạnh nghiên cứu
+
+- Tính so sánh của nhóm thuần tập
+
+- Đánh giá sai số hệ thống
+
+> 407
+
+11. Điểm mạnh và hạn chế của các phương pháp nghiên cứu
+
+12. Bảo vệ đối tượng con người
+
+13. Quản lý và báo cáo các biến cố bất lợi và phản ứng bất lợi
+
+14. Kế hoạch phổ biến và truyền thông kết quả nghiên cứu
+
+15. Phụ lục&#58; Các đối chứng âm tính
+
+16. Tài liệu tham khảo
+
