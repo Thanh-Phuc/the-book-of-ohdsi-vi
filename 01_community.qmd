@@ -246,7 +246,10 @@ hoặc tổ chức. Thay vào đó, các câu hỏi nghiên cứu được đặ
 cá nhân trong cộng đồng dưới dạng một giao thức nghiên cứu và kèm theo
 mã phân tích tạo ra bằng chứng dưới dạng một tập hợp các số liệu thống
 kê tóm tắt tổng hợp, và chỉ những số liệu thống kê tóm tắt này mới
-được chia sẻ giữa các đối tác
+được chia sẻ giữa các đối tác lựa chọn hợp tác trong nghiên cứu. Với mạng lưới phân tán OHDSI, mỗi
+đối tác dữ liệu giữ toàn quyền tự chủ đối với việc sử dụng dữ liệu cấp
+độ bệnh nhân của họ và tiếp tục tuân thủ các chính sách quản trị dữ
+liệu trong các tổ chức tương ứng của họ.
 
 ^1^<https://www.ohdsi.org/who-we-are/collaborators/>
 
@@ -254,11 +257,6 @@ kê tóm tắt tổng hợp, và chỉ những số liệu thống kê tóm tắ
 height="3.0625in"}
 
 Hình 1.2: Bản đồ cộng tác viên OHDSI tính đến tháng 8 năm 2019
-
-lựa chọn hợp tác trong nghiên cứu. Với mạng lưới phân tán OHDSI, mỗi
-đối tác dữ liệu giữ toàn quyền tự chủ đối với việc sử dụng dữ liệu cấp
-độ bệnh nhân của họ và tiếp tục tuân thủ các chính sách quản trị dữ
-liệu trong các tổ chức tương ứng của họ.
 
 Cộng đồng nhà phát triển OHDSI đã tạo ra một thư viện mạnh mẽ các công
 cụ phân tích mã nguồn mở trên OMOP CDM để hỗ trợ 3 trường hợp sử
@@ -334,8 +332,9 @@ hành trình, hãy xem Chương 2 ("Nơi bắt đầu") để biết cách bắt
 ![](media/image4.png){width="0.4455205599300088in"
 height="0.4644783464566929in"}
 
-- –	Sứ mệnh của OHDSI là cải thiện sức khỏe bằng cách trao quyền cho cộng đồng cùng nhau tạo ra bằng chứng thúc đẩy các quyết định y tế tốt hơn và dịch vụ chăm sóc tốt hơn.
+-	Sứ mệnh của OHDSI là cải thiện sức khỏe bằng cách trao quyền cho cộng đồng cùng nhau tạo ra bằng chứng thúc đẩy các quyết định y tế tốt hơn và dịch vụ chăm sóc tốt hơn.
 
-- –	Tầm nhìn của chúng tôi là một thế giới nơi nghiên cứu quan sát tạo ra sự hiểu biết toàn diện về sức khỏe và bệnh tật, điều này sẽ đạt được thông qua các mục tiêu của chúng tôi về đổi mới, khả năng tái lập, cộng đồng, hợp tác, cởi mở và lòng nhân ái.
-**--** – Các cộng tác viên của OHDSI tập trung vào các tiêu chuẩn dữ liệu cộng đồng mở, nghiên cứu phương pháp luận, phát triển phân tích mã nguồn mở và các ứng dụng lâm sàng để cải thiện hành trình từ dữ liệu đến bằng chứng.
+- Tầm nhìn của chúng tôi là một thế giới nơi nghiên cứu quan sát tạo ra sự hiểu biết toàn diện về sức khỏe và bệnh tật, điều này sẽ đạt được thông qua các mục tiêu của chúng tôi về đổi mới, khả năng tái lập, cộng đồng, hợp tác, cởi mở và lòng nhân ái.
+
+– Các cộng tác viên của OHDSI tập trung vào các tiêu chuẩn dữ liệu cộng đồng mở, nghiên cứu phương pháp luận, phát triển phân tích mã nguồn mở và các ứng dụng lâm sàng để cải thiện hành trình từ dữ liệu đến bằng chứng.
 
