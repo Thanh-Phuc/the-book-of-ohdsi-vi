@@ -336,7 +336,7 @@ kèm siêu dữ liệu này một cách hệ thống trong OMOP CDM là lĩnh v�
 Nhóm làm việc Siêu dữ liệu.
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - The OHDSI community can be seen as an open-science community that is
 actively pursuing the interoperability and reproducibility of medical

@@ -494,7 +494,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="lựa-chọn-biến" class="level3">
 <h3 class="anchored" data-anchor-id="lựa-chọn-biến">Lựa chọn biến</h3>
 <p>Trước đây, PS được tính toán dựa trên các đặc điểm được chọn thủ công, và mặc dù các công cụ OHDSI có thể hỗ trợ những phương pháp như vậy, chúng tôi ưu tiên sử dụng nhiều đặc điểm chung (tức là các đặc điểm không được chọn dựa trên các phơi nhiễm và kết cục cụ thể trong nghiên cứu). (Tian et al., 2018) Những đặc điểm này bao gồm nhân khẩu học, cũng như tất cả các chẩn đoán, phơi nhiễm thuốc, đo lường và thủ thuật y tế được quan sát trước và vào ngày bắt đầu điều trị. Một mô hình thường bao gồm từ 10.000 đến 100.000 đặc điểm duy nhất, được chúng tôi khớp bằng hồi quy chuẩn hóa quy mô lớn (Suchard et al., 2013) được triển khai trong gói Cyclops. Về cơ bản, chúng tôi để dữ liệu quyết định những đặc điểm nào có khả năng dự đoán việc phân bổ điều trị và nên được đưa vào mô hình.</p>
-<p><img src="media/image6.png" style="width:0.455in;height:0.455in"></p>
+<p><img src="media/image6.png" class="book-icon" style="width:0.455in;height:0.455in"></p>
 <p>We typically include the day of treatment initiation in the covariate capture window because many relevant data points such as the diagnosis leading to the treatment are recorded on that date. On this day the target and comparator treatment themselves are also recorded, but these should <em>not</em> be included in the propensity model, because they are the very thing we are trying to predict. We must therefore explicitly exclude the target and comparator treatment from the set of covariates</p>
 <p>Một số người cho rằng cách tiếp cận dựa trên dữ liệu để lựa chọn đồng biến mà không phụ thuộc vào chuyên môn lâm sàng để xác định cấu trúc nhân quả "đúng" sẽ có nguy cơ vô tình đưa vào các biến gọi là biến công cụ và biến nhiễu (colliders), từ đó làm tăng phương sai và có khả năng gây sai lệch. (Hernan et al., 2002) Tuy nhiên, những lo ngại này khó có tác động lớn trong các tình huống thực tế. (Schneeweiss, 2018) Hơn nữa, trong y học, cấu trúc nhân quả thực sự hiếm khi được biết rõ, và khi các nhà nghiên cứu khác nhau được yêu cầu xác định các đồng biến 'đúng' để đưa vào cho một câu hỏi nghiên cứu cụ thể, mỗi nhà nghiên cứu luôn đưa ra một danh sách khác nhau, do đó làm cho quá trình này không thể tái lập. Quan trọng nhất, các chẩn đoán của chúng tôi như kiểm tra mô hình xu hướng, đánh giá sự cân bằng trên tất cả các đồng biến và đưa vào các kiểm soát âm tính sẽ xác định hầu hết các vấn đề liên quan đến biến nhiễu và biến công cụ.</p>
 </section>
@@ -618,11 +618,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="triển-khai-nghiên-cứu-bằng-atlas" class="level2">
 <h2 class="anchored" data-anchor-id="triển-khai-nghiên-cứu-bằng-atlas">Triển khai nghiên cứu bằng ATLAS</h2>
-<p>Tại đây, chúng tôi chứng minh cách nghiên cứu này có thể được triển khai bằng hàm Estimation (Ước tính) trong ATLAS. Nhấp vào trong thanh bên trái của ATLAS và tạo một nghiên cứu ước tính mới. Hãy chắc chắn đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế nghiên cứu có thể được lưu bất cứ lúc nào bằng cách nhấp vào nút .<img src="media/image101.png" style="width:0.97904in;height:0.18748in"><img src="media/image46.png" style="width:0.18748in;height:0.18748in"></p>
+<p>Tại đây, chúng tôi chứng minh cách nghiên cứu này có thể được triển khai bằng hàm Estimation (Ước tính) trong ATLAS. Nhấp vào trong thanh bên trái của ATLAS và tạo một nghiên cứu ước tính mới. Hãy chắc chắn đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế nghiên cứu có thể được lưu bất cứ lúc nào bằng cách nhấp vào nút .<img src="media/image101.png" class="book-icon" style="width:0.97904in;height:0.18748in"><img src="media/image46.png" class="book-icon" style="width:0.18748in;height:0.18748in"></p>
 <p>Trong hàm thiết kế Ước tính, có ba phần: So sánh, Cài đặt phân tích và Cài đặt đánh giá. Chúng ta có thể chỉ định nhiều so sánh và nhiều cài đặt phân tích, và ATLAS sẽ thực hiện tất cả các kết hợp này dưới dạng các phân tích riêng biệt. Tại đây, chúng tôi thảo luận từng phần:</p>
 <section id="cài-đặt-nhóm-thuần-tập-so-sánh" class="level3">
 <h3 class="anchored" data-anchor-id="cài-đặt-nhóm-thuần-tập-so-sánh">Cài đặt nhóm thuần tập so sánh</h3>
-<p>Một nghiên cứu có thể có một hoặc nhiều so sánh. Nhấp vào “Add Comparison” (Thêm so sánh), thao tác này sẽ mở ra một hộp thoại mới. Nhấp vào để chọn các nhóm thuần tập mục tiêu và so sánh. Bằng cách nhấp vào “Add Outcome” (Thêm kết cục), chúng ta có thể thêm hai nhóm thuần tập kết cục của mình. Chúng tôi giả định rằng các nhóm thuần tập đã được tạo trong ATLAS như được mô tả trong Chương 10. Phụ lục cung cấp các định nghĩa đầy đủ về các nhóm thuần tập mục tiêu (Phụ lục B.2), so sánh (Phụ lục B.5) và kết cục (Phụ lục B.4 và Phụ lục B.3). Khi hoàn tất, hộp thoại sẽ trông giống như Hình 12.6.<img src="media/image102.png" style="width:0.20831in;height:0.18748in"></p>
+<p>Một nghiên cứu có thể có một hoặc nhiều so sánh. Nhấp vào “Add Comparison” (Thêm so sánh), thao tác này sẽ mở ra một hộp thoại mới. Nhấp vào để chọn các nhóm thuần tập mục tiêu và so sánh. Bằng cách nhấp vào “Add Outcome” (Thêm kết cục), chúng ta có thể thêm hai nhóm thuần tập kết cục của mình. Chúng tôi giả định rằng các nhóm thuần tập đã được tạo trong ATLAS như được mô tả trong Chương 10. Phụ lục cung cấp các định nghĩa đầy đủ về các nhóm thuần tập mục tiêu (Phụ lục B.2), so sánh (Phụ lục B.5) và kết cục (Phụ lục B.4 và Phụ lục B.3). Khi hoàn tất, hộp thoại sẽ trông giống như Hình 12.6.<img src="media/image102.png" class="book-icon" style="width:0.20831in;height:0.18748in"></p>
 <p><img src="media/image103.png" style="width:5.33042in;height:3.08917in"></p>
 <p>Hình 12.6: Hộp thoại so sánh</p>
 <p>Lưu ý rằng chúng ta có thể chọn nhiều kết cục cho một cặp mục tiêu-so sánh. Mỗi kết cục sẽ được xử lý độc lập và sẽ dẫn đến một phân tích riêng biệt.</p>
@@ -744,7 +744,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Chúng ta phải cung cấp tên cho gói của mình, sau đó chúng ta có thể nhấp vào “Download” (Tải xuống) để</p>
 <p><img src="media/image114.jpeg" style="width:5.31156in;height:4.37719in"></p>
 <p>Hình 12.17: Cài đặt định nghĩa nhóm thuần tập kết cục kiểm soát âm tính.</p>
-<p>tải xuống tệp zip. Tệp zip chứa một gói R, với cấu trúc thư mục bắt buộc thông thường cho các gói R. (Wickham, 2015) Để sử dụng gói này, chúng tôi khuyên bạn nên sử dụng R Studio. Nếu bạn đang chạy R Studio cục bộ, hãy giải nén tệp và nhấp đúp vào tệp .Rproj để mở nó trong R Studio. Nếu bạn đang chạy R Studio trên một máy chủ R studio, hãy nhấp vào để tải lên và giải nén tệp, sau đó nhấp vào tệp .Rproj để mở dự án.<img src="media/image115.png" style="width:0.6772in;height:0.19795in"></p>
+<p>tải xuống tệp zip. Tệp zip chứa một gói R, với cấu trúc thư mục bắt buộc thông thường cho các gói R. (Wickham, 2015) Để sử dụng gói này, chúng tôi khuyên bạn nên sử dụng R Studio. Nếu bạn đang chạy R Studio cục bộ, hãy giải nén tệp và nhấp đúp vào tệp .Rproj để mở nó trong R Studio. Nếu bạn đang chạy R Studio trên một máy chủ R studio, hãy nhấp vào để tải lên và giải nén tệp, sau đó nhấp vào tệp .Rproj để mở dự án.<img src="media/image115.png" class="book-icon" style="width:0.6772in;height:0.19795in"></p>
 <p>Sau khi bạn đã mở dự án trong R Studio, bạn có thể mở tệp README và làm theo hướng dẫn. Hãy chắc chắn thay đổi tất cả các đường dẫn tệp thành các đường dẫn hiện có trên hệ thống của bạn.</p>
 <p>Một thông báo lỗi phổ biến có thể xuất hiện khi chạy nghiên cứu là “High correlation between covariate(s) and treatment detected.” (Phát hiện mối tương quan cao giữa (các) đồng biến và điều trị). Điều này cho thấy rằng khi khớp mô hình điểm xu hướng, một số đồng biến được quan sát thấy có mối tương quan cao với phơi nhiễm. Vui lòng xem xét các đồng biến được đề cập trong thông báo lỗi và loại trừ chúng khỏi tập hợp các đồng biến nếu thích hợp (xem Phần 12.1.2).<span id="_bookmark352" class="anchor"></span></p>
 </section>
@@ -1029,7 +1029,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tóm-tắt" class="level2">
 <h2 class="anchored" data-anchor-id="tóm-tắt">Tóm tắt</h2>
 <p>Hình 12.22: Biểu đồ Kaplan-Meier.</p>
-<p><img src="media/image4.png" style="width:0.44552in;height:0.46448in"></p>
+<p><img src="media/image4.png" class="book-icon" style="width:0.44552in;height:0.46448in"></p>
 <ul>
 <li><p>Population-level estimation aims to infer causal effects from observational data.</p></li>
 <li><p>The <strong>counterfactual</strong>, what would have happened if the subject had received an alternative exposure or no exposure, cannot be observed.</p></li>
@@ -1909,7 +1909,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>nên được đưa vào mô hình.</span>
 <span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image6.png)</span>{width="0.45499890638670165in"</span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>height="0.45499890638670165in"}</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>height="0.45499890638670165in" .book-icon}</span>
 <span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>We typically include the day of treatment</span>
 <span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>initiation in the covariate capture window because many relevant data</span>
@@ -2279,8 +2279,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-586"><a href="#cb1-586" aria-hidden="true" tabindex="-1"></a>đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế nghiên cứu có</span>
 <span id="cb1-587"><a href="#cb1-587" aria-hidden="true" tabindex="-1"></a>thể được lưu bất cứ lúc nào bằng cách nhấp vào nút</span>
 <span id="cb1-588"><a href="#cb1-588" aria-hidden="true" tabindex="-1"></a>.<span class="al">![](media/image101.png)</span>{width="0.9790430883639545in"</span>
-<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}<span class="al">![](media/image46.png)</span>{width="0.18747594050743657in"</span>
-<span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}</span>
+<span id="cb1-589"><a href="#cb1-589" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}<span class="al">![](media/image46.png)</span>{width="0.18747594050743657in"</span>
+<span id="cb1-590"><a href="#cb1-590" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}</span>
 <span id="cb1-591"><a href="#cb1-591" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-592"><a href="#cb1-592" aria-hidden="true" tabindex="-1"></a>Trong hàm thiết kế Ước tính, có ba phần: So sánh, Cài đặt phân tích và</span>
 <span id="cb1-593"><a href="#cb1-593" aria-hidden="true" tabindex="-1"></a>Cài đặt đánh giá. Chúng ta có thể chỉ định nhiều so sánh và nhiều cài</span>
@@ -2299,7 +2299,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-606"><a href="#cb1-606" aria-hidden="true" tabindex="-1"></a>B.2), so sánh (Phụ lục B.5) và kết cục (Phụ lục B.4 và Phụ lục B.3).</span>
 <span id="cb1-607"><a href="#cb1-607" aria-hidden="true" tabindex="-1"></a>Khi hoàn tất, hộp thoại sẽ trông giống như Hình</span>
 <span id="cb1-608"><a href="#cb1-608" aria-hidden="true" tabindex="-1"></a>12.6.<span class="al">![](media/image102.png)</span>{width="0.20830599300087488in"</span>
-<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}</span>
+<span id="cb1-609"><a href="#cb1-609" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}</span>
 <span id="cb1-610"><a href="#cb1-610" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-611"><a href="#cb1-611" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image103.png)</span>{width="5.330416666666666in"</span>
 <span id="cb1-612"><a href="#cb1-612" aria-hidden="true" tabindex="-1"></a>height="3.0891655730533683in"}</span>
@@ -2760,7 +2760,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-1067"><a href="#cb1-1067" aria-hidden="true" tabindex="-1"></a>Studio. Nếu bạn đang chạy R Studio trên một máy chủ R studio, hãy nhấp</span>
 <span id="cb1-1068"><a href="#cb1-1068" aria-hidden="true" tabindex="-1"></a>vào để tải lên và giải nén tệp, sau đó nhấp vào tệp .Rproj để mở dự</span>
 <span id="cb1-1069"><a href="#cb1-1069" aria-hidden="true" tabindex="-1"></a>án.<span class="al">![](media/image115.png)</span>{width="0.6771981627296588in"</span>
-<span id="cb1-1070"><a href="#cb1-1070" aria-hidden="true" tabindex="-1"></a>height="0.1979494750656168in"}</span>
+<span id="cb1-1070"><a href="#cb1-1070" aria-hidden="true" tabindex="-1"></a>height="0.1979494750656168in" .book-icon}</span>
 <span id="cb1-1071"><a href="#cb1-1071" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1072"><a href="#cb1-1072" aria-hidden="true" tabindex="-1"></a>Sau khi bạn đã mở dự án trong R Studio, bạn có thể mở tệp README và</span>
 <span id="cb1-1073"><a href="#cb1-1073" aria-hidden="true" tabindex="-1"></a>làm theo hướng dẫn. Hãy chắc chắn thay đổi tất cả các đường dẫn tệp</span>
@@ -3417,7 +3417,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-1724"><a href="#cb1-1724" aria-hidden="true" tabindex="-1"></a>Hình 12.22: Biểu đồ Kaplan-Meier.</span>
 <span id="cb1-1725"><a href="#cb1-1725" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1726"><a href="#cb1-1726" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image4.png)</span>{width="0.4455205599300088in"</span>
-<span id="cb1-1727"><a href="#cb1-1727" aria-hidden="true" tabindex="-1"></a>height="0.4644783464566929in"}</span>
+<span id="cb1-1727"><a href="#cb1-1727" aria-hidden="true" tabindex="-1"></a>height="0.4644783464566929in" .book-icon}</span>
 <span id="cb1-1728"><a href="#cb1-1728" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1729"><a href="#cb1-1729" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Population-level estimation aims to infer causal effects from</span>
 <span id="cb1-1730"><a href="#cb1-1730" aria-hidden="true" tabindex="-1"></a>observational data.</span>

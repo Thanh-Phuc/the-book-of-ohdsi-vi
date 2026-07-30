@@ -133,7 +133,7 @@ Cuốn sách này được cấp phép theo giấy phép Creative Commons Zero v
 Universal.
 
 ![](media/image1.png){width="1.2191655730533684in"
-height="0.4294783464566929in"}
+height="0.4294783464566929in" .book-icon}
 
 ## Cách cuốn sách được phát triển
 

@@ -650,7 +650,7 @@ thể nhấp vào bất kỳ loại thuốc nào trong số này để có cái 
 tiết hơn, ví dụ như hiển thị phân bố độ tuổi và giới tính cho các loại
 thuốc
 này.![](media/image64.png){width="1.093918416447944in"
-height="0.18752843394575677in"}
+height="0.18752843394575677in" .book-icon}
 
 #### Bài tập 11.2
 
@@ -664,14 +664,14 @@ thành "Thành phần" (Ingredient) và Khái niệm chuẩn (Standard Concept)
 thành "Chuẩn" (Standard), rồi nhấp để thêm khái niệm vào tập hợp khái
 niệm của bạn như được hiển thị trong Hình
 E.9.![](media/image44.jpeg){width="1.301920384951881in"
-height="0.18747594050743657in"}![](media/image50.jpeg){width="0.635336832895888in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}![](media/image50.jpeg){width="0.635336832895888in"
+height="0.18747594050743657in" .book-icon}
 
 phần" (Ingredient) và Khái niệm chuẩn (Standard Concept) thành "Chuẩn"
 (Standard), rồi nhấp để thêm khái niệm vào tập hợp khái niệm của bạn
 như được hiển thị trong Hình
 E.9.![](media/image52.png){width="0.15622922134733158in"
-height="0.12498359580052494in"}
+height="0.12498359580052494in" .book-icon}
 
 ![](media/image188.jpeg){width="5.3125in"
 height="4.296874453193351in"}
@@ -695,8 +695,8 @@ các phần Tiêu chí bao gồm (Inclusion Criteria), Thoát nhóm thuần tậ
 (Cohort Exit) và Giai đoạn nhóm thuần tập (Cohort Eras). Hãy đảm bảo
 lưu định nghĩa nhóm thuần tập bằng cách nhấp và đóng nó bằng cách
 nhấp.![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}![](media/image190.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}![](media/image190.png){width="0.18747594050743657in"
+height="0.18747594050743657in" .book-icon}
 
 ![](media/image191.png){width="5.380207786526684in"
 height="2.817707786526684in"}
@@ -716,12 +716,12 @@ một phân tích tình trạng bệnh lý và một phân tích thuốc, ví d�
 Time Prior) và "Giai đoạn nhóm tình trạng bệnh lý bất kỳ thời điểm nào
 trước đó" (Condition Group Era Any Time
 Prior).![](media/image68.png){width="1.479808617672791in"
-height="0.1563167104111986in"}
+height="0.1563167104111986in" .book-icon}
 
 Định nghĩa đặc điểm hóa của bạn bây giờ sẽ trông giống như Hình E.11.
 Hãy đảm bảo lưu các cài đặt đặc điểm hóa bằng cách
 nhấp.![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 Nhấp vào tab "Thực thi" (Executions) và nhấp vào "Tạo" (Generate) cho
 một trong các nguồn dữ liệu. Có thể mất một lúc để quá trình tạo hoàn
@@ -753,9 +753,9 @@ tiêu hóa"). Mở mô-đun, tìm kiếm "Gastrointestinal hemorrhage", và nh�
 vào bên cạnh khái niệm hàng đầu để thêm khái niệm vào tập hợp khái
 niệm của bạn như được hiển thị trong Hình
 E.13.![](media/image44.jpeg){width="1.301920384951881in"
-height="0.18747594050743657in"}![](media/image50.jpeg){width="0.635336832895888in"
-height="0.18747594050743657in"}![](media/image52.png){width="0.15622922134733158in"
-height="0.12498359580052494in"}
+height="0.18747594050743657in" .book-icon}![](media/image50.jpeg){width="0.635336832895888in"
+height="0.18747594050743657in" .book-icon}![](media/image52.png){width="0.15622922134733158in"
+height="0.12498359580052494in" .book-icon}
 
 ![](media/image194.jpeg){width="5.369791119860017in"
 height="2.5104166666666665in"}
@@ -780,8 +780,8 @@ sẽ trông giống như Hình E.15. Để nguyên các phần Tiêu chí bao g�
 Thoát nhóm thuần tập và Giai đoạn nhóm thuần tập. Hãy đảm bảo lưu định
 nghĩa nhóm thuần tập bằng cách nhấp và đóng nó bằng cách
 nhấp.![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}![](media/image190.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}![](media/image190.png){width="0.18747594050743657in"
+height="0.18747594050743657in" .book-icon}
 
 ![](media/image196.png){width="5.348957786526684in"
 height="2.6145833333333335in"}
@@ -799,8 +799,8 @@ xuất huyết tiêu hóa mới của chúng ta. Đặt Thời gian nguy cơ (Ti
 Risk) kết thúc 1095 ngày sau ngày bắt đầu. Phân tích bây giờ sẽ trông
 giống như Hình E.16. Hãy đảm bảo lưu các cài đặt phân tích bằng cách
 nhấp.![](media/image87.png){width="1.2505238407699037in"
-height="0.18757764654418196in"}![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18757764654418196in" .book-icon}![](media/image46.png){width="0.18747594050743657in"
+height="0.18747594050743657in" .book-icon}
 
 ![](media/image197.jpeg){width="5.389998906386702in"
 height="2.765in"}

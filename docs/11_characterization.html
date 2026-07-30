@@ -490,7 +490,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="đặc-điểm-hóa-cơ-sở-dữ-liệu-trong-atlas" class="level2">
 <h2 class="anchored" data-anchor-id="đặc-điểm-hóa-cơ-sở-dữ-liệu-trong-atlas">Đặc điểm hóa cơ sở dữ liệu trong ATLAS</h2>
 <p>Tại đây, chúng tôi trình bày cách sử dụng mô-đun nguồn dữ liệu trong ATLAS để khám phá các thống kê đặc điểm hóa cơ sở dữ liệu được tạo bằng ACHILLES nhằm tìm ra các đặc điểm cấp độ cơ sở dữ liệu</p>
-<p>liên quan đến những người bị tăng huyết áp. Bắt đầu bằng cách nhấp vào trong thanh bên trái của ATLAS để bắt đầu. Trong danh sách thả xuống đầu tiên hiển thị trong ATLAS, hãy chọn cơ sở dữ liệu để khám phá. Tiếp theo, sử dụng danh sách thả xuống bên dưới cơ sở dữ liệu để bắt đầu khám phá các báo cáo. Để thực hiện việc này, hãy chọn Condition Occurrence (Sự kiện bệnh lý) từ danh sách thả xuống báo cáo, thao tác này sẽ hiển thị trực quan hóa dạng sơ đồ cây (treemap) của tất cả các bệnh lý có trong cơ sở dữ liệu:<img src="media/image64.png" style="width:1.09392in;height:0.18753in"></p>
+<p>liên quan đến những người bị tăng huyết áp. Bắt đầu bằng cách nhấp vào trong thanh bên trái của ATLAS để bắt đầu. Trong danh sách thả xuống đầu tiên hiển thị trong ATLAS, hãy chọn cơ sở dữ liệu để khám phá. Tiếp theo, sử dụng danh sách thả xuống bên dưới cơ sở dữ liệu để bắt đầu khám phá các báo cáo. Để thực hiện việc này, hãy chọn Condition Occurrence (Sự kiện bệnh lý) từ danh sách thả xuống báo cáo, thao tác này sẽ hiển thị trực quan hóa dạng sơ đồ cây (treemap) của tất cả các bệnh lý có trong cơ sở dữ liệu:<img src="media/image64.png" class="book-icon" style="width:1.09392in;height:0.18753in"></p>
 <p><img src="media/image65.png" style="width:5.32667in;height:2.81333in"></p>
 <p>Hình 11.3: Nguồn dữ liệu Atlas: Sơ đồ cây về sự kiện bệnh lý</p>
 <p>Để tìm kiếm một bệnh lý cụ thể, hãy nhấp vào tab Table (Bảng) để hiển thị danh sách đầy đủ các bệnh lý trong cơ sở dữ liệu với số lượng người, tỷ lệ phổ biến và số hồ sơ trên mỗi người. Sử dụng hộp lọc ở trên cùng, chúng ta có thể lọc các mục trong bảng dựa trên tên khái niệm có chứa thuật ngữ “hypertension” (tăng huyết áp):</p>
@@ -504,8 +504,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="đặc-điểm-hóa-nhóm-thuần-tập-trong-atlas" class="level2">
 <h2 class="anchored" data-anchor-id="đặc-điểm-hóa-nhóm-thuần-tập-trong-atlas">Đặc điểm hóa nhóm thuần tập trong ATLAS</h2>
-<p>Tại đây, chúng tôi trình bày cách sử dụng ATLAS để thực hiện đặc điểm hóa nhóm thuần tập quy mô lớn cho một vài nhóm thuần tập. Nhấp vào trong thanh bên trái của ATLAS và<img src="media/image68.png" style="width:1.47981in;height:0.15632in"></p>
-<p>tạo một phân tích đặc điểm hóa mới. Đặt tên cho phân tích và lưu bằng cách sử dụng nút .<img src="media/image46.png" style="width:0.18748in;height:0.18748in"></p>
+<p>Tại đây, chúng tôi trình bày cách sử dụng ATLAS để thực hiện đặc điểm hóa nhóm thuần tập quy mô lớn cho một vài nhóm thuần tập. Nhấp vào trong thanh bên trái của ATLAS và<img src="media/image68.png" class="book-icon" style="width:1.47981in;height:0.15632in"></p>
+<p>tạo một phân tích đặc điểm hóa mới. Đặt tên cho phân tích và lưu bằng cách sử dụng nút .<img src="media/image46.png" class="book-icon" style="width:0.18748in;height:0.18748in"></p>
 <section id="thiết-kế" class="level3">
 <h3 class="anchored" data-anchor-id="thiết-kế">Thiết kế</h3>
 <p>Một phân tích đặc điểm hóa yêu cầu ít nhất một nhóm thuần tập và ít nhất một đặc điểm để đặc điểm hóa. Đối với ví dụ này, chúng ta sẽ sử dụng hai nhóm thuần tập. Nhóm thuần tập đầu tiên sẽ xác định những người bắt đầu điều trị tăng huyết áp làm ngày chỉ số với ít nhất một chẩn đoán tăng huyết áp trong năm trước đó. Chúng ta cũng sẽ yêu cầu những người trong nhóm thuần tập này có ít nhất một năm quan sát sau khi bắt đầu dùng thuốc tăng huyết áp (Phụ lục B.6). Nhóm thuần tập thứ hai giống hệt với nhóm thuần tập đầu tiên được mô tả với yêu cầu có ít nhất ba năm quan sát thay vì một (Phụ lục B.7).</p>
@@ -513,12 +513,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="định-nghĩa-nhóm-thuần-tập">Định nghĩa nhóm thuần tập</h4>
 <p><img src="media/image69.png" style="width:5.36in;height:2.88667in"></p>
 <p>Hình 11.6: Tab thiết kế đặc điểm hóa - chọn định nghĩa nhóm thuần tập</p>
-<p>Chúng tôi giả định rằng các nhóm thuần tập đã được tạo trong ATLAS như mô tả trong Chương 10. Nhấp vào và chọn các nhóm thuần tập như hiển thị trong hình 11.6. Tiếp theo, chúng ta sẽ xác định các đặc điểm để sử dụng cho việc đặc điểm hóa hai nhóm thuần tập này.<img src="media/image70.png" style="width:0.36474in;height:0.18758in"></p>
+<p>Chúng tôi giả định rằng các nhóm thuần tập đã được tạo trong ATLAS như mô tả trong Chương 10. Nhấp vào và chọn các nhóm thuần tập như hiển thị trong hình 11.6. Tiếp theo, chúng ta sẽ xác định các đặc điểm để sử dụng cho việc đặc điểm hóa hai nhóm thuần tập này.<img src="media/image70.png" class="book-icon" style="width:0.36474in;height:0.18758in"></p>
 </section>
 <section id="chọn-đặc-điểm" class="level4">
 <h4 class="anchored" data-anchor-id="chọn-đặc-điểm">Chọn đặc điểm</h4>
 <p>ATLAS đi kèm với gần 100 phân tích đặc điểm cài sẵn được sử dụng để thực hiện đặc điểm hóa trên các lĩnh vực lâm sàng được mô hình hóa trong OMOP CDM. Mỗi phân tích đặc điểm cài sẵn này thực hiện các chức năng tổng hợp và tóm tắt trên các quan sát lâm sàng cho các nhóm thuần tập mục tiêu đã chọn. Các phép tính này cung cấp hàng nghìn đặc điểm tiềm năng để mô tả các đặc điểm nền và sau chỉ số của nhóm thuần tập. Về cơ bản, ATLAS đang sử dụng gói R FeatureExtraction của OHDSI để thực hiện việc đặc điểm hóa cho mỗi nhóm thuần tập. Chúng ta sẽ đề cập đến việc sử dụng FeatureExtraction và R chi tiết hơn trong phần tiếp theo.</p>
-<p>Nhấp vào để chọn đặc điểm cần đặc điểm hóa. Dưới đây là danh sách các đặc điểm chúng ta sẽ sử dụng để đặc điểm hóa các nhóm thuần tập này:<img src="media/image70.png" style="width:0.36474in;height:0.18758in"></p>
+<p>Nhấp vào để chọn đặc điểm cần đặc điểm hóa. Dưới đây là danh sách các đặc điểm chúng ta sẽ sử dụng để đặc điểm hóa các nhóm thuần tập này:<img src="media/image70.png" class="book-icon" style="width:0.36474in;height:0.18758in"></p>
 <p><img src="media/image71.png" style="width:5.28281in;height:4.6725in"></p>
 <p>Hình 11.7: Tab thiết kế đặc điểm hóa - chọn đặc điểm.</p>
 <p>Hình trên hiển thị danh sách các đặc điểm đã chọn cùng với mô tả về những gì mỗi đặc điểm sẽ đặc điểm hóa cho mỗi nhóm thuần tập. Các đặc điểm bắt đầu bằng tên “Demographics” (Nhân khẩu học) sẽ tính toán thông tin nhân khẩu học cho mỗi người tại ngày bắt đầu nhóm thuần tập. Đối với các đặc điểm bắt đầu bằng tên lĩnh vực (ví dụ: Visit, Procedure, Condition,</p>
@@ -574,11 +574,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="xác-định-các-đặc-điểm-tùy-chỉnh" class="level3">
 <h3 class="anchored" data-anchor-id="xác-định-các-đặc-điểm-tùy-chỉnh">Xác định các đặc điểm tùy chỉnh</h3>
-<p>Ngoài các đặc điểm cài sẵn, ATLAS hỗ trợ khả năng cho phép các đặc điểm tùy chỉnh do người dùng xác định. Để thực hiện việc này, hãy nhấp vào mục menu bên trái Characterization (Đặc điểm hóa), sau đó nhấp vào tab Feature Analysis (Phân tích đặc điểm) và nhấp vào nút New Feature Analysis (Phân tích đặc điểm mới). Đặt tên cho đặc điểm tùy chỉnh và lưu nó bằng cách sử dụng nút .<img src="media/image46.png" style="width:0.18748in;height:0.18748in"></p>
+<p>Ngoài các đặc điểm cài sẵn, ATLAS hỗ trợ khả năng cho phép các đặc điểm tùy chỉnh do người dùng xác định. Để thực hiện việc này, hãy nhấp vào mục menu bên trái Characterization (Đặc điểm hóa), sau đó nhấp vào tab Feature Analysis (Phân tích đặc điểm) và nhấp vào nút New Feature Analysis (Phân tích đặc điểm mới). Đặt tên cho đặc điểm tùy chỉnh và lưu nó bằng cách sử dụng nút .<img src="media/image46.png" class="book-icon" style="width:0.18748in;height:0.18748in"></p>
 <p>Trong ví dụ này, chúng ta sẽ xác định một đặc điểm tùy chỉnh sẽ xác định số lượng người trong mỗi nhóm thuần tập có kỷ nguyên thuốc ức chế ACE trong lịch sử của họ sau khi bắt đầu nhóm thuần tập:</p>
 <p><img src="media/image79.png" style="width:5.38in;height:3.30667in"></p>
 <p>Hình 11.15: Định nghĩa đặc điểm tùy chỉnh trong ATLAS.</p>
-<p>Các tiêu chí được xác định ở trên giả định rằng nó sẽ được áp dụng cho ngày bắt đầu nhóm thuần tập. Sau khi đã xác định các tiêu chí và lưu lại, chúng ta có thể áp dụng nó vào thiết kế đặc điểm hóa mà chúng ta đã tạo trong phần trước. Để thực hiện việc này, hãy mở thiết kế đặc điểm hóa và điều hướng đến phần Feature Analysis (Phân tích đặc điểm). Nhấp vào nút và từ menu chọn các đặc điểm tùy chỉnh mới. Chúng bây giờ sẽ xuất hiện trong danh sách đặc điểm cho thiết kế đặc điểm hóa. Như đã mô tả trước đó, chúng ta có thể thực thi thiết kế này trên cơ sở dữ liệu để tạo ra đặc điểm hóa cho đặc điểm tùy chỉnh này:<img src="media/image70.png" style="width:0.36474in;height:0.18758in"></p>
+<p>Các tiêu chí được xác định ở trên giả định rằng nó sẽ được áp dụng cho ngày bắt đầu nhóm thuần tập. Sau khi đã xác định các tiêu chí và lưu lại, chúng ta có thể áp dụng nó vào thiết kế đặc điểm hóa mà chúng ta đã tạo trong phần trước. Để thực hiện việc này, hãy mở thiết kế đặc điểm hóa và điều hướng đến phần Feature Analysis (Phân tích đặc điểm). Nhấp vào nút và từ menu chọn các đặc điểm tùy chỉnh mới. Chúng bây giờ sẽ xuất hiện trong danh sách đặc điểm cho thiết kế đặc điểm hóa. Như đã mô tả trước đó, chúng ta có thể thực thi thiết kế này trên cơ sở dữ liệu để tạo ra đặc điểm hóa cho đặc điểm tùy chỉnh này:<img src="media/image70.png" class="book-icon" style="width:0.36474in;height:0.18758in"></p>
 <p><img src="media/image80.png" style="width:5.34844in;height:2.0475in"></p>
 <p>Hình 11.16: Hiển thị kết quả đặc điểm tùy chỉnh.</p>
 </section>
@@ -670,14 +670,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Hình 11.17: Phân tích lộ trình trong bối cảnh của một cá nhân.</p>
 <p>Trong hình 11.17, người đó là một phần của nhóm thuần tập mục tiêu với ngày bắt đầu và ngày kết thúc được xác định. Sau đó, các đoạn đường được đánh số đại diện cho nơi người đó cũng được xác định trong một nhóm thuần tập sự kiện trong một khoảng thời gian. Các nhóm thuần tập sự kiện cho phép chúng ta mô tả bất kỳ sự kiện lâm sàng</p>
 <p>nào quan tâm được thể hiện trong CDM sao cho chúng ta không bị hạn chế trong việc tạo lộ trình cho một lĩnh vực hoặc khái niệm duy nhất.</p>
-<p>Để bắt đầu, hãy nhấp vào trong thanh bên trái của ATLAS để tạo một nghiên cứu lộ trình nhóm thuần tập mới. Cung cấp một tên mô tả và nhấn nút lưu.<img src="media/image82.png" style="width:1.35473in;height:0.18758in"></p>
+<p>Để bắt đầu, hãy nhấp vào trong thanh bên trái của ATLAS để tạo một nghiên cứu lộ trình nhóm thuần tập mới. Cung cấp một tên mô tả và nhấn nút lưu.<img src="media/image82.png" class="book-icon" style="width:1.35473in;height:0.18758in"></p>
 <section id="thiết-kế-1" class="level3">
 <h3 class="anchored" data-anchor-id="thiết-kế-1">Thiết kế</h3>
 <p>Để bắt đầu, chúng ta sẽ tiếp tục sử dụng các nhóm thuần tập bắt đầu liệu pháp hàng đầu cho bệnh tăng huyết áp với 1 và 3 năm theo dõi (Phụ lục B.6, B.7). Sử dụng nút để nhập 2 nhóm thuần tập.</p>
 <p><img src="media/image83.jpeg" style="width:5.37469in;height:2.65125in"></p>
 <p>Hình 11.18: Phân tích lộ trình với các nhóm thuần tập mục tiêu đã chọn.</p>
 <p>Tiếp theo, chúng ta sẽ xác định các nhóm thuần tập sự kiện bằng cách tạo một nhóm thuần tập cho mỗi loại thuốc tăng huyết áp hàng đầu quan tâm. Đối với điều này, chúng ta sẽ bắt đầu bằng cách tạo một nhóm thuần tập những người dùng thuốc ức chế ACE và xác định ngày kết thúc nhóm thuần tập là ngày kết thúc tiếp xúc liên tục. Chúng ta sẽ làm tương tự cho 8 loại thuốc tăng huyết áp khác và lưu ý rằng các định nghĩa này được tìm thấy trong Phụ lục B.8-</p>
-<p>B.16. Sau khi hoàn tất, hãy sử dụng nút để nhập các nhóm này vào phần Event Cohort (Nhóm thuần tập sự kiện) của thiết kế lộ trình:<img src="media/image70.png" style="width:0.36474in;height:0.18758in"></p>
+<p>B.16. Sau khi hoàn tất, hãy sử dụng nút để nhập các nhóm này vào phần Event Cohort (Nhóm thuần tập sự kiện) của thiết kế lộ trình:<img src="media/image70.png" class="book-icon" style="width:0.36474in;height:0.18758in"></p>
 <p>Khi hoàn tất, thiết kế của bạn sẽ trông giống như thiết kế ở trên. Tiếp theo, chúng ta sẽ cần quyết định một vài cài đặt phân tích bổ sung:</p>
 <ul>
 <li><p><strong>Cửa sổ kết hợp: Cài đặt này cho phép bạn xác định một khoảng thời gian, tính bằng ngày, trong đó sự chồng lấp giữa các sự kiện được coi là một sự kết hợp của các sự kiện. Ví dụ, nếu hai loại thuốc được đại diện bởi 2 nhóm thuần tập sự kiện (nhóm thuần tập sự kiện 1 và nhóm thuần tập sự kiện 2) chồng lấp trong cửa sổ kết hợp, thuật toán lộ trình sẽ kết hợp chúng thành “nhóm thuần tập sự kiện 1 + nhóm thuần tập sự kiện 2”.</strong></p></li>
@@ -708,8 +708,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="phân-tích-tỷ-lệ-mới-mắc-trong-atlas" class="level2">
 <h2 class="anchored" data-anchor-id="phân-tích-tỷ-lệ-mới-mắc-trong-atlas">Phân tích tỷ lệ mới mắc trong ATLAS</h2>
 <p>Trong một phép tính tỷ lệ mới mắc, chúng ta mô tả: trong số những người trong nhóm thuần tập mục tiêu, ai đã trải qua nhóm thuần tập kết cục trong thời gian có nguy cơ. Tại đây, chúng ta sẽ thiết kế một phân tích tỷ lệ mới mắc để đặc điểm hóa các kết cục phù mạch và nhồi máu cơ tim cấp tính trong số những người dùng thuốc ức chế ACE (ACEi) mới và thuốc lợi tiểu Thiazide và thiazide-like (THZ). Chúng ta sẽ đánh giá các kết cục này trong thời gian TAR mà một người tiếp xúc với thuốc. Ngoài ra, chúng ta sẽ thêm một kết cục tiếp xúc thuốc với thuốc chẹn thụ thể Angiotensin (ARBs) để đo lường tỷ lệ mới mắc của việc sử dụng ARBs mới trong thời gian tiếp xúc với các nhóm thuần tập mục tiêu (ACEi và THZ). Định nghĩa kết cục này cung cấp sự hiểu biết về cách ARBs được sử dụng trong các quần thể mục tiêu.</p>
-<p>Để bắt đầu, hãy nhấp vào trong thanh bên trái của ATLAS để tạo một tỷ lệ mới mắc<img src="media/image87.png" style="width:1.25052in;height:0.18758in"></p>
-<p>phân tích mới. Cung cấp một tên mô tả và nhấn nút lưu .<img src="media/image46.png" style="width:0.18748in;height:0.18748in"></p>
+<p>Để bắt đầu, hãy nhấp vào trong thanh bên trái của ATLAS để tạo một tỷ lệ mới mắc<img src="media/image87.png" class="book-icon" style="width:1.25052in;height:0.18758in"></p>
+<p>phân tích mới. Cung cấp một tên mô tả và nhấn nút lưu .<img src="media/image46.png" class="book-icon" style="width:0.18748in;height:0.18748in"></p>
 <section id="thiết-kế-2" class="level3">
 <h3 class="anchored" data-anchor-id="thiết-kế-2">Thiết kế</h3>
 <p>Chúng tôi giả định rằng các nhóm thuần tập được sử dụng trong ví dụ này đã được tạo trong ATLAS như mô tả trong Chương 10. Phụ lục cung cấp đầy đủ các định nghĩa về các nhóm thuần tập mục tiêu (Phụ lục B.2, B.5) và các nhóm thuần tập kết cục (Phụ lục B.4, B.3, B.9).</p>
@@ -726,7 +726,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="thực-thi-2" class="level3">
 <h3 class="anchored" data-anchor-id="thực-thi-2">Thực thi</h3>
-<p>Nhấp vào tab Generation (Tạo) và sau đó nhấn nút để hiển thị danh sách các cơ sở dữ liệu để sử dụng nhằm thực thi phân tích:<img src="media/image91.png" style="width:0.53147in;height:0.18758in"></p>
+<p>Nhấp vào tab Generation (Tạo) và sau đó nhấn nút để hiển thị danh sách các cơ sở dữ liệu để sử dụng nhằm thực thi phân tích:<img src="media/image91.png" class="book-icon" style="width:0.53147in;height:0.18758in"></p>
 <p><img src="media/image92.png" style="width:5.33917in;height:2.10521in"></p>
 <p>Hình 11.25: Thực thi phân tích tỷ suất mới mắc.</p>
 <p>Chọn một hoặc nhiều cơ sở dữ liệu và nhấp vào nút Generate (Tạo) để bắt đầu phân tích nhằm phân tích tất cả các kết hợp mục tiêu và kết cục được chỉ định trong thiết kế.</p>
@@ -734,19 +734,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="xem-kết-quả-1" class="level3">
 <h3 class="anchored" data-anchor-id="xem-kết-quả-1">Xem kết quả</h3>
 <p>Trên tab Generation (Tạo), phần trên của màn hình cho phép bạn chọn mục tiêu và kết cục để sử dụng khi xem kết quả. Ngay bên dưới phần này là tóm tắt về tỷ lệ mới mắc được hiển thị cho mỗi cơ sở dữ liệu được sử dụng trong phân tích.</p>
-<p>Chọn nhóm thuần tập mục tiêu là người dùng ACEi và Nhồi máu cơ tim cấp tính (AMI) từ các danh sách thả xuống tương ứng. Nhấp vào nút để hiển thị kết quả phân tích tỷ lệ mới mắc:<img src="media/image93.png" style="width:0.50021in;height:0.18758in"></p>
+<p>Chọn nhóm thuần tập mục tiêu là người dùng ACEi và Nhồi máu cơ tim cấp tính (AMI) từ các danh sách thả xuống tương ứng. Nhấp vào nút để hiển thị kết quả phân tích tỷ lệ mới mắc:<img src="media/image93.png" class="book-icon" style="width:0.50021in;height:0.18758in"></p>
 <p>Tóm tắt cho cơ sở dữ liệu hiển thị tổng số người trong nhóm thuần tập được quan sát trong thời gian TAR cùng với tổng số trường hợp. Tỷ lệ cho thấy số</p>
 <p><img src="media/image94.png" style="width:5.31521in;height:3.24854in"></p>
 <p>Hình 11.26: Đầu ra phân tích tỷ suất mới mắc - Người dùng ACEi mới với kết cục AMI.</p>
 <p>trường hợp trên 1000 người. Thời gian có nguy cơ, tính bằng năm, được tính cho nhóm thuần tập mục tiêu. Tỷ suất mới mắc được biểu thị là số trường hợp trên 1000 năm-người.</p>
 <p>Chúng ta cũng có thể xem các số liệu tỷ lệ mới mắc cho các phân tầng mà chúng ta đã xác định trong thiết kế. Các số liệu tương tự được đề cập ở trên được tính toán cho mỗi phân tầng. Ngoài ra, trực quan hóa dạng sơ đồ cây cung cấp biểu diễn về tỷ lệ của mỗi phân tầng được đại diện bởi các khu vực được đóng khung. Màu sắc đại diện cho tỷ suất mới mắc như hiển thị trong thang đo dọc theo phía dưới.</p>
-<p>Chúng ta có thể thu thập thông tin tương tự để xem tỷ lệ mới mắc của việc sử dụng ARBs mới trong quần thể ACEi. Sử dụng danh sách thả xuống ở trên cùng, thay đổi kết cục thành sử dụng ARBs và nhấp vào nút để xem chi tiết.<img src="media/image93.png" style="width:0.50021in;height:0.18758in"></p>
+<p>Chúng ta có thể thu thập thông tin tương tự để xem tỷ lệ mới mắc của việc sử dụng ARBs mới trong quần thể ACEi. Sử dụng danh sách thả xuống ở trên cùng, thay đổi kết cục thành sử dụng ARBs và nhấp vào nút để xem chi tiết.<img src="media/image93.png" class="book-icon" style="width:0.50021in;height:0.18758in"></p>
 <p>Như đã hiển thị, các số liệu được tính toán là giống nhau nhưng cách diễn giải lại khác vì đầu vào (sử dụng ARB) tham chiếu đến một ước tính sử dụng thuốc thay vì một kết cục sức khỏe.<span id="_bookmark311" class="anchor"></span></p>
 </section>
 </section>
 <section id="tóm-tắt" class="level2">
 <h2 class="anchored" data-anchor-id="tóm-tắt">Tóm tắt</h2>
-<p><img src="media/image4.png" style="width:0.44552in;height:0.46448in"></p>
+<p><img src="media/image4.png" class="book-icon" style="width:0.44552in;height:0.46448in"></p>
 <ul>
 <li><p>OHDSI offers tools to characterize an entire database, or a cohort of interest.</p></li>
 <li><p>Cohort characterization describes a cohort of interest during the time preced-ing the index date (<strong>baseline</strong>) and the time after index (<strong>post-index</strong>).</p></li>
@@ -1625,7 +1625,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>này sẽ hiển thị trực quan hóa dạng sơ đồ cây (treemap) của tất cả các</span>
 <span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>bệnh lý có trong cơ sở dữ</span>
 <span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>liệu:<span class="al">![](media/image64.png)</span>{width="1.093918416447944in"</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>height="0.18752843394575677in"}</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>height="0.18752843394575677in" .book-icon}</span>
 <span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image65.png)</span>{width="5.326666666666667in"</span>
 <span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>height="2.8133333333333335in"}</span>
@@ -1676,12 +1676,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>hóa nhóm thuần tập quy mô lớn cho một vài nhóm thuần tập. Nhấp vào</span>
 <span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>trong thanh bên trái của ATLAS</span>
 <span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>và<span class="al">![](media/image68.png)</span>{width="1.479808617672791in"</span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>height="0.1563167104111986in"}</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>height="0.1563167104111986in" .book-icon}</span>
 <span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>tạo một phân tích đặc điểm hóa mới. Đặt tên cho phân tích và lưu bằng</span>
 <span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>cách sử dụng nút</span>
 <span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>.<span class="al">![](media/image46.png)</span>{width="0.18747594050743657in"</span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}</span>
 <span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="fu">### Thiết kế</span></span>
 <span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
@@ -1707,7 +1707,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>thị trong hình 11.6. Tiếp theo, chúng ta sẽ xác định các đặc điểm để</span>
 <span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>sử dụng cho việc đặc điểm hóa hai nhóm thuần tập</span>
 <span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>này.<span class="al">![](media/image70.png)</span>{width="0.36473534558180226in"</span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Chọn đặc điểm</span></span>
 <span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a></span>
@@ -1725,7 +1725,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>Nhấp vào để chọn đặc điểm cần đặc điểm hóa. Dưới đây là danh sách các</span>
 <span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>đặc điểm chúng ta sẽ sử dụng để đặc điểm hóa các nhóm thuần tập</span>
 <span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>này:<span class="al">![](media/image70.png)</span>{width="0.36473534558180226in"</span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image71.png)</span>{width="5.282811679790027in"</span>
 <span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>height="4.6725in"}</span>
@@ -1880,7 +1880,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>Analysis (Phân tích đặc điểm mới). Đặt tên cho đặc điểm tùy chỉnh và</span>
 <span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a>lưu nó bằng cách sử dụng nút</span>
 <span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a>.<span class="al">![](media/image46.png)</span>{width="0.18747594050743657in"</span>
-<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}</span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}</span>
 <span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a>Trong ví dụ này, chúng ta sẽ xác định một đặc điểm tùy chỉnh sẽ xác</span>
 <span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a>định số lượng người trong mỗi nhóm thuần tập có kỷ nguyên thuốc ức chế</span>
@@ -1901,7 +1901,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>đã mô tả trước đó, chúng ta có thể thực thi thiết kế này trên cơ sở dữ</span>
 <span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a>liệu để tạo ra đặc điểm hóa cho đặc điểm tùy chỉnh</span>
 <span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a>này:<span class="al">![](media/image70.png)</span>{width="0.36473534558180226in"</span>
-<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-506"><a href="#cb1-506" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image80.png)</span>{width="5.348437226596675in"</span>
 <span id="cb1-507"><a href="#cb1-507" aria-hidden="true" tabindex="-1"></a>height="2.0474989063867017in"}</span>
@@ -2121,7 +2121,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-721"><a href="#cb1-721" aria-hidden="true" tabindex="-1"></a>nghiên cứu lộ trình nhóm thuần tập mới. Cung cấp một tên mô tả và nhấn</span>
 <span id="cb1-722"><a href="#cb1-722" aria-hidden="true" tabindex="-1"></a>nút</span>
 <span id="cb1-723"><a href="#cb1-723" aria-hidden="true" tabindex="-1"></a>lưu.<span class="al">![](media/image82.png)</span>{width="1.354734251968504in"</span>
-<span id="cb1-724"><a href="#cb1-724" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-724"><a href="#cb1-724" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-725"><a href="#cb1-725" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-726"><a href="#cb1-726" aria-hidden="true" tabindex="-1"></a><span class="fu">### Thiết kế</span></span>
 <span id="cb1-727"><a href="#cb1-727" aria-hidden="true" tabindex="-1"></a></span>
@@ -2146,7 +2146,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-746"><a href="#cb1-746" aria-hidden="true" tabindex="-1"></a>B.16. Sau khi hoàn tất, hãy sử dụng nút để nhập các nhóm này vào phần</span>
 <span id="cb1-747"><a href="#cb1-747" aria-hidden="true" tabindex="-1"></a>Event Cohort (Nhóm thuần tập sự kiện) của thiết kế lộ</span>
 <span id="cb1-748"><a href="#cb1-748" aria-hidden="true" tabindex="-1"></a>trình:<span class="al">![](media/image70.png)</span>{width="0.36473534558180226in"</span>
-<span id="cb1-749"><a href="#cb1-749" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-749"><a href="#cb1-749" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-750"><a href="#cb1-750" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-751"><a href="#cb1-751" aria-hidden="true" tabindex="-1"></a>Khi hoàn tất, thiết kế của bạn sẽ trông giống như thiết kế ở trên.</span>
 <span id="cb1-752"><a href="#cb1-752" aria-hidden="true" tabindex="-1"></a>Tiếp theo, chúng ta sẽ cần quyết định một vài cài đặt phân tích bổ</span>
@@ -2240,11 +2240,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-840"><a href="#cb1-840" aria-hidden="true" tabindex="-1"></a>Để bắt đầu, hãy nhấp vào trong thanh bên trái của ATLAS để tạo một tỷ lệ</span>
 <span id="cb1-841"><a href="#cb1-841" aria-hidden="true" tabindex="-1"></a>mới</span>
 <span id="cb1-842"><a href="#cb1-842" aria-hidden="true" tabindex="-1"></a>mắc<span class="al">![](media/image87.png)</span>{width="1.2505238407699037in"</span>
-<span id="cb1-843"><a href="#cb1-843" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-843"><a href="#cb1-843" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-844"><a href="#cb1-844" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-845"><a href="#cb1-845" aria-hidden="true" tabindex="-1"></a>phân tích mới. Cung cấp một tên mô tả và nhấn nút lưu</span>
 <span id="cb1-846"><a href="#cb1-846" aria-hidden="true" tabindex="-1"></a>.<span class="al">![](media/image46.png)</span>{width="0.18747594050743657in"</span>
-<span id="cb1-847"><a href="#cb1-847" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}</span>
+<span id="cb1-847"><a href="#cb1-847" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}</span>
 <span id="cb1-848"><a href="#cb1-848" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-849"><a href="#cb1-849" aria-hidden="true" tabindex="-1"></a><span class="fu">### Thiết kế</span></span>
 <span id="cb1-850"><a href="#cb1-850" aria-hidden="true" tabindex="-1"></a></span>
@@ -2302,7 +2302,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-902"><a href="#cb1-902" aria-hidden="true" tabindex="-1"></a>Nhấp vào tab Generation (Tạo) và sau đó nhấn nút để hiển thị danh sách</span>
 <span id="cb1-903"><a href="#cb1-903" aria-hidden="true" tabindex="-1"></a>các cơ sở dữ liệu để sử dụng nhằm thực thi phân</span>
 <span id="cb1-904"><a href="#cb1-904" aria-hidden="true" tabindex="-1"></a>tích:<span class="al">![](media/image91.png)</span>{width="0.5314720034995626in"</span>
-<span id="cb1-905"><a href="#cb1-905" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-905"><a href="#cb1-905" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-906"><a href="#cb1-906" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-907"><a href="#cb1-907" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image92.png)</span>{width="5.339166666666666in"</span>
 <span id="cb1-908"><a href="#cb1-908" aria-hidden="true" tabindex="-1"></a>height="2.1052077865266843in"}</span>
@@ -2324,7 +2324,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-924"><a href="#cb1-924" aria-hidden="true" tabindex="-1"></a>tính (AMI) từ các danh sách thả xuống tương ứng. Nhấp vào nút để hiển</span>
 <span id="cb1-925"><a href="#cb1-925" aria-hidden="true" tabindex="-1"></a>thị kết quả phân tích tỷ lệ mới</span>
 <span id="cb1-926"><a href="#cb1-926" aria-hidden="true" tabindex="-1"></a>mắc:<span class="al">![](media/image93.png)</span>{width="0.5002088801399825in"</span>
-<span id="cb1-927"><a href="#cb1-927" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-927"><a href="#cb1-927" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-928"><a href="#cb1-928" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-929"><a href="#cb1-929" aria-hidden="true" tabindex="-1"></a>Tóm tắt cho cơ sở dữ liệu hiển thị tổng số người trong nhóm thuần tập</span>
 <span id="cb1-930"><a href="#cb1-930" aria-hidden="true" tabindex="-1"></a>được quan sát trong thời gian TAR cùng với tổng số trường hợp. Tỷ lệ</span>
@@ -2352,7 +2352,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-952"><a href="#cb1-952" aria-hidden="true" tabindex="-1"></a>ở trên cùng, thay đổi kết cục thành sử dụng ARBs và nhấp vào nút để</span>
 <span id="cb1-953"><a href="#cb1-953" aria-hidden="true" tabindex="-1"></a>xem chi</span>
 <span id="cb1-954"><a href="#cb1-954" aria-hidden="true" tabindex="-1"></a>tiết.<span class="al">![](media/image93.png)</span>{width="0.5002088801399825in"</span>
-<span id="cb1-955"><a href="#cb1-955" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in"}</span>
+<span id="cb1-955"><a href="#cb1-955" aria-hidden="true" tabindex="-1"></a>height="0.18757764654418196in" .book-icon}</span>
 <span id="cb1-956"><a href="#cb1-956" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-957"><a href="#cb1-957" aria-hidden="true" tabindex="-1"></a>Như đã hiển thị, các số liệu được tính toán là giống nhau nhưng cách</span>
 <span id="cb1-958"><a href="#cb1-958" aria-hidden="true" tabindex="-1"></a>diễn giải lại khác vì đầu vào (sử dụng ARB) tham chiếu đến một ước</span>
@@ -2362,7 +2362,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-962"><a href="#cb1-962" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tóm tắt</span></span>
 <span id="cb1-963"><a href="#cb1-963" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-964"><a href="#cb1-964" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image4.png)</span>{width="0.4455205599300088in"</span>
-<span id="cb1-965"><a href="#cb1-965" aria-hidden="true" tabindex="-1"></a>height="0.4644783464566929in"}</span>
+<span id="cb1-965"><a href="#cb1-965" aria-hidden="true" tabindex="-1"></a>height="0.4644783464566929in" .book-icon}</span>
 <span id="cb1-966"><a href="#cb1-966" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-967"><a href="#cb1-967" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>OHDSI offers tools to characterize an entire database, or a cohort of</span>
 <span id="cb1-968"><a href="#cb1-968" aria-hidden="true" tabindex="-1"></a>interest.</span>

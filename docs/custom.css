@@ -62,10 +62,27 @@ code, pre {
 }
 
 /* Image adjustments */
+/* Figures were converted from a print book with inline width/height in inches
+   (e.g. style="width:5.48in"), which caps every plot at its tiny original print
+   size regardless of the page's actual width. Override with !important so
+   plots scale up to fill the content column instead of staying print-sized. */
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
   border-radius: 6px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   margin: 16px 0;
+  display: block;
+}
+
+/* Small decorative/inline icons (bullet markers, logos, license badge) are
+   tagged .book-icon in the source so they don't get stretched full-width too. */
+img.book-icon {
+  width: auto !important;
+  max-width: 48px !important;
+  display: inline-block;
+  box-shadow: none;
+  margin: 4px;
+  vertical-align: middle;
 }

@@ -615,7 +615,7 @@ liệu tuân thủ nguyên tắc đó.**
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - An OHDSI study becomes an OHDSI Network study when it is run across
 multiple CDMs at different institutions.

@@ -590,7 +590,7 @@ Hình 8.11: Kiến trúc Amazon Web Services cho OHDSIonAWS.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - We can perform analyses against data in the CDM by
 

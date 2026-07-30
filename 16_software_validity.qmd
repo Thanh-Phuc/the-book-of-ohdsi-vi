@@ -340,7 +340,7 @@ theo thời gian trong dữ liệu mô phỏng.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - An observational study should be implemented as an automated script
 that executes the entire analysis, from data in the CDM to the

@@ -314,7 +314,7 @@ này.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - In observational research we distinguish three large categories of
 uses cases.

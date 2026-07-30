@@ -388,7 +388,7 @@ nhấp vào "New cohort" (Nhóm thuần tập mới). Màn hình tiếp theo b�
 thấy là một định nghĩa nhóm thuần tập trống. Hình 10.4 cho thấy những
 gì bạn sẽ thấy trên màn hình của
 mình.![](media/image44.jpeg){width="1.301920384951881in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 ![](media/image45.png){width="5.345833333333333in"
 height="3.054165573053368in"}
@@ -408,7 +408,7 @@ height="0.45499890638670165in"}
 
 Sau khi đã chọn tên, bạn có thể lưu nhóm thuần tập bằng cách nhấp vào
 .![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 ### Tiêu chí sự kiện ban đầu
 
@@ -456,7 +456,7 @@ Hình 10.6: Xác định tiếp xúc thuốc
 Bạn sẽ cần nhấp vào để mở hộp thoại cho phép bạn truy xuất một tập
 khái niệm để xác định thuốc ức chế
 ACE.![](media/image49.png){width="0.1458147419072616in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 #### Kịch bản 1: Bạn chưa xây dựng tập khái niệm
 
@@ -468,7 +468,7 @@ hướng đến tab "Concept set" và nhấp vào "New Concept Set". Bạn sẽ 
 bạn chọn. Từ đó, bạn có thể sử dụng mô-đun để tìm kiếm các khái niệm
 lâm sàng đại diện cho thuốc ức chế ACE (Hình
 10.7).![](media/image50.jpeg){width="0.635336832895888in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 ![](media/image51.jpeg){width="5.321666666666666in"
 height="2.4541666666666666in"}
@@ -481,7 +481,7 @@ có thể quay lại định nghĩa nhóm thuần tập của mình bằng cách
 mũi tên trái ở trên cùng bên trái của Hình 10.7. Bạn có thể tham khảo
 lại Chương 5 (Từ vựng chuẩn
 hóa![](media/image52.png){width="0.15622922134733158in"
-height="0.12498359580052494in"}
+height="0.12498359580052494in" .book-icon}
 
 ) về cách điều hướng các từ vựng để tìm các khái niệm lâm sàng quan
 tâm.
@@ -748,7 +748,7 @@ OHDSI. Bây giờ bạn có thể sử dụng tab "Export" để chia sẻ đị
 nhóm thuần tập của mình với các cộng tác viên khác dưới dạng mã SQL
 hoặc tệp JSON để tải vào
 ATLAS.![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 ## Triển khai nhóm thuần tập bằng SQL
 
@@ -1147,7 +1147,7 @@ TRUNCATE TABLE #exposure_era; DROP TABLE #exposure_era;\"
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - A cohort is set of persons who satisfy one or more inclusion criteria
 for a duration of time.

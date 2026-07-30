@@ -491,7 +491,7 @@ nhất về các cơ hội này và hơn thế nữa.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - Getting started in the OHDSI Community is as easy as saying hello!
 Post on the **OHDSI Forum** and join a Community Call.

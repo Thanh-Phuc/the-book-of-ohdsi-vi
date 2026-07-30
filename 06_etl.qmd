@@ -995,7 +995,7 @@ Triển khai của chúng tôi.9
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - There is a generally agreed upon process for how to approach an ETL,
 includ-ing

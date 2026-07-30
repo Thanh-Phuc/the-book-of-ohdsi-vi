@@ -200,7 +200,7 @@ cách nghiêm ngặt và cởi mở.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - The evidence we generate should be **repeatable**, **reproducible**,
 **replicable**, **generalizable**, **robust**, and **calibrated**.
@@ -478,7 +478,7 @@ cho giới tính không được gán cho những người có giới tính khô
 xác (ví dụ: ung thư tuyến tiền liệt ở một bệnh nhân nữ).
 
 ![](media/image6.png){width="0.45499890638670165in"
-height="0.45499890638670165in"}
+height="0.45499890638670165in" .book-icon}
 
 ACHILLES and DQD are executed against the data in the CDM. DQ issues
 iden-tified this way may be due to the conversion to the CDM, but may
@@ -839,7 +839,7 @@ bảng được liệt kê đều trống, điều mà Bảng điều khiển t�
 Điều này cho phép dễ dàng xác định các hàng được Bảng điều khiển coi
 là không
 đạt.![](media/image160.png){width="0.1666447944006999in"
-height="0.1666447944006999in"}
+height="0.1666447944006999in" .book-icon}
 
 ## Các kiểm tra cụ thể cho nghiên cứu trong thực tiễn
 
@@ -934,7 +934,7 @@ này không phát hiện bất kỳ mã nào bị thiếu.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - Most observational healthcare data were not collected for research.
 

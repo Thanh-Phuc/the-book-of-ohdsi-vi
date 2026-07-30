@@ -895,8 +895,8 @@ nhấp vào nút trong menu ATLAS bên trái. Tạo một nghiên cứu dự đo
 mới. Đảm bảo đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế
 nghiên cứu có thể được lưu bất cứ lúc nào bằng cách nhấp vào nút
 .![](media/image124.png){width="0.9689140419947506in"
-height="0.20836832895888013in"}![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.20836832895888013in" .book-icon}![](media/image46.png){width="0.18747594050743657in"
+height="0.18747594050743657in" .book-icon}
 
 Trong chức năng thiết kế Dự đoán, có bốn phần: Thiết lập vấn đề dự
 đoán, Thiết lập phân tích, Thiết lập thực thi và Thiết lập huấn luyện.
@@ -981,7 +981,7 @@ ID này mới được đưa vào mô hình. Tùy chọn này chỉ dành cho ng
 nâng cao. Khi hoàn tất, các thiết lập bao gồm và loại trừ sẽ trông
 giống như Hình
 13.6.![](media/image102.png){width="0.20830599300087488in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 Phần tiếp theo cho phép lựa chọn các biến không bị ràng buộc theo thời
 gian.
@@ -1359,7 +1359,7 @@ Nhấp vào tab "Review & Download" trong "Utilities". Trong phần
 bất kỳ ký tự bất hợp pháp nào trong R sẽ tự động bị ATLAS xóa khỏi tên
 tệp. Nhấp vào để tải xuống gói R vào một thư mục cục
 bộ.![](media/image137.jpeg){width="0.9064031058617673in"
-height="0.21878608923884516in"}
+height="0.21878608923884516in" .book-icon}
 
 ### Chạy nghiên cứu
 
@@ -1382,7 +1382,7 @@ tạo ra và nhấp đúp vào tệp .Rproj để mở nó trong R Studio. Nếu
 đang chạy R Studio trên máy chủ R studio, hãy nhấp để tải lên và giải
 nén tệp, sau đó nhấp vào tệp .Rproj để mở dự
 án.![](media/image115.png){width="0.6771981627296588in"
-height="0.1979494750656168in"}
+height="0.1979494750656168in" .book-icon}
 
 Sau khi bạn đã mở dự án trong R Studio, bạn có thể mở tệp README và
 làm theo các hướng dẫn. Đảm bảo thay đổi tất cả các đường dẫn tệp
@@ -1850,7 +1850,7 @@ Sau khi một hàng mô hình đã được chọn, chúng ta cũng có thể xe
 suất mô hình. Nhấp vào để mở tóm tắt hiệu suất ngưỡng được hiển thị
 trong Hình
 13.23.![](media/image145.png){width="1.1043536745406823in"
-height="0.20836832895888013in"}
+height="0.20836832895888013in" .book-icon}
 
 ![](media/image146.jpeg){width="5.275416666666667in"
 height="2.6904166666666667in"}
@@ -1910,7 +1910,7 @@ nhân trẻ tuổi hoặc lớn tuổi hơn.
 Thao tác này sẽ mở một chế độ xem chứa các biểu đồ cho từng biến trong
 mô hình, được hiển thị trong Hình
 13.27,![](media/image148.png){width="0.7292793088363955in"
-height="0.23961942257217847in"}
+height="0.23961942257217847in" .book-icon}
 
 ![](media/image149.jpeg){width="5.28in"
 height="2.3466666666666667in"}
@@ -1986,7 +1986,7 @@ của hàm.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - Patient-level prediction aims to develop a model that predicts future
 events using data from the past.

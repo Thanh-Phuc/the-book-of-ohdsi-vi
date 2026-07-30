@@ -848,7 +848,7 @@ khái niệm = 0.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - All events and administrative facts are represented in the OMOP
 Standard-ized Vocabularies as concepts, concept relationships, and

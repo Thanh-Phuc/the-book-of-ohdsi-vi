@@ -959,7 +959,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="triển-khai-nghiên-cứu-trong-atlas" class="level2">
 <h2 class="anchored" data-anchor-id="triển-khai-nghiên-cứu-trong-atlas">Triển khai nghiên cứu trong ATLAS</h2>
-<p>Giao diện để thiết kế một nghiên cứu dự đoán có thể được mở bằng cách nhấp vào nút trong menu ATLAS bên trái. Tạo một nghiên cứu dự đoán mới. Đảm bảo đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế nghiên cứu có thể được lưu bất cứ lúc nào bằng cách nhấp vào nút .<img src="media/image124.png" style="width:0.96891in;height:0.20837in"><img src="media/image46.png" style="width:0.18748in;height:0.18748in"></p>
+<p>Giao diện để thiết kế một nghiên cứu dự đoán có thể được mở bằng cách nhấp vào nút trong menu ATLAS bên trái. Tạo một nghiên cứu dự đoán mới. Đảm bảo đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế nghiên cứu có thể được lưu bất cứ lúc nào bằng cách nhấp vào nút .<img src="media/image124.png" class="book-icon" style="width:0.96891in;height:0.20837in"><img src="media/image46.png" class="book-icon" style="width:0.18748in;height:0.18748in"></p>
 <p>Trong chức năng thiết kế Dự đoán, có bốn phần: Thiết lập vấn đề dự đoán, Thiết lập phân tích, Thiết lập thực thi và Thiết lập huấn luyện. Ở đây chúng tôi thảo luận về từng phần:</p>
 <section id="thiết-lập-vấn-đề-dự-đoán" class="level3">
 <h3 class="anchored" data-anchor-id="thiết-lập-vấn-đề-dự-đoán">Thiết lập vấn đề dự đoán</h3>
@@ -980,7 +980,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="thiết-lập-biến-đồng-biến">Thiết lập biến đồng biến</h4>
 <p>Chúng tôi đã xác định một tập hợp các biến đồng biến chuẩn có thể được trích xuất từ dữ liệu quan sát ở định dạng CDM. Trong chế độ xem thiết lập biến đồng biến, có thể chọn biến đồng biến chuẩn nào để bao gồm. Chúng ta có thể xác định các loại thiết lập biến đồng biến khác nhau và mỗi mô hình sẽ được tạo riêng biệt với từng thiết lập biến đồng biến được chỉ định.</p>
 <p>Để thêm một thiết lập biến đồng biến vào nghiên cứu, hãy nhấp vào “Add Covariate Settings”. Điều này sẽ mở chế độ xem thiết lập biến đồng biến.</p>
-<p>Phần đầu tiên của chế độ xem thiết lập biến đồng biến là tùy chọn loại trừ/bao gồm. Các biến đồng biến thường được xây dựng cho bất kỳ khái niệm nào. Tuy nhiên, chúng ta có thể muốn bao gồm hoặc loại trừ các khái niệm cụ thể, ví dụ nếu một khái niệm được liên kết với định nghĩa nhóm thuần tập mục tiêu. Để chỉ bao gồm các khái niệm nhất định, hãy tạo một tập hợp khái niệm trong ATLAS và sau đó trong phần “Những khái niệm nào bạn muốn bao gồm trong các biến đồng biến cơ bản trong mô hình dự đoán cấp độ bệnh nhân? (Để trống nếu bạn muốn bao gồm tất cả)” chọn tập hợp khái niệm bằng cách nhấp vào . Chúng ta có thể tự động thêm tất cả các khái niệm con vào các khái niệm trong tập hợp khái niệm bằng cách trả lời “có” cho câu hỏi “Các khái niệm con có nên được thêm vào danh sách các khái niệm được bao gồm không?”. Quy trình tương tự có thể được lặp lại cho câu hỏi “Những khái niệm nào bạn muốn loại trừ trong các biến đồng biến cơ bản trong mô hình dự đoán cấp độ bệnh nhân? (Để trống nếu bạn muốn bao gồm tất cả)”, cho phép loại bỏ các biến đồng biến tương ứng với các khái niệm đã chọn. Tùy chọn cuối cùng “Một danh sách các ID biến đồng biến được phân tách bằng dấu phẩy mà cần bị giới hạn” cho phép chúng ta thêm một tập hợp các ID biến đồng biến (thay vì ID khái niệm) được phân tách bằng dấu phẩy mà chỉ những ID này mới được đưa vào mô hình. Tùy chọn này chỉ dành cho người dùng nâng cao. Khi hoàn tất, các thiết lập bao gồm và loại trừ sẽ trông giống như Hình 13.6.<img src="media/image102.png" style="width:0.20831in;height:0.18748in"></p>
+<p>Phần đầu tiên của chế độ xem thiết lập biến đồng biến là tùy chọn loại trừ/bao gồm. Các biến đồng biến thường được xây dựng cho bất kỳ khái niệm nào. Tuy nhiên, chúng ta có thể muốn bao gồm hoặc loại trừ các khái niệm cụ thể, ví dụ nếu một khái niệm được liên kết với định nghĩa nhóm thuần tập mục tiêu. Để chỉ bao gồm các khái niệm nhất định, hãy tạo một tập hợp khái niệm trong ATLAS và sau đó trong phần “Những khái niệm nào bạn muốn bao gồm trong các biến đồng biến cơ bản trong mô hình dự đoán cấp độ bệnh nhân? (Để trống nếu bạn muốn bao gồm tất cả)” chọn tập hợp khái niệm bằng cách nhấp vào . Chúng ta có thể tự động thêm tất cả các khái niệm con vào các khái niệm trong tập hợp khái niệm bằng cách trả lời “có” cho câu hỏi “Các khái niệm con có nên được thêm vào danh sách các khái niệm được bao gồm không?”. Quy trình tương tự có thể được lặp lại cho câu hỏi “Những khái niệm nào bạn muốn loại trừ trong các biến đồng biến cơ bản trong mô hình dự đoán cấp độ bệnh nhân? (Để trống nếu bạn muốn bao gồm tất cả)”, cho phép loại bỏ các biến đồng biến tương ứng với các khái niệm đã chọn. Tùy chọn cuối cùng “Một danh sách các ID biến đồng biến được phân tách bằng dấu phẩy mà cần bị giới hạn” cho phép chúng ta thêm một tập hợp các ID biến đồng biến (thay vì ID khái niệm) được phân tách bằng dấu phẩy mà chỉ những ID này mới được đưa vào mô hình. Tùy chọn này chỉ dành cho người dùng nâng cao. Khi hoàn tất, các thiết lập bao gồm và loại trừ sẽ trông giống như Hình 13.6.<img src="media/image102.png" class="book-icon" style="width:0.20831in;height:0.18748in"></p>
 <p>Phần tiếp theo cho phép lựa chọn các biến không bị ràng buộc theo thời gian.</p>
 <p><img src="media/image126.png" style="width:5.32in;height:5.7in"></p>
 <p>Hình 13.5: Thiết lập máy tăng cường độ dốc</p>
@@ -1102,7 +1102,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="tải-xuống-gói-nghiên-cứu" class="level3">
 <h3 class="anchored" data-anchor-id="tải-xuống-gói-nghiên-cứu">Tải xuống gói nghiên cứu</h3>
-<p>Nhấp vào tab “Review &amp; Download” trong “Utilities”. Trong phần “Download Study Package”, hãy nhập một tên mô tả cho gói R, lưu ý rằng bất kỳ ký tự bất hợp pháp nào trong R sẽ tự động bị ATLAS xóa khỏi tên tệp. Nhấp vào để tải xuống gói R vào một thư mục cục bộ.<img src="media/image137.jpeg" style="width:0.9064in;height:0.21879in"></p>
+<p>Nhấp vào tab “Review &amp; Download” trong “Utilities”. Trong phần “Download Study Package”, hãy nhập một tên mô tả cho gói R, lưu ý rằng bất kỳ ký tự bất hợp pháp nào trong R sẽ tự động bị ATLAS xóa khỏi tên tệp. Nhấp vào để tải xuống gói R vào một thư mục cục bộ.<img src="media/image137.jpeg" class="book-icon" style="width:0.9064in;height:0.21879in"></p>
 </section>
 <section id="chạy-nghiên-cứu" class="level3">
 <h3 class="anchored" data-anchor-id="chạy-nghiên-cứu">Chạy nghiên cứu</h3>
@@ -1110,7 +1110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>R bằng cách sử dụng:</p>
 <p><strong>install.packages</strong>("drat") drat<strong>::addRepo</strong>("OHDSI") <strong>install.packages</strong>("PatientLevelPrediction")</p>
 <p>Một số thuật toán học máy yêu cầu cài đặt phần mềm bổ sung. Để biết mô tả đầy đủ về cách cài đặt gói PatientLevelPrediction, hãy xem tài liệu phụ trợ “Hướng dẫn cài đặt dự đoán cấp độ bệnh nhân”.</p>
-<p>Để sử dụng gói R nghiên cứu, chúng tôi khuyên bạn nên sử dụng R Studio. Nếu bạn đang chạy R Studio cục bộ, hãy giải nén tệp do ATLAS tạo ra và nhấp đúp vào tệp .Rproj để mở nó trong R Studio. Nếu bạn đang chạy R Studio trên máy chủ R studio, hãy nhấp để tải lên và giải nén tệp, sau đó nhấp vào tệp .Rproj để mở dự án.<img src="media/image115.png" style="width:0.6772in;height:0.19795in"></p>
+<p>Để sử dụng gói R nghiên cứu, chúng tôi khuyên bạn nên sử dụng R Studio. Nếu bạn đang chạy R Studio cục bộ, hãy giải nén tệp do ATLAS tạo ra và nhấp đúp vào tệp .Rproj để mở nó trong R Studio. Nếu bạn đang chạy R Studio trên máy chủ R studio, hãy nhấp để tải lên và giải nén tệp, sau đó nhấp vào tệp .Rproj để mở dự án.<img src="media/image115.png" class="book-icon" style="width:0.6772in;height:0.19795in"></p>
 <p>Sau khi bạn đã mở dự án trong R Studio, bạn có thể mở tệp README và làm theo các hướng dẫn. Đảm bảo thay đổi tất cả các đường dẫn tệp thành các đường dẫn hiện có trên hệ thống của bạn.<span id="_bookmark418" class="anchor"></span></p>
 </section>
 </section>
@@ -1284,7 +1284,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="xem-hiệu-suất-mô-hình" class="level4">
 <h4 class="anchored" data-anchor-id="xem-hiệu-suất-mô-hình">Xem hiệu suất mô hình</h4>
-<p>Sau khi một hàng mô hình đã được chọn, chúng ta cũng có thể xem hiệu suất mô hình. Nhấp vào để mở tóm tắt hiệu suất ngưỡng được hiển thị trong Hình 13.23.<img src="media/image145.png" style="width:1.10435in;height:0.20837in"></p>
+<p>Sau khi một hàng mô hình đã được chọn, chúng ta cũng có thể xem hiệu suất mô hình. Nhấp vào để mở tóm tắt hiệu suất ngưỡng được hiển thị trong Hình 13.23.<img src="media/image145.png" class="book-icon" style="width:1.10435in;height:0.20837in"></p>
 <p><img src="media/image146.jpeg" style="width:5.27542in;height:2.69042in"></p>
 <p>Hình 13.23: Các thước đo hiệu suất tóm tắt tại một ngưỡng thiết lập.</p>
 <p>Chế độ xem tóm tắt này hiển thị câu hỏi dự đoán đã chọn ở định dạng chuẩn, bộ chọn ngưỡng và bảng điều khiển chứa các chỉ số chính dựa trên ngưỡng như giá trị dự đoán dương tính (PPV), giá trị dự đoán âm tính (NPV), độ nhạy và độ đặc hiệu (xem Mục 13.4.2). Trong Hình 13.23, chúng ta thấy rằng tại ngưỡng 0,00482, độ nhạy là 83,4% (83,4% bệnh nhân có kết cục trong năm tiếp theo có rủi ro lớn hơn hoặc bằng 0,00482) và PPV là 1,2% (1,2% bệnh nhân có rủi ro lớn hơn hoặc bằng 0,00482 có kết cục trong năm tiếp theo). Vì tỷ lệ mắc kết cục trong năm là 0,741%, việc xác định các bệnh nhân có rủi ro lớn hơn hoặc bằng</p>
@@ -1298,7 +1298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="xem-mô-hình" class="level4">
 <h4 class="anchored" data-anchor-id="xem-mô-hình">Xem mô hình</h4>
-<p>Để kiểm tra mô hình cuối cùng, hãy chọn tùy chọn từ menu bên trái. Thao tác này sẽ mở một chế độ xem chứa các biểu đồ cho từng biến trong mô hình, được hiển thị trong Hình 13.27,<img src="media/image148.png" style="width:0.72928in;height:0.23962in"></p>
+<p>Để kiểm tra mô hình cuối cùng, hãy chọn tùy chọn từ menu bên trái. Thao tác này sẽ mở một chế độ xem chứa các biểu đồ cho từng biến trong mô hình, được hiển thị trong Hình 13.27,<img src="media/image148.png" class="book-icon" style="width:0.72928in;height:0.23962in"></p>
 <p><img src="media/image149.jpeg" style="width:5.28in;height:2.34667in"></p>
 <p>Hình 13.25: Phân phối rủi ro dự đoán cho những người có và không có kết cục. Sự chồng lấp càng nhiều thì khả năng phân biệt càng kém</p>
 <p><img src="media/image150.jpeg" style="width:5.28in;height:2.38792in"></p>
@@ -1332,7 +1332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="tóm-tắt" class="level2">
 <h2 class="anchored" data-anchor-id="tóm-tắt">Tóm tắt</h2>
-<p><img src="media/image4.png" style="width:0.44552in;height:0.46448in"></p>
+<p><img src="media/image4.png" class="book-icon" style="width:0.44552in;height:0.46448in"></p>
 <ul>
 <li><p>Patient-level prediction aims to develop a model that predicts future events using data from the past.</p></li>
 <li><p>The selection of the best machine algorithm for model development is an empirical question, i.e.&nbsp;it should be driven by the problem and data at hand.</p></li>
@@ -2889,8 +2889,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-895"><a href="#cb1-895" aria-hidden="true" tabindex="-1"></a>mới. Đảm bảo đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế</span>
 <span id="cb1-896"><a href="#cb1-896" aria-hidden="true" tabindex="-1"></a>nghiên cứu có thể được lưu bất cứ lúc nào bằng cách nhấp vào nút</span>
 <span id="cb1-897"><a href="#cb1-897" aria-hidden="true" tabindex="-1"></a>.<span class="al">![](media/image124.png)</span>{width="0.9689140419947506in"</span>
-<span id="cb1-898"><a href="#cb1-898" aria-hidden="true" tabindex="-1"></a>height="0.20836832895888013in"}<span class="al">![](media/image46.png)</span>{width="0.18747594050743657in"</span>
-<span id="cb1-899"><a href="#cb1-899" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}</span>
+<span id="cb1-898"><a href="#cb1-898" aria-hidden="true" tabindex="-1"></a>height="0.20836832895888013in" .book-icon}<span class="al">![](media/image46.png)</span>{width="0.18747594050743657in"</span>
+<span id="cb1-899"><a href="#cb1-899" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}</span>
 <span id="cb1-900"><a href="#cb1-900" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-901"><a href="#cb1-901" aria-hidden="true" tabindex="-1"></a>Trong chức năng thiết kế Dự đoán, có bốn phần: Thiết lập vấn đề dự</span>
 <span id="cb1-902"><a href="#cb1-902" aria-hidden="true" tabindex="-1"></a>đoán, Thiết lập phân tích, Thiết lập thực thi và Thiết lập huấn luyện.</span>
@@ -2975,7 +2975,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-981"><a href="#cb1-981" aria-hidden="true" tabindex="-1"></a>nâng cao. Khi hoàn tất, các thiết lập bao gồm và loại trừ sẽ trông</span>
 <span id="cb1-982"><a href="#cb1-982" aria-hidden="true" tabindex="-1"></a>giống như Hình</span>
 <span id="cb1-983"><a href="#cb1-983" aria-hidden="true" tabindex="-1"></a>13.6.<span class="al">![](media/image102.png)</span>{width="0.20830599300087488in"</span>
-<span id="cb1-984"><a href="#cb1-984" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in"}</span>
+<span id="cb1-984"><a href="#cb1-984" aria-hidden="true" tabindex="-1"></a>height="0.18747594050743657in" .book-icon}</span>
 <span id="cb1-985"><a href="#cb1-985" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-986"><a href="#cb1-986" aria-hidden="true" tabindex="-1"></a>Phần tiếp theo cho phép lựa chọn các biến không bị ràng buộc theo thời</span>
 <span id="cb1-987"><a href="#cb1-987" aria-hidden="true" tabindex="-1"></a>gian.</span>
@@ -3353,7 +3353,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-1359"><a href="#cb1-1359" aria-hidden="true" tabindex="-1"></a>bất kỳ ký tự bất hợp pháp nào trong R sẽ tự động bị ATLAS xóa khỏi tên</span>
 <span id="cb1-1360"><a href="#cb1-1360" aria-hidden="true" tabindex="-1"></a>tệp. Nhấp vào để tải xuống gói R vào một thư mục cục</span>
 <span id="cb1-1361"><a href="#cb1-1361" aria-hidden="true" tabindex="-1"></a>bộ.<span class="al">![](media/image137.jpeg)</span>{width="0.9064031058617673in"</span>
-<span id="cb1-1362"><a href="#cb1-1362" aria-hidden="true" tabindex="-1"></a>height="0.21878608923884516in"}</span>
+<span id="cb1-1362"><a href="#cb1-1362" aria-hidden="true" tabindex="-1"></a>height="0.21878608923884516in" .book-icon}</span>
 <span id="cb1-1363"><a href="#cb1-1363" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1364"><a href="#cb1-1364" aria-hidden="true" tabindex="-1"></a><span class="fu">### Chạy nghiên cứu</span></span>
 <span id="cb1-1365"><a href="#cb1-1365" aria-hidden="true" tabindex="-1"></a></span>
@@ -3376,7 +3376,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-1382"><a href="#cb1-1382" aria-hidden="true" tabindex="-1"></a>đang chạy R Studio trên máy chủ R studio, hãy nhấp để tải lên và giải</span>
 <span id="cb1-1383"><a href="#cb1-1383" aria-hidden="true" tabindex="-1"></a>nén tệp, sau đó nhấp vào tệp .Rproj để mở dự</span>
 <span id="cb1-1384"><a href="#cb1-1384" aria-hidden="true" tabindex="-1"></a>án.<span class="al">![](media/image115.png)</span>{width="0.6771981627296588in"</span>
-<span id="cb1-1385"><a href="#cb1-1385" aria-hidden="true" tabindex="-1"></a>height="0.1979494750656168in"}</span>
+<span id="cb1-1385"><a href="#cb1-1385" aria-hidden="true" tabindex="-1"></a>height="0.1979494750656168in" .book-icon}</span>
 <span id="cb1-1386"><a href="#cb1-1386" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1387"><a href="#cb1-1387" aria-hidden="true" tabindex="-1"></a>Sau khi bạn đã mở dự án trong R Studio, bạn có thể mở tệp README và</span>
 <span id="cb1-1388"><a href="#cb1-1388" aria-hidden="true" tabindex="-1"></a>làm theo các hướng dẫn. Đảm bảo thay đổi tất cả các đường dẫn tệp</span>
@@ -3844,7 +3844,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-1850"><a href="#cb1-1850" aria-hidden="true" tabindex="-1"></a>suất mô hình. Nhấp vào để mở tóm tắt hiệu suất ngưỡng được hiển thị</span>
 <span id="cb1-1851"><a href="#cb1-1851" aria-hidden="true" tabindex="-1"></a>trong Hình</span>
 <span id="cb1-1852"><a href="#cb1-1852" aria-hidden="true" tabindex="-1"></a>13.23.<span class="al">![](media/image145.png)</span>{width="1.1043536745406823in"</span>
-<span id="cb1-1853"><a href="#cb1-1853" aria-hidden="true" tabindex="-1"></a>height="0.20836832895888013in"}</span>
+<span id="cb1-1853"><a href="#cb1-1853" aria-hidden="true" tabindex="-1"></a>height="0.20836832895888013in" .book-icon}</span>
 <span id="cb1-1854"><a href="#cb1-1854" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1855"><a href="#cb1-1855" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image146.jpeg)</span>{width="5.275416666666667in"</span>
 <span id="cb1-1856"><a href="#cb1-1856" aria-hidden="true" tabindex="-1"></a>height="2.6904166666666667in"}</span>
@@ -3904,7 +3904,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-1910"><a href="#cb1-1910" aria-hidden="true" tabindex="-1"></a>Thao tác này sẽ mở một chế độ xem chứa các biểu đồ cho từng biến trong</span>
 <span id="cb1-1911"><a href="#cb1-1911" aria-hidden="true" tabindex="-1"></a>mô hình, được hiển thị trong Hình</span>
 <span id="cb1-1912"><a href="#cb1-1912" aria-hidden="true" tabindex="-1"></a>13.27,<span class="al">![](media/image148.png)</span>{width="0.7292793088363955in"</span>
-<span id="cb1-1913"><a href="#cb1-1913" aria-hidden="true" tabindex="-1"></a>height="0.23961942257217847in"}</span>
+<span id="cb1-1913"><a href="#cb1-1913" aria-hidden="true" tabindex="-1"></a>height="0.23961942257217847in" .book-icon}</span>
 <span id="cb1-1914"><a href="#cb1-1914" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1915"><a href="#cb1-1915" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image149.jpeg)</span>{width="5.28in"</span>
 <span id="cb1-1916"><a href="#cb1-1916" aria-hidden="true" tabindex="-1"></a>height="2.3466666666666667in"}</span>
@@ -3980,7 +3980,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-1986"><a href="#cb1-1986" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tóm tắt</span></span>
 <span id="cb1-1987"><a href="#cb1-1987" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1988"><a href="#cb1-1988" aria-hidden="true" tabindex="-1"></a><span class="al">![](media/image4.png)</span>{width="0.4455205599300088in"</span>
-<span id="cb1-1989"><a href="#cb1-1989" aria-hidden="true" tabindex="-1"></a>height="0.4644783464566929in"}</span>
+<span id="cb1-1989"><a href="#cb1-1989" aria-hidden="true" tabindex="-1"></a>height="0.4644783464566929in" .book-icon}</span>
 <span id="cb1-1990"><a href="#cb1-1990" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-1991"><a href="#cb1-1991" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Patient-level prediction aims to develop a model that predicts future</span>
 <span id="cb1-1992"><a href="#cb1-1992" aria-hidden="true" tabindex="-1"></a>events using data from the past.</span>

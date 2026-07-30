@@ -216,7 +216,7 @@ triển khai trong gói Cyclops. Về cơ bản, chúng tôi để dữ liệu q
 nên được đưa vào mô hình.
 
 ![](media/image6.png){width="0.45499890638670165in"
-height="0.45499890638670165in"}
+height="0.45499890638670165in" .book-icon}
 
 We typically include the day of treatment
 initiation in the covariate capture window because many relevant data
@@ -586,8 +586,8 @@ bên trái của ATLAS và tạo một nghiên cứu ước tính mới. Hãy ch
 đặt cho nghiên cứu một cái tên dễ nhận biết. Thiết kế nghiên cứu có
 thể được lưu bất cứ lúc nào bằng cách nhấp vào nút
 .![](media/image101.png){width="0.9790430883639545in"
-height="0.18747594050743657in"}![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}![](media/image46.png){width="0.18747594050743657in"
+height="0.18747594050743657in" .book-icon}
 
 Trong hàm thiết kế Ước tính, có ba phần: So sánh, Cài đặt phân tích và
 Cài đặt đánh giá. Chúng ta có thể chỉ định nhiều so sánh và nhiều cài
@@ -606,7 +606,7 @@ cấp các định nghĩa đầy đủ về các nhóm thuần tập mục tiêu
 B.2), so sánh (Phụ lục B.5) và kết cục (Phụ lục B.4 và Phụ lục B.3).
 Khi hoàn tất, hộp thoại sẽ trông giống như Hình
 12.6.![](media/image102.png){width="0.20830599300087488in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 ![](media/image103.png){width="5.330416666666666in"
 height="3.0891655730533683in"}
@@ -1067,7 +1067,7 @@ cục bộ, hãy giải nén tệp và nhấp đúp vào tệp .Rproj để mở
 Studio. Nếu bạn đang chạy R Studio trên một máy chủ R studio, hãy nhấp
 vào để tải lên và giải nén tệp, sau đó nhấp vào tệp .Rproj để mở dự
 án.![](media/image115.png){width="0.6771981627296588in"
-height="0.1979494750656168in"}
+height="0.1979494750656168in" .book-icon}
 
 Sau khi bạn đã mở dự án trong R Studio, bạn có thể mở tệp README và
 làm theo hướng dẫn. Hãy chắc chắn thay đổi tất cả các đường dẫn tệp
@@ -1724,7 +1724,7 @@ height="3.345718503937008in"}*12.10. Tóm tắt 237*
 Hình 12.22: Biểu đồ Kaplan-Meier.
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - Population-level estimation aims to infer causal effects from
 observational data.

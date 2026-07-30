@@ -560,7 +560,7 @@ cùng hoặc gửi bản thảo để xuất bản.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - Study should examine a well-defined question.
 

@@ -225,7 +225,7 @@ Occurrence (Sự kiện bệnh lý) từ danh sách thả xuống báo cáo, tha
 này sẽ hiển thị trực quan hóa dạng sơ đồ cây (treemap) của tất cả các
 bệnh lý có trong cơ sở dữ
 liệu:![](media/image64.png){width="1.093918416447944in"
-height="0.18752843394575677in"}
+height="0.18752843394575677in" .book-icon}
 
 ![](media/image65.png){width="5.326666666666667in"
 height="2.8133333333333335in"}
@@ -276,12 +276,12 @@ Tại đây, chúng tôi trình bày cách sử dụng ATLAS để thực hiện
 hóa nhóm thuần tập quy mô lớn cho một vài nhóm thuần tập. Nhấp vào
 trong thanh bên trái của ATLAS
 và![](media/image68.png){width="1.479808617672791in"
-height="0.1563167104111986in"}
+height="0.1563167104111986in" .book-icon}
 
 tạo một phân tích đặc điểm hóa mới. Đặt tên cho phân tích và lưu bằng
 cách sử dụng nút
 .![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 ### Thiết kế
 
@@ -307,7 +307,7 @@ mô tả trong Chương 10. Nhấp vào và chọn các nhóm thuần tập như
 thị trong hình 11.6. Tiếp theo, chúng ta sẽ xác định các đặc điểm để
 sử dụng cho việc đặc điểm hóa hai nhóm thuần tập
 này.![](media/image70.png){width="0.36473534558180226in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 #### Chọn đặc điểm
 
@@ -325,7 +325,7 @@ theo.
 Nhấp vào để chọn đặc điểm cần đặc điểm hóa. Dưới đây là danh sách các
 đặc điểm chúng ta sẽ sử dụng để đặc điểm hóa các nhóm thuần tập
 này:![](media/image70.png){width="0.36473534558180226in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 ![](media/image71.png){width="5.282811679790027in"
 height="4.6725in"}
@@ -480,7 +480,7 @@ tab Feature Analysis (Phân tích đặc điểm) và nhấp vào nút New Featu
 Analysis (Phân tích đặc điểm mới). Đặt tên cho đặc điểm tùy chỉnh và
 lưu nó bằng cách sử dụng nút
 .![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 Trong ví dụ này, chúng ta sẽ xác định một đặc điểm tùy chỉnh sẽ xác
 định số lượng người trong mỗi nhóm thuần tập có kỷ nguyên thuốc ức chế
@@ -501,7 +501,7 @@ sẽ xuất hiện trong danh sách đặc điểm cho thiết kế đặc đi�
 đã mô tả trước đó, chúng ta có thể thực thi thiết kế này trên cơ sở dữ
 liệu để tạo ra đặc điểm hóa cho đặc điểm tùy chỉnh
 này:![](media/image70.png){width="0.36473534558180226in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 ![](media/image80.png){width="5.348437226596675in"
 height="2.0474989063867017in"}
@@ -721,7 +721,7 @@ trong việc tạo lộ trình cho một lĩnh vực hoặc khái niệm duy nh�
 nghiên cứu lộ trình nhóm thuần tập mới. Cung cấp một tên mô tả và nhấn
 nút
 lưu.![](media/image82.png){width="1.354734251968504in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 ### Thiết kế
 
@@ -746,7 +746,7 @@ nghĩa này được tìm thấy trong Phụ lục B.8-
 B.16. Sau khi hoàn tất, hãy sử dụng nút để nhập các nhóm này vào phần
 Event Cohort (Nhóm thuần tập sự kiện) của thiết kế lộ
 trình:![](media/image70.png){width="0.36473534558180226in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 Khi hoàn tất, thiết kế của bạn sẽ trông giống như thiết kế ở trên.
 Tiếp theo, chúng ta sẽ cần quyết định một vài cài đặt phân tích bổ
@@ -840,11 +840,11 @@ ARBs được sử dụng trong các quần thể mục tiêu.
 Để bắt đầu, hãy nhấp vào trong thanh bên trái của ATLAS để tạo một tỷ lệ
 mới
 mắc![](media/image87.png){width="1.2505238407699037in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 phân tích mới. Cung cấp một tên mô tả và nhấn nút lưu
 .![](media/image46.png){width="0.18747594050743657in"
-height="0.18747594050743657in"}
+height="0.18747594050743657in" .book-icon}
 
 ### Thiết kế
 
@@ -902,7 +902,7 @@ Hình 11.24&#58; Định nghĩa phân tầng tỷ suất mới mắc cho nữ gi
 Nhấp vào tab Generation (Tạo) và sau đó nhấn nút để hiển thị danh sách
 các cơ sở dữ liệu để sử dụng nhằm thực thi phân
 tích:![](media/image91.png){width="0.5314720034995626in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 ![](media/image92.png){width="5.339166666666666in"
 height="2.1052077865266843in"}
@@ -924,7 +924,7 @@ Chọn nhóm thuần tập mục tiêu là người dùng ACEi và Nhồi máu c
 tính (AMI) từ các danh sách thả xuống tương ứng. Nhấp vào nút để hiển
 thị kết quả phân tích tỷ lệ mới
 mắc:![](media/image93.png){width="0.5002088801399825in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 Tóm tắt cho cơ sở dữ liệu hiển thị tổng số người trong nhóm thuần tập
 được quan sát trong thời gian TAR cùng với tổng số trường hợp. Tỷ lệ
@@ -952,7 +952,7 @@ việc sử dụng ARBs mới trong quần thể ACEi. Sử dụng danh sách th
 ở trên cùng, thay đổi kết cục thành sử dụng ARBs và nhấp vào nút để
 xem chi
 tiết.![](media/image93.png){width="0.5002088801399825in"
-height="0.18757764654418196in"}
+height="0.18757764654418196in" .book-icon}
 
 Như đã hiển thị, các số liệu được tính toán là giống nhau nhưng cách
 diễn giải lại khác vì đầu vào (sử dụng ARB) tham chiếu đến một ước
@@ -962,7 +962,7 @@ tính sử dụng thuốc thay vì một kết cục sức khỏe.[]{#_bookmark3
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - OHDSI offers tools to characterize an entire database, or a cohort of
 interest.

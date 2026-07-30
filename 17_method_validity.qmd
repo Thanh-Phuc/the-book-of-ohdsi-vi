@@ -540,8 +540,8 @@ chứng) và nhấp vào nút . Việc tạo tổng quan bằng chứng sẽ m�
 phút, sau đó bạn có thể nhấp vào nút . Thao tác này sẽ mở danh sách
 các kết quả như được hiển thị trong Hình
 18.4.![](media/image170.png){width="0.7813943569553806in"
-height="0.1979527559055118in"}![](media/image171.jpeg){width="1.0522615923009624in"
-height="0.21878608923884516in"}
+height="0.1979527559055118in" .book-icon}![](media/image171.jpeg){width="1.0522615923009624in"
+height="0.21878608923884516in" .book-icon}
 
 Danh sách này hiển thị các khái niệm tình trạng, cùng với tổng quan về
 bằng chứng liên kết tình trạng đó với bất kỳ phơi nhiễm nào chúng ta
@@ -945,7 +945,7 @@ xác.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - A method's validity depends on whether the assumptions underlying the
 method are met.

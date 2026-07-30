@@ -982,7 +982,7 @@ ra bằng cách sử dụng các dữ liệu này.
 ## Tóm tắt
 
 ![](media/image4.png){width="0.4455205599300088in"
-height="0.4644783464566929in"}
+height="0.4644783464566929in" .book-icon}
 
 - Clinical validity can be established by understanding the
 characteristics of the underlying data source, evaluating the
